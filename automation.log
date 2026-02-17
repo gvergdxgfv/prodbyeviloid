@@ -1,0 +1,2048 @@
+00:00:49 │ 🚀 Beat-to-Instagram Reel Automation
+00:00:49 │ ============================================================
+00:00:49 │ ⚠️ No beat files found in C:\N8N\beats
+00:00:49 │    Drop your .wav/.mp3 files into: C:\N8N\beats
+00:02:14 │ 🚀 Beat-to-Instagram Reel Automation
+00:02:14 │ ============================================================
+00:02:14 │ 📂 Found 1 beat(s) to process
+
+00:02:14 │ 
+[1/1] Processing uhkfkxvx.mp3
+00:02:14 │ ============================================================
+00:02:14 │ 🎵 PROCESSING: uhkfkxvx.mp3
+00:02:14 │ ============================================================
+00:02:14 │ 🎵 Analyzing audio: uhkfkxvx.mp3
+00:02:24 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+00:02:26 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:02:26 │ Retrying request to /chat/completions in 0.414062 seconds
+00:02:28 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:02:28 │ Retrying request to /chat/completions in 0.898421 seconds
+00:02:29 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:02:29 │    ⚠️ AI keyword generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+00:02:29 │    ✅ Parsed: Uhkfkxvx | 112bpm |  | 
+00:02:29 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+00:02:29 │ 
+📋 Beat Info:
+00:02:29 │    Name:     Uhkfkxvx
+00:02:29 │    BPM:      112
+00:02:29 │    Genre:    
+00:02:29 │    Mood:     
+00:02:29 │    Energy:   medium
+00:02:29 │    Duration: 101.7s
+00:02:29 │    Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+00:02:29 │ 
+00:02:29 │ 📹 Step 2: Sourcing YouTube clips...
+00:02:29 │ 🔍 Searching YouTube: 'cinematic urban footage 4k cinematic footage no copyright'
+00:02:33 │    Found 3 result(s)
+00:02:33 │ 🔍 Searching YouTube: 'aesthetic drone footage city cinematic footage no copyright'
+00:02:36 │    Found 3 result(s)
+00:02:36 │ 🔍 Searching YouTube: 'abstract visual effects dark background cinematic footage no copyright'
+00:02:39 │    Found 3 result(s)
+00:02:39 │ 🏃 DRY RUN — Would download 5 clips:
+00:02:39 │    📹 Urban Streets Cinematic Stock Footage & No Copyright Street Music — https://www.youtube.com/watch?v=MFp9rm4_kFA
+00:02:39 │    📹 4k Ultra HD Urban Sunset Time-lapse | Copyright-Free Cinematic Stock Footage #copyrightfree — https://www.youtube.com/watch?v=gs8QFnuwoZI
+00:02:39 │    📹 4k Stockfootage | Drone footage of New York at Night - No Copyright — https://www.youtube.com/watch?v=TEjHDF9QXTY
+00:02:39 │    📹 4K Cinematic Drone view village Highway l Free  Drone Video l Free stock footage l Copyright free — https://www.youtube.com/watch?v=nNjYd1Qh1Ws
+00:02:39 │    📹 VENICE | Cinematic FPV — https://www.youtube.com/watch?v=8jT9ygmMvMg
+00:02:39 │ 
+🏃 DRY RUN complete — no files were downloaded or created.
+00:02:39 │ ⏱️ Took 25.5s
+
+00:02:39 │ 
+============================================================
+00:02:39 │ 📊 SUMMARY
+00:02:39 │ ============================================================
+00:02:39 │   ✅ uhkfkxvx.mp3 (25.5s)
+00:02:39 │ 
+  1/1 beat(s) processed successfully
+00:04:07 │ 🚀 Beat-to-Instagram Reel Automation
+00:04:07 │ ============================================================
+00:04:07 │ 📂 Found 1 beat(s) to process
+
+00:04:07 │ 
+[1/1] Processing uhkfkxvx.mp3
+00:04:07 │ ============================================================
+00:04:07 │ 🎵 PROCESSING: uhkfkxvx.mp3
+00:04:07 │ ============================================================
+00:04:07 │ 🎵 Analyzing audio: uhkfkxvx.mp3
+00:04:11 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+00:04:13 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:04:13 │ Retrying request to /chat/completions in 0.428192 seconds
+00:04:13 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:04:13 │ Retrying request to /chat/completions in 0.907291 seconds
+00:04:15 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:04:15 │    ⚠️ AI keyword generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+00:04:15 │    ✅ Parsed: Uhkfkxvx | 112bpm |  | 
+00:04:15 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+00:04:15 │ 
+00:04:15 │ 📹 Step 2: Sourcing YouTube clips...
+00:04:15 │ 🔍 Searching YouTube: 'cinematic urban footage 4k cinematic footage no copyright'
+00:04:18 │    Found 3 result(s)
+00:04:18 │ 🔍 Searching YouTube: 'aesthetic drone footage city cinematic footage no copyright'
+00:04:21 │    Found 3 result(s)
+00:04:21 │ 🔍 Searching YouTube: 'abstract visual effects dark background cinematic footage no copyright'
+00:04:23 │    Found 3 result(s)
+00:04:23 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=MFp9rm4_kFA
+00:04:39 │    ✅ Downloaded: uhkfkxvx_c8ab80e2.mp4
+00:04:40 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=gs8QFnuwoZI
+00:05:34 │    ✅ Downloaded: uhkfkxvx_a44edd34.mp4
+00:05:34 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=TEjHDF9QXTY
+00:05:55 │    ✅ Downloaded: uhkfkxvx_fdba2ce6.mp4
+00:05:55 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=nNjYd1Qh1Ws
+00:06:26 │    ✅ Downloaded: uhkfkxvx_a6bd23f2.mp4
+00:06:26 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=8jT9ygmMvMg
+00:06:57 │    ✅ Downloaded: uhkfkxvx_64ae1673.mp4
+00:06:58 │ 📦 Sourced 5 clip(s) for 'Uhkfkxvx'
+00:06:58 │ 
+00:06:58 │ 🎬 Step 3: Assembling video...
+00:06:58 │ 🎬 Assembling video: Uhkfkxvx (60s)
+00:07:34 │    📐 Clips stitched to beat
+00:07:34 │    🔊 Audio overlay applied
+00:07:42 │    ⚡ Added 91 beat-synced flashes
+00:07:42 │ ⚠️ Could not create watermark (font issue?): Invalid font Arial, pillow failed to use it with error cannot open resource
+00:07:42 │    🔄 Rendering to uhkfkxvx_reel.mp4 ...
+00:18:53 │ 🚀 Beat-to-Instagram Reel Automation
+00:18:53 │ ============================================================
+00:18:53 │ 🎨 Visualizer: ON (neon theme)
+00:18:53 │ 📂 Found 1 beat(s) to process
+
+00:18:53 │ 
+[1/1] Processing uhkfkxvx.mp3
+00:18:53 │ ============================================================
+00:18:53 │ 🎵 PROCESSING: uhkfkxvx.mp3
+00:18:53 │ ============================================================
+00:18:53 │ 🎵 Analyzing audio: uhkfkxvx.mp3
+00:19:09 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+00:19:13 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:19:13 │ Retrying request to /chat/completions in 0.454649 seconds
+00:19:14 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:19:14 │ Retrying request to /chat/completions in 0.826808 seconds
+00:19:16 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:19:16 │    ⚠️ AI keyword generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+00:19:16 │    ✅ Parsed: Uhkfkxvx | 112bpm |  | 
+00:19:16 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+00:19:16 │ 
+📋 Beat Info:
+00:19:16 │    Name:     Uhkfkxvx
+00:19:16 │    BPM:      112
+00:19:16 │    Genre:    
+00:19:16 │    Mood:     
+00:19:16 │    Energy:   medium
+00:19:16 │    Duration: 101.7s
+00:19:16 │    Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+00:19:16 │ 
+00:19:16 │ 📹 Step 2: Sourcing YouTube clips...
+00:19:16 │ 🔍 Searching YouTube: 'cinematic urban footage 4k cinematic footage no copyright'
+00:19:24 │    Found 3 result(s)
+00:19:24 │ 🔍 Searching YouTube: 'aesthetic drone footage city cinematic footage no copyright'
+00:19:29 │    Found 3 result(s)
+00:19:29 │ 🔍 Searching YouTube: 'abstract visual effects dark background cinematic footage no copyright'
+00:19:33 │    Found 3 result(s)
+00:19:33 │ 🏃 DRY RUN — Would download 5 clips:
+00:19:33 │    📹 Urban Streets Cinematic Stock Footage & No Copyright Street Music — https://www.youtube.com/watch?v=MFp9rm4_kFA
+00:19:33 │    📹 4k Ultra HD Urban Sunset Time-lapse | Copyright-Free Cinematic Stock Footage #copyrightfree — https://www.youtube.com/watch?v=gs8QFnuwoZI
+00:19:33 │    📹 4k Stockfootage | Drone footage of New York at Night - No Copyright — https://www.youtube.com/watch?v=TEjHDF9QXTY
+00:19:33 │    📹 4K Cinematic Drone view village Highway l Free  Drone Video l Free stock footage l Copyright free — https://www.youtube.com/watch?v=nNjYd1Qh1Ws
+00:19:33 │    📹 VENICE | Cinematic FPV — https://www.youtube.com/watch?v=8jT9ygmMvMg
+00:19:34 │ 
+00:19:34 │ 🎨 Visualizer: enabled (neon theme)
+00:19:34 │ 
+🏃 DRY RUN complete — no files were downloaded or created.
+00:19:34 │ ⏱️ Took 40.0s
+
+00:19:34 │ 
+============================================================
+00:19:34 │ 📊 SUMMARY
+00:19:34 │ ============================================================
+00:19:34 │   ✅ uhkfkxvx.mp3 (40.0s)
+00:19:34 │ 
+  1/1 beat(s) processed successfully
+00:21:13 │ 🚀 Beat-to-Instagram Reel Automation
+00:21:13 │ ============================================================
+00:21:13 │ 🎨 Visualizer: ON (neon theme)
+00:21:13 │ 📂 Found 1 beat(s) to process
+
+00:21:13 │ 
+[1/1] Processing uhkfkxvx.mp3
+00:21:13 │ ============================================================
+00:21:13 │ 🎵 PROCESSING: uhkfkxvx.mp3
+00:21:13 │ ============================================================
+00:21:13 │ 🎵 Analyzing audio: uhkfkxvx.mp3
+00:21:19 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+00:21:21 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:21:21 │ Retrying request to /chat/completions in 0.463788 seconds
+00:21:22 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:21:22 │ Retrying request to /chat/completions in 0.952638 seconds
+00:21:23 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:21:23 │    ⚠️ AI keyword generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+00:21:23 │    ✅ Parsed: Uhkfkxvx | 112bpm |  | 
+00:21:23 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+00:21:23 │ 
+00:21:23 │ 📹 Step 2: Sourcing YouTube clips...
+00:21:23 │ 🔍 Searching YouTube: 'cinematic urban footage 4k cinematic footage no copyright'
+00:21:27 │    Found 3 result(s)
+00:21:27 │ 🔍 Searching YouTube: 'aesthetic drone footage city cinematic footage no copyright'
+00:21:31 │    Found 3 result(s)
+00:21:31 │ 🔍 Searching YouTube: 'abstract visual effects dark background cinematic footage no copyright'
+00:21:34 │    Found 3 result(s)
+00:21:34 │    ⏭️ Already cached: uhkfkxvx_c8ab80e2.mp4
+00:21:34 │    ⏭️ Already cached: uhkfkxvx_a44edd34.mp4
+00:21:34 │    ⏭️ Already cached: uhkfkxvx_fdba2ce6.mp4
+00:21:34 │    ⏭️ Already cached: uhkfkxvx_a6bd23f2.mp4
+00:21:34 │    ⏭️ Already cached: uhkfkxvx_64ae1673.mp4
+00:21:35 │ 📦 Sourced 5 clip(s) for 'Uhkfkxvx'
+00:21:35 │ 
+00:21:35 │ 🎬 Step 3: Assembling video...
+00:21:35 │ 🎬 Assembling video: Uhkfkxvx (60s)
+00:22:18 │    📐 Clips stitched to beat
+00:22:18 │    🔊 Audio overlay applied
+00:22:28 │    ⚡ Added 91 beat-synced flashes
+00:22:29 │ 🎨 Analyzing audio for visualizer...
+00:22:29 │    📊 3050 frames | 64 frequency bands | 101.7s
+00:22:29 │ 🎨 Rendering visualizer overlay (neon theme)...
+00:22:30 │    ✅ Visualizer overlay ready (1800 frames, 60.0s)
+00:22:30 │    🎨 Visualizer overlay added (neon theme)
+00:22:30 │    🔄 Rendering to uhkfkxvx_reel.mp4 ...
+00:24:22 │ ❌ Video assembly failed: [WinError 32] The process cannot access the file because it is being used by another process: 'uhkfkxvx_reelTEMP_MPY_wvf_snd.mp4'
+00:24:22 │ ⏱️ Took 1215.0s
+
+00:24:22 │ 
+============================================================
+00:24:22 │ 📊 SUMMARY
+00:24:22 │ ============================================================
+00:24:22 │   ❌ uhkfkxvx.mp3 (1215.0s)
+00:24:22 │ 
+  0/1 beat(s) processed successfully
+00:39:50 │    ✅ Video rendered: C:\N8N\output\uhkfkxvx_reel.mp4 (60.7 MB)
+00:39:51 │ 
+00:39:51 │ 📝 Step 4: Generating Instagram metadata...
+00:39:52 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:39:52 │ Retrying request to /chat/completions in 0.468061 seconds
+00:39:53 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:39:53 │ Retrying request to /chat/completions in 0.830528 seconds
+00:39:54 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+00:39:54 │ ⚠️ AI metadata generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+00:39:54 │ 
+📋 Reel Metadata:
+00:39:54 │    Caption: 🔥 Uhkfkxvx 🔥
+Hip Hop | 112 BPM | Vibes
+DM for exclusive beats 💰...
+00:39:54 │    Hashtags: 20 tags
+00:39:54 │ 
+00:39:54 │ ⏭️ Upload skipped (--no-upload). Video saved to: C:\N8N\output\uhkfkxvx_reel.mp4
+00:39:54 │ 
+📋 Full caption for manual upload:
+🔥 Uhkfkxvx 🔥
+Hip Hop | 112 BPM | Vibes
+DM for exclusive beats 💰
+
+.
+.
+.
+#beats #producer #beatmaker #hiphop #typebeat #newmusic #instrumentals #studiolife #vibes #hiphop #rap #trapbeats #musicproducer #beatsforsale #exclusive #fire #unsigned #rapper #explorepage #viral
+00:39:54 │ ⏱️ Took 1120.9s
+
+00:39:54 │ 
+============================================================
+00:39:54 │ 📊 SUMMARY
+00:39:54 │ ============================================================
+00:39:54 │   ✅ uhkfkxvx.mp3 (1120.9s)
+00:39:54 │ 
+  1/1 beat(s) processed successfully
+13:51:53 │ 🚀 Beat-to-Instagram Reel Automation
+13:51:53 │ ============================================================
+13:51:53 │ 🎨 Visualizer: ON (neon theme)
+13:51:53 │ 📂 Found 1 beat(s) to process
+
+13:51:53 │ 
+[1/1] Processing uhkfkxvx.mp3
+13:51:53 │ ============================================================
+13:51:53 │ 🎵 PROCESSING: uhkfkxvx.mp3
+13:51:53 │ ============================================================
+13:51:53 │ 🎵 Analyzing audio: uhkfkxvx.mp3
+13:52:03 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+13:52:03 │    🔥 Found 2 best 30s segments
+13:52:03 │       Highlight 1: 24.0s – 54.0s
+13:52:03 │       Highlight 2: 61.0s – 91.0s
+13:52:05 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+13:52:05 │ Retrying request to /chat/completions in 0.400938 seconds
+13:52:06 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+13:52:06 │ Retrying request to /chat/completions in 0.930705 seconds
+13:52:07 │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+13:52:07 │    ⚠️ AI keyword generation failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+13:52:07 │    ✅ Parsed: Uhkfkxvx | 112bpm |  | 
+13:52:07 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+13:52:07 │ 
+13:52:07 │ 📹 Step 2: Sourcing YouTube clips...
+13:52:07 │ 🔍 Searching YouTube: 'cinematic urban footage 4k cinematic footage no copyright'
+13:52:10 │    Found 3 result(s)
+13:52:10 │ 🔍 Searching YouTube: 'aesthetic drone footage city cinematic footage no copyright'
+13:52:13 │    Found 3 result(s)
+13:52:13 │ 🔍 Searching YouTube: 'abstract visual effects dark background cinematic footage no copyright'
+13:52:15 │    Found 3 result(s)
+13:52:15 │    ⏭️ Already cached: uhkfkxvx_c8ab80e2.mp4
+13:52:16 │    ⏭️ Already cached: uhkfkxvx_a44edd34.mp4
+13:52:16 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=l6EzZafb1Pk
+13:52:32 │    ✅ Downloaded: uhkfkxvx_543126a5.mp4
+13:52:32 │    ⏭️ Already cached: uhkfkxvx_fdba2ce6.mp4
+13:52:32 │    ⏭️ Already cached: uhkfkxvx_a6bd23f2.mp4
+13:52:32 │ 📦 Sourced 5 clip(s) for 'Uhkfkxvx'
+13:52:32 │ 
+13:52:32 │ 🎬 Step 3: Assembling video...
+13:52:32 │ 🎬 Rendering: uhkfkxvx_full.mp4 (102s)
+13:53:23 │    📐 Clips stitched to beat
+13:53:23 │    🔊 Audio overlay applied
+13:53:35 │    ⚡ Added 170 beat-synced flashes
+13:53:35 │ 🎨 Analyzing audio for waveform visualizer...
+13:53:35 │    📊 3050 frames | 101.7s | waveform-only mode
+13:53:35 │ 🎨 Rendering waveform visualizer (neon theme)...
+13:53:36 │    ✅ Waveform visualizer ready (3050 frames, 101.7s)
+13:53:36 │    🎨 Waveform visualizer overlay added (neon theme)
+13:53:36 │    🔄 Rendering to uhkfkxvx_full.mp4 ...
+14:20:57 │ ❌ Video assembly failed: Unable to allocate 15.8 MiB for an array with shape (1920, 1080) and data type float64
+14:20:58 │ ⏱️ Took 1745.0s
+
+14:20:58 │ 
+============================================================
+14:20:58 │ 📊 SUMMARY
+14:20:58 │ ============================================================
+14:20:58 │   ❌ uhkfkxvx.mp3 (1745.0s)
+14:20:58 │ 
+  0/1 beat(s) processed successfully
+14:27:33 │ 🚀 Beat-to-Instagram Reel Automation
+14:27:33 │ ============================================================
+14:27:33 │ 🎨 Visualizer: ON (neon theme)
+14:27:33 │ 📂 Found 2 beat(s) to process
+
+14:27:33 │ 
+[1/2] Processing Over_the_Horizon.mp3
+14:27:33 │ ============================================================
+14:27:33 │ 🎵 PROCESSING: Over_the_Horizon.mp3
+14:27:33 │ ============================================================
+14:27:33 │ 🎵 Analyzing audio: Over_the_Horizon.mp3
+14:27:40 │    ⏱ Duration: 213.4s | 🥁 BPM: 129 | ⚡ Energy: low
+14:27:40 │    💥 Detected 250 drop/cut points (428 beats, 344 onsets)
+14:27:40 │    🔥 Found 3 best 30s segments
+14:27:40 │       Highlight 1: 53.0s – 83.0s
+14:27:40 │       Highlight 2: 113.0s – 143.0s
+14:27:40 │       Highlight 3: 146.0s – 176.0s
+14:27:41 │    ⚠️ Gemini keyword generation failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 13.956424169s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 13
+}
+]
+14:27:41 │    ✅ Parsed: Over The Horizon | 129bpm |  | 
+14:27:41 │    🔍 Keywords: calm nature landscape cinematic, slow motion ambient footage, abstract visual effects dark background
+14:27:41 │ 
+14:27:41 │ 📹 Step 2: Sourcing YouTube clips...
+14:27:41 │ 🤖 Generating AI-powered search queries...
+14:27:42 │    ⚠️ Gemini query generation failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 12.774791433s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 12
+}
+]
+14:27:42 │ 🔍 Searching YouTube: 'calm nature landscape cinematic cinematic footage no copyright'
+14:27:45 │    Found 3 result(s)
+14:27:45 │ 🔍 Searching YouTube: 'slow motion ambient footage cinematic footage no copyright'
+14:27:47 │    Found 3 result(s)
+14:27:47 │ 🔍 Searching YouTube: 'abstract visual effects dark background cinematic footage no copyright'
+14:27:50 │    Found 3 result(s)
+14:27:50 │ 🤖 Ranking 8 clips by relevance...
+14:27:50 │    ⚠️ Gemini ranking failed, using default order: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 4.216518645s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 4
+}
+]
+14:27:50 │    ⏭️ Already cached: Over_the_Horizon_69fa3d87.mp4
+14:27:51 │    ⏭️ Already cached: Over_the_Horizon_a75f5033.mp4
+14:27:51 │    ⏭️ Already cached: Over_the_Horizon_440c39ba.mp4
+14:27:51 │    ⏭️ Already cached: Over_the_Horizon_cf812a06.mp4
+14:27:51 │    ⏭️ Already cached: Over_the_Horizon_2f8dbbcb.mp4
+14:27:51 │ 📦 Sourced 5 clip(s) for 'Over The Horizon'
+14:27:51 │ 
+14:27:51 │ 🎬 Step 3: Assembling video...
+14:27:51 │ 🎬 Rendering: Over_the_Horizon_full.mp4 (213s)
+14:27:54 │    ✂️ 85 beat-synced cuts planned
+14:29:26 │    ⚡ 84 drop flash transitions added
+14:29:26 │    📐 Clips stitched to beat (drop-synced)
+14:29:26 │    🔊 Audio overlay applied
+14:29:26 │    💥 Added 84 drop transition flashes
+14:29:27 │    ⚡ Added 30 beat-synced flashes
+14:29:27 │ 🎨 Analyzing audio for waveform visualizer...
+14:29:28 │    📊 6401 frames | 213.4s | waveform-only mode
+14:29:28 │ 🎨 Rendering waveform visualizer (neon theme)...
+14:29:28 │    ✅ Waveform visualizer ready (6401 frames, 213.4s)
+14:29:28 │    🎨 Waveform visualizer overlay added (neon theme)
+14:29:28 │    🔄 Rendering to Over_the_Horizon_full.mp4 ...
+14:56:36 │ 🚀 Beat-to-Instagram Reel Automation
+14:56:36 │ ============================================================
+14:56:36 │ 🎨 Visualizer: ON (neon theme)
+14:56:36 │ 📂 Found 1 beat(s) to process
+
+14:56:36 │ 
+[1/1] Processing BPL.mp3
+14:56:36 │ ============================================================
+14:56:36 │ 🎵 PROCESSING: BPL.mp3
+14:56:36 │ ============================================================
+14:56:36 │ 🎵 Analyzing audio: BPL.mp3
+14:56:43 │    ⏱ Duration: 144.1s | 🥁 BPM: 123 | ⚡ Energy: high
+14:56:43 │    💥 Detected 233 drop/cut points (288 beats, 363 onsets)
+14:56:43 │    🔥 Found 3 best 30s segments
+14:56:43 │       Highlight 1: 4.0s – 34.0s
+14:56:43 │       Highlight 2: 36.0s – 66.0s
+14:56:43 │       Highlight 3: 68.0s – 98.0s
+14:56:43 │    ⚠️ Gemini keyword generation failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 11.349618594s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 11
+}
+]
+14:56:43 │    ✅ Parsed: Bpl | 123bpm |  | 
+14:56:43 │    🔍 Keywords: fast paced urban night footage 4k, dynamic action cinematic shots, abstract visual effects dark background
+14:56:43 │ 
+14:56:43 │ 📹 Step 2: Sourcing YouTube clips...
+14:56:43 │ 🤖 Generating AI-powered search queries...
+14:56:44 │    ⚠️ Gemini query generation failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+Please retry in 11.031619286s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 11
+}
+]
+14:56:44 │ 🔍 Searching YouTube: 'fast paced urban night footage 4k cinematic footage no copyright'
+14:56:47 │    Found 3 result(s)
+14:56:47 │ 🔍 Searching YouTube: 'dynamic action cinematic shots cinematic footage no copyright'
+14:56:50 │    Found 3 result(s)
+14:56:50 │ 🔍 Searching YouTube: 'abstract visual effects dark background cinematic footage no copyright'
+14:56:53 │    Found 3 result(s)
+14:56:53 │ 🤖 Ranking 7 clips by relevance...
+14:56:54 │    ⚠️ Gemini ranking failed, using default order: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro
+Please retry in 1.060895035s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerDay-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-pro"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 1
+}
+]
+14:56:54 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=thpF81-wrMs
+14:57:04 │    ✅ Downloaded: BPL_b8b023fe.mp4
+14:57:04 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=-d_iBRRVlVE
+14:57:43 │ 🚀 Beat-to-Instagram Reel Automation
+14:57:43 │ ============================================================
+14:57:43 │ 🎨 Visualizer: ON (neon theme)
+14:57:43 │ 📂 Found 1 beat(s) to process
+
+14:57:43 │ 
+[1/1] Processing BPL.mp3
+14:57:43 │ ============================================================
+14:57:43 │ 🎵 PROCESSING: BPL.mp3
+14:57:43 │ ============================================================
+14:57:43 │ 🎵 Analyzing audio: BPL.mp3
+14:57:47 │    ⏱ Duration: 144.1s | 🥁 BPM: 123 | ⚡ Energy: high
+14:57:47 │    💥 Detected 233 drop/cut points (288 beats, 363 onsets)
+14:57:47 │    🔥 Found 3 best 30s segments
+14:57:47 │       Highlight 1: 4.0s – 34.0s
+14:57:47 │       Highlight 2: 36.0s – 66.0s
+14:57:47 │       Highlight 3: 68.0s – 98.0s
+14:57:54 │    🤖 Gemini response:
+GENRE: Electro Pop
+MOOD: Exhilarating
+KEYWORDS: Neon city streets at night cinematic 4k | Energetic crowd dancing club scene slow motion | Abstract digital light trails fast motion | Futuristic urban skyline drone shot sunset | Luxury car driving fast night city | Vibrant laser show fog concert | Reflective wet street neon lights close up
+14:57:54 │    ✅ Parsed: Bpl | 123bpm | Electro Pop | Exhilarating
+14:57:54 │    🔍 Keywords: Neon city streets at night cinematic 4k, Energetic crowd dancing club scene slow motion, Abstract digital light trails fast motion, Futuristic urban skyline drone shot sunset, Luxury car driving fast night city, Vibrant laser show fog concert, Reflective wet street neon lights close up
+14:57:54 │ 
+14:57:54 │ 📹 Step 2: Sourcing YouTube clips...
+14:57:54 │ 🤖 Generating AI-powered search queries...
+14:58:00 │    🤖 Gemini generated 6 search queries:
+14:58:00 │       🔍 The Weeknd Blinding Lights aesthetic
+14:58:00 │       🔍 Dua Lipa Future Nostalgia visuals
+14:58:00 │       🔍 Neon city night drive 4k
+14:58:00 │       🔍 Energetic club crowd cinematic
+14:58:00 │       🔍 Futuristic skyline drone sunset 4k
+14:58:00 │       🔍 Abstract digital light trails
+14:58:00 │ 🔍 Searching YouTube: 'The Weeknd Blinding Lights aesthetic'
+14:58:02 │    Found 3 result(s)
+14:58:02 │ 🔍 Searching YouTube: 'Dua Lipa Future Nostalgia visuals'
+14:58:05 │    Found 3 result(s)
+14:58:05 │ 🔍 Searching YouTube: 'Neon city night drive 4k'
+14:58:07 │    Found 3 result(s)
+14:58:07 │ 🔍 Searching YouTube: 'Energetic club crowd cinematic'
+14:58:10 │    Found 3 result(s)
+14:58:10 │ 🔍 Searching YouTube: 'Futuristic skyline drone sunset 4k'
+14:58:13 │    Found 3 result(s)
+14:58:13 │ 🤖 Ranking 15 clips by relevance...
+14:58:29 │    🤖 Gemini ranked and selected 5 best clips
+14:58:29 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=i3qUonr3d9U
+14:58:44 │    ✅ Downloaded: BPL_50f5c2b0.mp4
+14:58:44 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=v7RPpEHg0nE
+14:59:07 │    ✅ Downloaded: BPL_83a7f4f1.mp4
+14:59:07 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=ZrNO1ZAC5Vw
+14:59:47 │    ✅ Downloaded: BPL_7d9b619e.mp4
+14:59:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=m5lp8S-YgrQ
+15:00:01 │    ✅ Downloaded: BPL_4c67b422.mp4
+15:00:01 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=RD0xom40iEE
+15:00:28 │    ✅ Downloaded: BPL_635c34f3.mp4
+15:00:28 │ 📦 Sourced 5 clip(s) for 'Bpl'
+15:00:28 │ 
+15:00:28 │ 🎬 Step 3: Assembling video...
+15:00:28 │ 🎬 Rendering: BPL_full.mp4 (144s)
+15:00:31 │    ✂️ 74 beat-synced cuts planned
+15:01:58 │    ⚡ 73 drop flash transitions added
+15:01:58 │    📐 Clips stitched to beat (drop-synced)
+15:01:59 │    🔊 Audio overlay applied
+15:01:59 │    💥 Added 73 drop transition flashes
+15:02:00 │    ⚡ Added 30 beat-synced flashes
+15:02:00 │ 🎨 Analyzing audio for waveform visualizer...
+15:02:01 │    📊 4323 frames | 144.1s | waveform-only mode
+15:02:01 │ 🎨 Rendering waveform visualizer (neon theme)...
+15:02:01 │    ✅ Waveform visualizer ready (4323 frames, 144.1s)
+15:02:01 │    🎨 Waveform visualizer overlay added (neon theme)
+15:02:01 │    🔄 Rendering to BPL_full.mp4 ...
+15:51:54 │ ❌ Video assembly failed: 
+15:51:55 │ ⏱️ Took 3252.4s
+
+15:51:55 │ 
+============================================================
+15:51:55 │ 📊 SUMMARY
+15:51:55 │ ============================================================
+15:51:55 │   ❌ BPL.mp3 (3252.4s)
+15:51:55 │ 
+  0/1 beat(s) processed successfully
+16:22:12 │ 🚀 Beat-to-Instagram Reel Automation
+16:22:12 │ ============================================================
+16:22:12 │ 🎨 Visualizer: ON (neon theme)
+16:22:12 │ 📂 Found 1 beat(s) to process
+
+16:22:12 │ 
+[1/1] Processing BPL.mp3
+16:22:12 │ ============================================================
+16:22:12 │ 🎵 PROCESSING: BPL.mp3
+16:22:12 │ ============================================================
+16:22:12 │ 🎵 Analyzing audio: BPL.mp3
+16:22:18 │    ⏱ Duration: 144.1s | 🥁 BPM: 123 | ⚡ Energy: high
+16:22:18 │    💥 Detected 233 drop/cut points (288 beats, 363 onsets)
+16:22:18 │    🔥 Found 3 best 30s segments
+16:22:18 │       Highlight 1: 4.0s – 34.0s
+16:22:18 │       Highlight 2: 36.0s – 66.0s
+16:22:18 │       Highlight 3: 68.0s – 98.0s
+16:22:25 │    🤖 Gemini response:
+GENRE: Electro Pop
+MOOD: Energetic & Uplifting
+KEYWORDS: Neon city skyline night timelapse 4k | People dancing ecstatic club crowd | Futuristic light tunnel warp speed animation | Vibrant holographic particles floating dark background | Luxury sports car driving fast night city | Energetic concert stage lights crowd | Abstract geometric shapes moving glow animation
+16:22:25 │    ✅ Parsed: Bpl | 123bpm | Electro Pop | Energetic & Uplifting
+16:22:25 │    🔍 Keywords: Neon city skyline night timelapse 4k, People dancing ecstatic club crowd, Futuristic light tunnel warp speed animation, Vibrant holographic particles floating dark background, Luxury sports car driving fast night city, Energetic concert stage lights crowd, Abstract geometric shapes moving glow animation
+16:22:25 │ 
+16:22:25 │ 📹 Step 2: Sourcing YouTube clips...
+16:22:25 │ 🤖 Generating AI-powered search queries...
+16:22:32 │    🤖 Gemini generated 8 search queries:
+16:22:32 │       🔍 Dua Lipa music video
+16:22:32 │       🔍 The Weeknd official video
+16:22:32 │       🔍 Daft Punk music video
+16:22:32 │       🔍 Kylie Minogue official video
+16:22:32 │       🔍 Calvin Harris music video
+16:22:32 │       🔍 night club crowd dancing
+16:22:32 │       🔍 neon city night driving
+16:22:32 │       🔍 futuristic party vibes
+16:22:32 │ 🔍 Searching YouTube: 'Dua Lipa music video'
+16:22:35 │    Found 3 result(s)
+16:22:35 │ 🔍 Searching YouTube: 'The Weeknd official video'
+16:22:38 │    Found 3 result(s)
+16:22:38 │ 🔍 Searching YouTube: 'Daft Punk music video'
+16:22:40 │    Found 3 result(s)
+16:22:40 │ 🔍 Searching YouTube: 'Kylie Minogue official video'
+16:22:43 │    Found 3 result(s)
+16:22:43 │ 🔍 Searching YouTube: 'Calvin Harris music video'
+16:22:45 │    Found 3 result(s)
+16:22:45 │ 🔍 Searching YouTube: 'night club crowd dancing'
+16:22:48 │    Found 3 result(s)
+16:22:48 │ 🔍 Searching YouTube: 'neon city night driving'
+16:22:51 │    Found 3 result(s)
+16:22:51 │ 🔍 Searching YouTube: 'futuristic party vibes'
+16:22:54 │    Found 3 result(s)
+16:22:54 │ 🤖 Ranking 22 clips by relevance...
+16:23:09 │    🤖 Gemini ranked and selected 10 best clips
+16:23:09 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=TUVcZfQe-Kw
+16:23:38 │    ✅ Downloaded: BPL_05b5d047.mp4
+16:23:38 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=a9cyG_yfh1k
+16:23:53 │    ✅ Downloaded: BPL_671611fa.mp4
+16:23:53 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=4NRXx6U8ABQ
+16:24:03 │    ✅ Downloaded: BPL_1cf001ff.mp4
+16:24:03 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=K0HSD_i2DvA
+16:24:13 │    ✅ Downloaded: BPL_7aab0749.mp4
+16:24:13 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=c18441Eh_WE
+16:24:23 │    ✅ Downloaded: BPL_f3c59b4e.mp4
+16:24:23 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=63vqob-MljQ
+16:24:35 │    ✅ Downloaded: BPL_5434c09a.mp4
+16:24:35 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=wf421JsG004
+16:24:53 │    ✅ Downloaded: BPL_60c74ab8.mp4
+16:24:53 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=ebXbLfLACGM
+16:25:05 │    ✅ Downloaded: BPL_6441b1ec.mp4
+16:25:05 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=dGghkjpNCQ8
+16:25:15 │    ✅ Downloaded: BPL_5902174c.mp4
+16:25:15 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=4vmaCweRx3c
+16:25:23 │    ✅ Downloaded: BPL_b7d2c3d2.mp4
+16:25:23 │ 📦 Sourced 10 clip(s) for 'Bpl'
+16:25:23 │ 
+16:25:23 │ 🎬 Step 3: Assembling video...
+16:25:23 │ 🎬 Rendering: BPL_full.mp4 (144s)
+16:25:30 │    ✂️ 74 beat-synced cuts planned
+16:25:33 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:35 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:35 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:36 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:37 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:38 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:39 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:39 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:40 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:40 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:42 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:43 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:45 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:46 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:47 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:48 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:49 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:50 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:51 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:51 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:52 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:52 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:53 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:54 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:55 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:57 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:57 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:58 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:59 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:25:59 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:00 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:01 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:02 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:02 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:03 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:04 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:05 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:06 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:07 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:07 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:08 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:09 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:09 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:10 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:11 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:12 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:13 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:14 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:14 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:15 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:16 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:17 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:18 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:19 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:21 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:21 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:22 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:23 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:23 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:24 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:24 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:25 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:26:26 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+16:45:07 │ 🚀 Beat-to-Instagram Reel Automation
+16:45:07 │ ============================================================
+16:45:07 │ 👀 WATCHING C:\N8N\beats for new beats...
+16:45:07 │    Mode: DEFORUM 🎨
+16:45:07 │ ❌ 'watchdog' library not found. Install it with: pip install watchdog
+16:46:28 │ 🚀 Beat-to-Instagram Reel Automation
+16:46:28 │ ============================================================
+16:46:28 │ 👀 WATCHING C:\N8N\beats for new beats...
+16:46:28 │    Mode: DEFORUM 🎨
+16:47:05 │ 🆕 New beat detected: untitled.mp3
+16:47:07 │ ============================================================
+16:47:07 │ 🎨 DEFORUM PROCESSING: untitled.mp3
+16:47:07 │ ============================================================
+16:47:07 │ 🎵 Analyzing audio: untitled.mp3
+16:47:12 │    ⏱ Duration: 56.2s | 🥁 BPM: 117 | ⚡ Energy: high
+16:47:12 │    💥 Detected 63 drop/cut points (112 beats, 173 onsets)
+16:47:12 │    🔥 Found 1 best 30s segments
+16:47:12 │       Highlight 1: 18.0s – 48.0s
+16:47:21 │    🤖 Gemini response:
+GENRE: Trap Pop
+MOOD: Vibrant & Driving
+KEYWORDS: Neon urban landscape night cinematic | Abstract glitch art motion graphics vibrant | Luxury sports car driving night city drone | Futuristic digital interface animation HUD | Dynamic light streaks fast motion blur | Vibrant smoke particles dark background 4k | Sleek modern architecture urban aesthetic
+16:47:21 │    ✅ Parsed: Untitled | 117bpm | Trap Pop | Vibrant & Driving
+16:47:21 │    🔍 Keywords: Neon urban landscape night cinematic, Abstract glitch art motion graphics vibrant, Luxury sports car driving night city drone, Futuristic digital interface animation HUD, Dynamic light streaks fast motion blur, Vibrant smoke particles dark background 4k, Sleek modern architecture urban aesthetic
+16:47:21 │ ⚠️ SD API enabled but unreachable. Generating settings file instead.
+16:47:21 │ 🎨 Generating Deforum settings for 'Untitled' (117 BPM)
+16:47:28 │ ✅ Deforum Settings Saved: C:\N8N\output\Untitled_deforum.txt
+16:47:28 │ ✅ Auto-processing complete. Watching for next beat...
+16:57:50 │ 🆕 New beat detected: melodic shit for rich.mp3
+16:57:52 │ ============================================================
+16:57:52 │ 🎨 DEFORUM PROCESSING: melodic shit for rich.mp3
+16:57:52 │ ============================================================
+16:57:52 │ 🎵 Analyzing audio: melodic shit for rich.mp3
+16:57:52 │    ⏱ Duration: 25.3s | 🥁 BPM: 76 | ⚡ Energy: medium
+16:57:52 │    💥 Detected 32 drop/cut points (31 beats, 72 onsets)
+16:57:58 │    🤖 Gemini response:
+GENRE: Luxury Trap
+MOOD: Confident Opulence
+KEYWORDS: Luxury penthouse city lights view cinematic | High-end sports car driving night slow motion | Yacht cruising ocean sunset drone shot | Expensive watch close up bokeh | Private jet cabin interior luxury | Champagne pouring slow motion cinematic | Businessman looking out skyscraper window reflective
+16:57:58 │    ✅ Parsed: Melodic Shit For Rich | 76bpm | Luxury Trap | Confident Opulence
+16:57:58 │    🔍 Keywords: Luxury penthouse city lights view cinematic, High-end sports car driving night slow motion, Yacht cruising ocean sunset drone shot, Expensive watch close up bokeh, Private jet cabin interior luxury, Champagne pouring slow motion cinematic, Businessman looking out skyscraper window reflective
+16:57:58 │ 🚀 Sending to Deforum API (http://127.0.0.1:7860)...
+16:57:58 │    This may take a while. Check your A1111 console.
+16:57:58 │ 🚀 Sending Deforum job for 'Melodic Shit For Rich' to http://127.0.0.1:7860...
+16:58:05 │ ⚠️ Deforum API returned 404: {"detail":"Not Found"}
+16:58:05 │    Trying fallback to generic txt2img with script args...
+16:58:05 │ ⚠️ API failed or returned no video. Generating settings file instead.
+16:58:05 │ 🎨 Generating Deforum settings for 'Melodic Shit For Rich' (76 BPM)
+16:58:14 │ ✅ Deforum Settings Saved: C:\N8N\output\Melodic Shit For Rich_deforum.txt
+16:58:14 │ ✅ Auto-processing complete. Watching for next beat...
+17:02:47 │ 🆕 New beat detected: melodic shit for rich.mp3
+17:02:49 │ ============================================================
+17:02:49 │ 🎨 DEFORUM PROCESSING: melodic shit for rich.mp3
+17:02:49 │ ============================================================
+17:02:49 │ 🎵 Analyzing audio: melodic shit for rich.mp3
+17:02:49 │    ⏱ Duration: 25.3s | 🥁 BPM: 76 | ⚡ Energy: medium
+17:02:49 │    💥 Detected 32 drop/cut points (31 beats, 72 onsets)
+17:02:58 │    🤖 Gemini response:
+GENRE: Luxury Trap
+MOOD: Luxurious & Smooth
+KEYWORDS: Luxury car driving urban night cinematic | Modern skyscraper penthouse view city | Fashion model walking slow motion luxury aesthetic | Diamond jewelry sparkling close up 4k | Abstract smooth smoke dark background cinematic | Neon reflections wet pavement city night | Private jet interior luxury cabin view | Man wearing suit looking out city window success
+17:02:58 │    ✅ Parsed: Melodic Shit For Rich | 76bpm | Luxury Trap | Luxurious & Smooth
+17:02:58 │    🔍 Keywords: Luxury car driving urban night cinematic, Modern skyscraper penthouse view city, Fashion model walking slow motion luxury aesthetic, Diamond jewelry sparkling close up 4k, Abstract smooth smoke dark background cinematic, Neon reflections wet pavement city night, Private jet interior luxury cabin view, Man wearing suit looking out city window success
+17:02:58 │ 🚀 Sending to Deforum API (http://127.0.0.1:7860)...
+17:02:58 │    This may take a while. Check your A1111 console.
+17:02:58 │ 🚀 Sending Deforum job for 'Melodic Shit For Rich' to http://127.0.0.1:7860...
+17:03:05 │ ⚠️ Deforum API returned 404: {"detail":"Not Found"}
+17:03:05 │    Trying fallback to generic txt2img with script args...
+17:03:05 │ ⚠️ API failed or returned no video. Generating settings file instead.
+17:03:05 │ 🎨 Generating Deforum settings for 'Melodic Shit For Rich' (76 BPM)
+17:03:13 │ ✅ Deforum Settings Saved: C:\N8N\output\Melodic Shit For Rich_deforum.txt
+17:03:13 │ ✅ Auto-processing complete. Watching for next beat...
+17:31:00 │ 🚀 Beat-to-Instagram Reel Automation
+17:31:00 │ ============================================================
+17:31:00 │ 👀 WATCHING C:\N8N\beats for new beats...
+17:31:00 │    Mode: VIDEO 📹
+17:31:31 │ 🆕 New beat detected: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample.mp3
+17:31:33 │ ============================================================
+17:31:33 │ 🎵 PROCESSING: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample.mp3
+17:31:33 │ ============================================================
+17:31:33 │ 🎵 Analyzing audio: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample.mp3
+17:31:39 │    ⏱ Duration: 12.0s | 🥁 BPM: 81 | ⚡ Energy: medium
+17:31:39 │    💥 Detected 5 drop/cut points (13 beats, 10 onsets)
+17:31:48 │    🤖 Gemini response:
+GENRE: Lo-Fi Hip Hop
+MOOD: sad
+KEYWORDS: rainy city streets night cinematic | lonely figure walking dark urban | lofi aesthetic vhs grain overlay | neon reflections wet asphalt 4k | person looking out window rain night | melancholy youth staring into distance | abstract dark blue smoke slow motion | empty park bench fog cinematic
+17:31:48 │    ✅ Parsed: Looperman A 2739431 0012832 Died Sad Boy Hour Shiloh Dynasty Type Sample | 81bpm | Lo-Fi Hip Hop | sad
+17:31:48 │    🔍 Keywords: rainy city streets night cinematic, lonely figure walking dark urban, lofi aesthetic vhs grain overlay, neon reflections wet asphalt 4k, person looking out window rain night, melancholy youth staring into distance, abstract dark blue smoke slow motion, empty park bench fog cinematic
+17:31:48 │ 
+17:31:48 │ 📹 Step 2: Sourcing YouTube clips...
+17:31:48 │ 🤖 Generating AI-powered search queries...
+17:31:54 │    🤖 Gemini generated 8 search queries:
+17:31:54 │       🔍 Joji music video
+17:31:54 │       🔍 Mac Miller official video
+17:31:54 │       🔍 Frank Ocean mv
+17:31:54 │       🔍 The Weeknd sad video
+17:31:54 │       🔍 Brent Faiyaz aesthetic video
+17:31:54 │       🔍 dark night city driving vibes
+17:31:54 │       🔍 late night lofi aesthetic
+17:31:54 │       🔍 lonely rain window view
+17:31:54 │ 🔍 Searching YouTube: 'Joji music video'
+17:31:57 │    Found 3 result(s)
+17:31:57 │ 🔍 Searching YouTube: 'Mac Miller official video'
+17:32:00 │    Found 3 result(s)
+17:32:00 │ 🔍 Searching YouTube: 'Frank Ocean mv'
+17:32:02 │    Found 3 result(s)
+17:32:02 │ 🔍 Searching YouTube: 'The Weeknd sad video'
+17:32:05 │    Found 3 result(s)
+17:32:05 │ 🔍 Searching YouTube: 'Brent Faiyaz aesthetic video'
+17:32:08 │    Found 3 result(s)
+17:32:08 │ 🔍 Searching YouTube: 'dark night city driving vibes'
+17:32:11 │    Found 3 result(s)
+17:32:11 │ 🔍 Searching YouTube: 'late night lofi aesthetic'
+17:32:18 │    Found 3 result(s)
+17:32:18 │ 🔍 Searching YouTube: 'lonely rain window view'
+17:32:20 │    Found 3 result(s)
+17:32:20 │ 🤖 Ranking 24 clips by relevance...
+17:32:21 │    ⚠️ Gemini ranking failed, using default order: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 33.845806726s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 33
+}
+]
+17:32:21 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=NgsWGfUlwJI
+17:32:31 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_c6de101c.mp4
+17:32:32 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=K3Qzzggn--s
+17:33:07 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_0e9e1e68.mp4
+17:33:08 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=acA8Rr3gEco
+17:33:23 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_26d79dc0.mp4
+17:33:23 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=SsKT0s5J8ko
+17:33:30 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_0c9df55c.mp4
+17:33:31 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=aIHF7u9Wwiw
+17:33:41 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_94fddd42.mp4
+17:33:41 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=5mj2mXIL-D0
+17:33:53 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_7d4843e0.mp4
+17:33:53 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=WtyX_Ec5MZw
+17:34:01 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_93c9ab4b.mp4
+17:34:01 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=K9AtF6lKsnU
+17:34:11 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_b9fe19a6.mp4
+17:34:11 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=mFNaFeIm4bU
+17:34:19 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_1a69cdd0.mp4
+17:34:19 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=bn8gP5N8hqM
+17:34:35 │    ✅ Downloaded: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_a603744f.mp4
+17:34:35 │ 📦 Sourced 10 clip(s) for 'Looperman A 2739431 0012832 Died Sad Boy Hour Shiloh Dynasty Type Sample'
+17:34:35 │ 
+17:34:35 │ 🎬 Step 3: Assembling video...
+17:34:35 │ 🎬 Rendering: looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_full.mp4 (12s)
+17:34:42 │    ✂️ 5 beat-synced cuts planned
+17:34:43 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+17:34:45 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+17:34:46 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+17:34:47 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+17:34:48 │    📐 Clips stitched (effects baked in)
+17:34:48 │    🔊 Audio overlay applied
+17:34:48 │ ⚠️ Could not create producer watermark: Invalid font Arial, pillow failed to use it with error cannot open resource
+17:34:48 │    🔄 Rendering to looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_full.mp4 ...
+17:37:13 │    ✅ Video rendered: C:\N8N\output\looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_full.mp4 (9.0 MB)
+17:37:13 │ 
+17:37:13 │ 📝 Step 4: Generating Instagram metadata...
+17:37:13 │ ⚠️ Gemini metadata generation failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 41.775767219s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 41
+}
+]
+17:37:13 │ 
+📋 Reel Metadata:
+17:37:13 │    Caption: 🔥 Looperman A 2739431 0012832 Died Sad Boy Hour Shiloh Dynasty Type Sample 🔥
+Lo-Fi Hip Hop | 81 BPM ...
+17:37:13 │    Hashtags: 25 tags
+17:37:13 │ 
+17:37:13 │ 📤 Step 5: Uploading to Instagram...
+17:37:13 │ 📡 Video server started at http://192.168.1.19:57756/looperman-a-2739431-0012832-died-sad-boy-hour-shiloh-dynasty-type-sample_full.mp4
+17:37:14 │ 📤 Creating media container...
+17:37:15 │    ❌ Container creation failed: Invalid OAuth access token - Cannot parse access token
+17:37:15 │ 📡 Video server stopped
+17:37:15 │ ❌ Instagram upload failed for Looperman A 2739431 0012832 Died Sad Boy Hour Shiloh Dynasty Type Sample
+17:37:15 │ 
+17:37:15 │ 📺 Step 6: Uploading to YouTube Shorts...
+17:37:16 │ 🔐 Starting YouTube OAuth2 flow (browser will open)...
+17:45:37 │ 🚀 Beat-to-Instagram Reel Automation
+17:45:37 │ ============================================================
+17:45:37 │ 👀 WATCHING C:\N8N\beats for new beats...
+17:45:37 │    Mode: VIDEO 📹
+17:46:25 │ 🆕 New beat detected: hoodtrap khed mixed.mp3
+17:46:27 │ ============================================================
+17:46:27 │ 🎵 PROCESSING: hoodtrap khed mixed.mp3
+17:46:27 │ ============================================================
+17:46:27 │ 🎵 Analyzing audio: hoodtrap khed mixed.mp3
+17:46:33 │    ⏱ Duration: 84.1s | 🥁 BPM: 152 | ⚡ Energy: high
+17:46:34 │    💥 Detected 124 drop/cut points (192 beats, 174 onsets)
+17:46:34 │    🔥 Found 2 best 30s segments
+17:46:34 │       Highlight 1: 12.0s – 42.0s
+17:46:34 │       Highlight 2: 42.0s – 72.0s
+17:46:34 │    ⚠️ Gemini keyword generation failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 20.723902353s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 20
+}
+]
+17:46:34 │    ✅ Parsed: Hoodtrap Khed Mixed | 152bpm | trap | 
+17:46:34 │    🔍 Keywords: trap music video aesthetic, fast paced urban night footage 4k, dynamic action cinematic shots, abstract visual effects dark background
+17:46:34 │ 
+17:46:34 │ 📹 Step 2: Sourcing YouTube clips...
+17:46:34 │ 🤖 Generating AI-powered search queries...
+17:46:35 │    ⚠️ Gemini query generation failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 20.034012691s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 20
+}
+]
+17:46:35 │ 🔍 Searching YouTube: 'trap music video aesthetic cinematic footage no copyright'
+17:46:38 │    Found 3 result(s)
+17:46:38 │ 🔍 Searching YouTube: 'fast paced urban night footage 4k cinematic footage no copyright'
+17:46:39 │    Found 0 result(s)
+17:46:39 │ 🔍 Searching YouTube: 'dynamic action cinematic shots cinematic footage no copyright'
+18:09:47 │ 🚀 Beat-to-Instagram Reel Automation
+18:09:47 │ ============================================================
+18:09:47 │ 👀 WATCHING C:\N8N\beats for new beats...
+18:09:47 │    Mode: VIDEO 📹
+18:10:13 │ 🆕 New beat detected: Dilwale ringtone.mp3
+18:10:15 │ ============================================================
+18:10:15 │ 🎵 PROCESSING: Dilwale ringtone.mp3
+18:10:15 │ ============================================================
+18:10:15 │ 🎵 Analyzing audio: Dilwale ringtone.mp3
+18:10:21 │    ⏱ Duration: 25.4s | 🥁 BPM: 99 | ⚡ Energy: high
+18:10:21 │    💥 Detected 5 drop/cut points (39 beats, 10 onsets)
+18:10:21 │    🤖 Trying Gemini Model: gemini-1.5-flash...
+18:10:21 │ ❌ Error with gemini-1.5-flash: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+18:10:21 │    🤖 Trying Gemini Model: gemini-2.0-flash-exp...
+18:10:21 │ ❌ Error with gemini-2.0-flash-exp: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+18:10:21 │    🤖 Trying Gemini Model: gemini-1.5-pro...
+18:10:21 │ ❌ Error with gemini-1.5-pro: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+18:10:21 │ ⚠️ All Gemini models exhausted! Switching to Grok fallback...
+18:10:21 │ ❌ Grok API Key not set! Cannot fallback.
+18:10:21 │    🤖 AI response: ...
+18:10:21 │    ⚠️ Gemini keyword generation failed: Expecting value: line 1 column 1 (char 0)
+18:10:21 │    ✅ Parsed: Dilwale Ringtone | 99bpm |  | 
+18:10:21 │    🔍 Keywords: fast paced urban night footage 4k, dynamic action cinematic shots, abstract visual effects dark background
+18:10:21 │ 
+18:10:21 │ 📹 Step 2: Sourcing YouTube clips...
+18:10:21 │ 🤖 Generating AI-powered search queries...
+18:10:21 │    🤖 Trying Gemini Model: gemini-1.5-flash...
+18:10:22 │ ❌ Error with gemini-1.5-flash: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+18:10:22 │    🤖 Trying Gemini Model: gemini-2.0-flash-exp...
+18:10:22 │ ❌ Error with gemini-2.0-flash-exp: 404 models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+18:10:22 │    🤖 Trying Gemini Model: gemini-1.5-pro...
+18:10:23 │ ❌ Error with gemini-1.5-pro: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+18:10:23 │ ⚠️ All Gemini models exhausted! Switching to Grok fallback...
+18:10:23 │ ❌ Grok API Key not set! Cannot fallback.
+18:10:23 │    🤖 AI generated 0 search queries:
+18:10:23 │ 🚀 Downloading 0 clips in parallel (workers=4)...
+18:10:23 │ 📦 Sourced 0 clip(s) for 'Dilwale Ringtone'
+18:10:23 │ ❌ No clips could be sourced. Aborting.
+18:10:23 │ ✅ Auto-processing complete. Watching for next beat...
+18:13:08 │ 🚀 Beat-to-Instagram Reel Automation
+18:13:08 │ ============================================================
+18:13:08 │ 👀 WATCHING C:\N8N\beats for new beats...
+18:13:08 │    Mode: VIDEO 📹
+18:13:32 │ 🆕 New beat detected: Track5_Instrument.m4a
+18:13:34 │ ============================================================
+18:13:34 │ 🎵 PROCESSING: Track5_Instrument.m4a
+18:13:34 │ ============================================================
+18:13:34 │ 🎵 Analyzing audio: Track5_Instrument.m4a
+18:13:38 │    ⏱ Duration: 59.4s | 🥁 BPM: 103 | ⚡ Energy: medium
+18:13:38 │    💥 Detected 71 drop/cut points (104 beats, 103 onsets)
+18:13:38 │    🔥 Found 1 best 30s segments
+18:13:38 │       Highlight 1: 20.0s – 50.0s
+18:13:39 │    🤖 Trying Gemini Model: gemini-1.5-flash...
+18:13:39 │ AFC is enabled with max remote calls: 10.
+18:13:41 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+18:13:41 │ ⚠️ Quota/Error for gemini-1.5-flash (404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}). Trying next...
+18:13:41 │    🤖 Trying Gemini Model: gemini-2.0-flash-exp...
+18:13:41 │ AFC is enabled with max remote calls: 10.
+18:13:41 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+18:13:41 │ ⚠️ Quota/Error for gemini-2.0-flash-exp (404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}). Trying next...
+18:13:41 │    🤖 Trying Gemini Model: gemini-1.5-pro...
+18:13:41 │ AFC is enabled with max remote calls: 10.
+18:13:42 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent "HTTP/1.1 404 Not Found"
+18:13:42 │ ⚠️ Quota/Error for gemini-1.5-pro (404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}). Trying next...
+18:13:42 │ ⚠️ All Gemini models exhausted! Switching to Grok fallback...
+18:13:42 │ ❌ Grok API Key not set! Cannot fallback.
+18:13:42 │    🤖 AI response: ...
+18:13:42 │    ⚠️ Gemini keyword generation failed: Expecting value: line 1 column 1 (char 0)
+18:13:42 │    ✅ Parsed: Track5 Instrument | 103bpm |  | 
+18:13:42 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+18:13:42 │ 
+18:13:42 │ 📹 Step 2: Sourcing YouTube clips...
+18:13:42 │ 🤖 Generating AI-powered search queries...
+18:13:42 │    🤖 Trying Gemini Model: gemini-1.5-flash...
+18:13:42 │ AFC is enabled with max remote calls: 10.
+18:13:43 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+18:13:43 │ ⚠️ Quota/Error for gemini-1.5-flash (404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}). Trying next...
+18:13:43 │    🤖 Trying Gemini Model: gemini-2.0-flash-exp...
+18:13:43 │ AFC is enabled with max remote calls: 10.
+18:13:43 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+18:13:43 │ ⚠️ Quota/Error for gemini-2.0-flash-exp (404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}). Trying next...
+18:13:43 │    🤖 Trying Gemini Model: gemini-1.5-pro...
+18:13:43 │ AFC is enabled with max remote calls: 10.
+18:13:43 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent "HTTP/1.1 404 Not Found"
+18:13:43 │ ⚠️ Quota/Error for gemini-1.5-pro (404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}). Trying next...
+18:13:43 │ ⚠️ All Gemini models exhausted! Switching to Grok fallback...
+18:13:43 │ ❌ Grok API Key not set! Cannot fallback.
+18:13:43 │    🤖 AI generated 0 search queries:
+18:13:43 │ 🚀 Downloading 0 clips in parallel (workers=4)...
+18:13:43 │ 📦 Sourced 0 clip(s) for 'Track5 Instrument'
+18:13:43 │ ❌ No clips could be sourced. Aborting.
+18:13:43 │ ✅ Auto-processing complete. Watching for next beat...
+18:18:35 │ 🚀 Beat-to-Instagram Reel Automation
+18:18:35 │ ============================================================
+18:18:35 │ 👀 WATCHING C:\N8N\beats for new beats...
+18:18:35 │    Mode: VIDEO 📹
+18:18:56 │ 🆕 New beat detected: nice drums.mp3
+18:18:58 │ ============================================================
+18:18:58 │ 🎵 PROCESSING: nice drums.mp3
+18:18:58 │ ============================================================
+18:18:58 │ 🎵 Analyzing audio: nice drums.mp3
+18:19:02 │    ⏱ Duration: 66.7s | 🥁 BPM: 152 | ⚡ Energy: high
+18:19:02 │    💥 Detected 131 drop/cut points (159 beats, 220 onsets)
+18:19:02 │    🔥 Found 2 best 30s segments
+18:19:02 │       Highlight 1: 4.0s – 34.0s
+18:19:02 │       Highlight 2: 34.0s – 64.0s
+18:19:03 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:19:03 │ AFC is enabled with max remote calls: 10.
+18:19:04 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:19:04 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 51.262556243s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}). Trying next...
+18:19:04 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:19:04 │ AFC is enabled with max remote calls: 10.
+18:19:04 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:19:04 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 50.862954593s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}). Trying next...
+18:19:04 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter (Grok) fallback...
+18:19:04 │ ❌ OpenRouter API Key not set! Cannot fallback.
+18:19:04 │    🤖 AI response: ...
+18:19:04 │    ⚠️ Gemini keyword generation failed: Expecting value: line 1 column 1 (char 0)
+18:19:04 │    ✅ Parsed: Nice Drums | 152bpm |  | 
+18:19:04 │    🔍 Keywords: fast paced urban night footage 4k, dynamic action cinematic shots, abstract visual effects dark background
+18:19:04 │ 
+18:19:04 │ 📹 Step 2: Sourcing YouTube clips...
+18:19:04 │ 🤖 Generating AI-powered search queries...
+18:19:04 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:19:04 │ AFC is enabled with max remote calls: 10.
+18:19:05 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:19:05 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 49.749455447s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '49s'}]}}). Trying next...
+18:19:05 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:19:05 │ AFC is enabled with max remote calls: 10.
+18:19:06 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:19:06 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 49.278993223s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '49s'}]}}). Trying next...
+18:19:06 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter (Grok) fallback...
+18:19:06 │ ❌ OpenRouter API Key not set! Cannot fallback.
+18:19:06 │    🤖 AI generated 0 search queries:
+18:19:06 │ 🚀 Downloading 0 clips in parallel (workers=4)...
+18:19:06 │ 📦 Sourced 0 clip(s) for 'Nice Drums'
+18:19:06 │ ❌ No clips could be sourced. Aborting.
+18:19:06 │ ✅ Auto-processing complete. Watching for next beat...
+18:20:43 │ 🚀 Beat-to-Instagram Reel Automation
+18:20:43 │ ============================================================
+18:20:43 │ 👀 WATCHING C:\N8N\beats for new beats...
+18:20:43 │    Mode: VIDEO 📹
+18:21:09 │ 🆕 New beat detected: looperman-l-2217281-0304494-female-choir-lil-baby-southside.wav
+18:21:11 │ ============================================================
+18:21:11 │ 🎵 PROCESSING: looperman-l-2217281-0304494-female-choir-lil-baby-southside.wav
+18:21:11 │ ============================================================
+18:21:11 │ 🎵 Analyzing audio: looperman-l-2217281-0304494-female-choir-lil-baby-southside.wav
+18:21:15 │    ⏱ Duration: 13.1s | 🥁 BPM: 117 | ⚡ Energy: medium
+18:21:15 │    💥 Detected 1 drop/cut points (24 beats, 1 onsets)
+18:21:16 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:21:16 │ AFC is enabled with max remote calls: 10.
+18:21:18 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:21:18 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 37.343464191s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}). Trying next...
+18:21:18 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:21:18 │ AFC is enabled with max remote calls: 10.
+18:21:19 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:21:19 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 36.903570296s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}). Trying next...
+18:21:19 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter (Grok) fallback...
+18:21:19 │    🤖 Calling OpenRouter API (Grok-2)...
+18:21:21 │ ❌ OpenRouter API Error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+18:21:21 │    Response: {"error":{"message":"No endpoints found for x-ai/grok-2-vision-1212.","code":404},"user_id":"user_39nWW7A491kcilIEY4VkMIp2tJh"}
+18:21:21 │    🤖 AI response: ...
+18:21:21 │    ⚠️ Gemini keyword generation failed: Expecting value: line 1 column 1 (char 0)
+18:21:21 │    ✅ Parsed: Looperman L 2217281 0304494 Female Choir Lil Baby Southside | 117bpm |  | 
+18:21:21 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+18:21:21 │ 
+18:21:21 │ 📹 Step 2: Sourcing YouTube clips...
+18:21:21 │ 🤖 Generating AI-powered search queries...
+18:21:21 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:21:21 │ AFC is enabled with max remote calls: 10.
+18:21:22 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:21:22 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 33.368113287s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}). Trying next...
+18:21:22 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:21:22 │ AFC is enabled with max remote calls: 10.
+18:21:22 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:21:22 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 32.998264239s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32s'}]}}). Trying next...
+18:21:22 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter (Grok) fallback...
+18:21:22 │    🤖 Calling OpenRouter API (Grok-2)...
+18:21:23 │ ❌ OpenRouter API Error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions
+18:21:23 │    Response: {"error":{"message":"No endpoints found for x-ai/grok-2-vision-1212.","code":404},"user_id":"user_39nWW7A491kcilIEY4VkMIp2tJh"}
+18:21:23 │    🤖 AI generated 0 search queries:
+18:21:23 │ 🚀 Downloading 0 clips in parallel (workers=4)...
+18:21:23 │ 📦 Sourced 0 clip(s) for 'Looperman L 2217281 0304494 Female Choir Lil Baby Southside'
+18:21:23 │ ❌ No clips could be sourced. Aborting.
+18:21:23 │ ✅ Auto-processing complete. Watching for next beat...
+18:24:47 │ 🚀 Beat-to-Instagram Reel Automation
+18:24:47 │ ============================================================
+18:24:47 │ 👀 WATCHING C:\N8N\beats for new beats...
+18:24:47 │    Mode: VIDEO 📹
+18:24:51 │ 🆕 New beat detected: looperman-l-1182541-0412580-something-is-wrong-in-hollywood-part-ii.wav
+18:24:53 │ ============================================================
+18:24:53 │ 🎵 PROCESSING: looperman-l-1182541-0412580-something-is-wrong-in-hollywood-part-ii.wav
+18:24:53 │ ============================================================
+18:24:53 │ 🎵 Analyzing audio: looperman-l-1182541-0412580-something-is-wrong-in-hollywood-part-ii.wav
+18:24:56 │    ⏱ Duration: 16.0s | 🥁 BPM: 152 | ⚡ Energy: high
+18:24:56 │    💥 Detected 7 drop/cut points (35 beats, 12 onsets)
+18:24:58 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:24:58 │ AFC is enabled with max remote calls: 10.
+18:24:58 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:24:58 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 56.844446981s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}). Trying next...
+18:24:58 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:24:58 │ AFC is enabled with max remote calls: 10.
+18:24:58 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:24:58 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 56.475091205s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}). Trying next...
+18:24:58 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:24:58 │    🤖 Calling OpenRouter API (GLM-4.5)...
+18:25:00 │ ❌ OpenRouter API Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions
+18:25:00 │    Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 36363. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_39nWW7A491kcilIEY4VkMIp2tJh"}
+18:25:00 │    🤖 AI response: ...
+18:25:00 │    ⚠️ Gemini keyword generation failed: Expecting value: line 1 column 1 (char 0)
+18:25:00 │    ✅ Parsed: Looperman L 1182541 0412580 Something Is Wrong In Hollywood Part Ii | 152bpm |  | 
+18:25:00 │    🔍 Keywords: fast paced urban night footage 4k, dynamic action cinematic shots, abstract visual effects dark background
+18:25:00 │ 
+18:25:00 │ 📹 Step 2: Sourcing YouTube clips...
+18:25:00 │ 🤖 Generating AI-powered search queries...
+18:25:00 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:25:00 │ AFC is enabled with max remote calls: 10.
+18:25:01 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:25:01 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 53.836529669s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}). Trying next...
+18:25:01 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:25:01 │ AFC is enabled with max remote calls: 10.
+18:25:01 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:25:01 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 53.396799328s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}). Trying next...
+18:25:01 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:25:01 │    🤖 Calling OpenRouter API (GLM-4.5)...
+18:25:03 │ ❌ OpenRouter API Error: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions
+18:25:03 │    Response: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 65536 tokens, but can only afford 33333. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_39nWW7A491kcilIEY4VkMIp2tJh"}
+18:25:03 │    🤖 AI generated 0 search queries:
+18:25:03 │ 🚀 Downloading 0 clips in parallel (workers=4)...
+18:25:03 │ 📦 Sourced 0 clip(s) for 'Looperman L 1182541 0412580 Something Is Wrong In Hollywood Part Ii'
+18:25:03 │ ❌ No clips could be sourced. Aborting.
+18:25:03 │ ✅ Auto-processing complete. Watching for next beat...
+18:26:17 │ 🚀 Beat-to-Instagram Reel Automation
+18:26:17 │ ============================================================
+18:26:17 │ 👀 WATCHING C:\N8N\beats for new beats...
+18:26:17 │    Mode: VIDEO 📹
+18:26:25 │ 🆕 New beat detected: looperman-l-5360566-0410578-electric-guitar-loop-100bpm.wav
+18:26:27 │ ============================================================
+18:26:27 │ 🎵 PROCESSING: looperman-l-5360566-0410578-electric-guitar-loop-100bpm.wav
+18:26:27 │ ============================================================
+18:26:27 │ 🎵 Analyzing audio: looperman-l-5360566-0410578-electric-guitar-loop-100bpm.wav
+18:26:30 │    ⏱ Duration: 6.6s | 🥁 BPM: 108 | ⚡ Energy: low
+18:26:30 │    💥 Detected 8 drop/cut points (10 beats, 17 onsets)
+18:26:32 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:26:32 │ AFC is enabled with max remote calls: 10.
+18:26:33 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:26:33 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 21.698778562s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}). Trying next...
+18:26:33 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:26:33 │ AFC is enabled with max remote calls: 10.
+18:26:34 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:26:34 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 21.34651917s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}). Trying next...
+18:26:34 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:26:34 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+18:26:37 │    ✅ OpenRouter responded successfully
+18:26:37 │    🤖 AI response: ```json
+{
+  "genre": "Ambient Rock",
+  "mood": "Contemplative",
+  "keywords": ["scenic", "atmospheri...
+18:26:37 │    ✅ Parsed: Looperman L 5360566 0410578 Electric Guitar Loop 100Bpm | 100bpm | Ambient Rock | Contemplative
+18:26:37 │    🔍 Keywords: scenic, atmospheric, nature, peaceful, drifting, ethereal
+18:26:37 │ 
+18:26:37 │ 📹 Step 2: Sourcing YouTube clips...
+18:26:37 │ 🤖 Generating AI-powered search queries...
+18:26:38 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:26:38 │ AFC is enabled with max remote calls: 10.
+18:26:39 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:26:39 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 16.46077107s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}). Trying next...
+18:26:39 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:26:39 │ AFC is enabled with max remote calls: 10.
+18:26:39 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:26:39 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 16.003347032s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}). Trying next...
+18:26:39 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:26:39 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+18:26:44 │    ✅ OpenRouter responded successfully
+18:26:44 │    🤖 AI generated 8 search queries:
+18:26:44 │       🔍 the weeknd mv
+18:26:44 │       🔍 joji vibes
+18:26:44 │       🔍 frank ocean music video
+18:26:44 │       🔍 brent faiyaz official video
+18:26:44 │       🔍 golden hour vibes
+18:26:44 │       🔍 summer night aesthetic
+18:26:44 │       🔍 contemplative nature scenes
+18:26:44 │       🔍 ambient rock performance
+18:26:44 │ 🔍 Searching YouTube: 'the weeknd mv'
+18:26:57 │    Found 3 result(s)
+18:26:57 │ 🔍 Searching YouTube: 'joji vibes'
+18:27:02 │    Found 3 result(s)
+18:27:02 │ 🔍 Searching YouTube: 'frank ocean music video'
+18:27:07 │    Found 3 result(s)
+18:27:07 │ 🔍 Searching YouTube: 'brent faiyaz official video'
+18:27:10 │    Found 3 result(s)
+18:27:10 │ 🔍 Searching YouTube: 'golden hour vibes'
+18:27:12 │    Found 3 result(s)
+18:27:12 │ 🔍 Searching YouTube: 'summer night aesthetic'
+18:27:14 │    Found 3 result(s)
+18:27:14 │ 🔍 Searching YouTube: 'contemplative nature scenes'
+18:27:17 │    Found 3 result(s)
+18:27:17 │ 🔍 Searching YouTube: 'ambient rock performance'
+18:27:19 │    Found 3 result(s)
+18:27:19 │ 🤖 Ranking 24 clips by relevance...
+18:27:20 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:27:20 │ AFC is enabled with max remote calls: 10.
+18:27:20 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:27:20 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 34.871153628s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}). Trying next...
+18:27:20 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:27:20 │ AFC is enabled with max remote calls: 10.
+18:27:20 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:27:20 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 34.379254754s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}). Trying next...
+18:27:20 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:27:20 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+18:27:24 │    ✅ OpenRouter responded successfully
+18:27:24 │    🤖 Gemini ranked and selected 10 best clips
+18:27:24 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+18:27:24 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=emeRVw--VIY
+18:27:24 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=BqiO3vlDExQ
+18:27:24 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=iK_I2jW5gOQ
+18:27:24 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=5RA_2_u81kE
+18:27:40 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_f3f8d787.mp4
+18:27:41 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=ZUOnqicPxmM
+18:27:44 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_b334e44d.mp4
+18:27:44 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=MOXc6WW-Ess
+18:27:47 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_280635f6.mp4
+18:27:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=mpWlW5_RPZ4
+18:27:48 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_0aa5133c.mp4
+18:27:48 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=5scUYdmJARM
+18:27:59 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_cc13bd80.mp4
+18:27:59 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=wUBjMWfmhOY
+18:28:02 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_a4e7bf06.mp4
+18:28:02 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=dB2f9tjBORE
+18:28:04 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_d7974157.mp4
+18:28:13 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_67e6baf8.mp4
+18:28:16 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_29165d13.mp4
+18:28:37 │    ✅ Downloaded: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_94410aa9.mp4
+18:28:37 │ 📦 Sourced 10 clip(s) for 'Looperman L 5360566 0410578 Electric Guitar Loop 100Bpm'
+18:28:37 │ 
+18:28:37 │ 🎬 Step 3: Assembling video...
+18:28:37 │ 🎬 Rendering: looperman-l-5360566-0410578-electric-guitar-loop-100bpm_full.mp4 (7s)
+18:28:43 │    ✂️ 3 beat-synced cuts planned
+18:28:44 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:28:45 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:28:46 │    📐 Clips stitched (effects baked in)
+18:28:46 │    🔊 Audio overlay applied
+18:28:46 │ ⚠️ Could not create producer watermark: Invalid font Arial, pillow failed to use it with error cannot open resource
+18:28:46 │    🔄 Rendering to looperman-l-5360566-0410578-electric-guitar-loop-100bpm_full.mp4 ...
+18:28:46 │    🚀 Using GPU Encoding (h264_nvenc)
+18:28:47 │ ❌ Video assembly failed: expected str, bytes or os.PathLike object, not NoneType
+18:28:47 │ ✅ Auto-processing complete. Watching for next beat...
+18:30:58 │ 🚀 Beat-to-Instagram Reel Automation
+18:30:58 │ ============================================================
+18:30:58 │ 👀 WATCHING C:\N8N\beats for new beats...
+18:30:58 │    Mode: VIDEO 📹
+18:31:04 │ 🆕 New beat detected: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect.wav
+18:31:06 │ ============================================================
+18:31:06 │ 🎵 PROCESSING: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect.wav
+18:31:06 │ ============================================================
+18:31:06 │ 🎵 Analyzing audio: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect.wav
+18:31:10 │    ⏱ Duration: 27.4s | 🥁 BPM: 152 | ⚡ Energy: low
+18:31:10 │    💥 Detected 10 drop/cut points (70 beats, 14 onsets)
+18:31:11 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:31:11 │ AFC is enabled with max remote calls: 10.
+18:31:12 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:31:12 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 43.276321821s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}). Trying next...
+18:31:12 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:31:12 │ AFC is enabled with max remote calls: 10.
+18:31:12 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:31:12 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 42.840593049s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}). Trying next...
+18:31:12 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:31:12 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+18:31:16 │    ✅ OpenRouter responded successfully
+18:31:16 │    🤖 AI response: ```json
+{
+  "genre": "Ambient/Experimental",
+  "mood": "Mysterious Tension",
+  "keywords": ["urban夜景...
+18:31:16 │    ✅ Parsed: Looperman L 1838758 0123783 Gabrieldumitra Police Sirens Sound Effect | 152bpm | Ambient/Experimental | Mysterious Tension
+18:31:16 │    🔍 Keywords: urban夜景, 霓虹灯光, 雨夜街道, 警灯闪烁, 城市轮廓, 雾气弥漫
+18:31:16 │ 
+18:31:16 │ 📹 Step 2: Sourcing YouTube clips...
+18:31:16 │ 🤖 Generating AI-powered search queries...
+18:31:16 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:31:16 │ AFC is enabled with max remote calls: 10.
+18:31:17 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:31:17 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.160633487s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}). Trying next...
+18:31:17 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:31:17 │ AFC is enabled with max remote calls: 10.
+18:31:17 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:31:17 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 37.694275725s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}). Trying next...
+18:31:17 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:31:17 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+18:31:21 │    ✅ OpenRouter responded successfully
+18:31:21 │    🤖 AI generated 8 search queries:
+18:31:21 │       🔍 travis scott music video
+18:31:21 │       🔍 dark night city vibes
+18:31:21 │       🔍 playboi carti official video
+18:31:21 │       🔍 late night street neon
+18:31:21 │       🔍 the weeknd mv
+18:31:21 │       🔍 urban rain aesthetic
+18:31:21 │       🔍 central cee drill video
+18:31:21 │       🔍 neon night city lights
+18:31:21 │ 🔍 Searching YouTube: 'travis scott music video'
+18:31:24 │    Found 3 result(s)
+18:31:24 │ 🔍 Searching YouTube: 'dark night city vibes'
+18:31:27 │    Found 3 result(s)
+18:31:27 │ 🔍 Searching YouTube: 'playboi carti official video'
+18:31:29 │    Found 3 result(s)
+18:31:29 │ 🔍 Searching YouTube: 'late night street neon'
+18:31:32 │    Found 3 result(s)
+18:31:32 │ 🔍 Searching YouTube: 'the weeknd mv'
+18:31:35 │    Found 3 result(s)
+18:31:35 │ 🔍 Searching YouTube: 'urban rain aesthetic'
+18:31:37 │    Found 3 result(s)
+18:31:37 │ 🔍 Searching YouTube: 'central cee drill video'
+18:31:39 │    Found 3 result(s)
+18:31:39 │ 🔍 Searching YouTube: 'neon night city lights'
+18:31:43 │    Found 3 result(s)
+18:31:43 │ 🤖 Ranking 24 clips by relevance...
+18:31:43 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:31:43 │ AFC is enabled with max remote calls: 10.
+18:31:44 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:31:44 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.451343741s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}). Trying next...
+18:31:44 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:31:44 │ AFC is enabled with max remote calls: 10.
+18:31:44 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:31:44 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 11.06981837s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}). Trying next...
+18:31:44 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:31:44 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+18:31:47 │    ✅ OpenRouter responded successfully
+18:31:47 │    🤖 Gemini ranked and selected 10 best clips
+18:31:47 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+18:31:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=pDddlvCfTiw
+18:31:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=-cgTFSrmrwQ
+18:31:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=X7aF3nZOS98
+18:31:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=8G8Fn0YRjvM
+18:32:14 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_914e66ec.mp4
+18:32:14 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=5EpyN_6dqyk
+18:32:15 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_bc55f4ee.mp4
+18:32:15 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=KnumAWWWgUE
+18:32:20 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_6ea2cf0d.mp4
+18:32:20 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=VcRc2DHHhoM
+18:32:31 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_1d07cd42.mp4
+18:32:31 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=2fDzCWNS3ig
+18:32:40 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_9d729b5d.mp4
+18:32:40 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=4NRXx6U8ABQ
+18:32:42 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_6c3c1179.mp4
+18:32:42 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=Mx92lTYxrJQ
+18:32:47 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_a25dae8d.mp4
+18:32:48 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_55a7206a.mp4
+18:32:53 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_1cf001ff.mp4
+18:32:57 │    ✅ Downloaded: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_8e7cf77b.mp4
+18:32:57 │ 📦 Sourced 10 clip(s) for 'Looperman L 1838758 0123783 Gabrieldumitra Police Sirens Sound Effect'
+18:32:57 │ 
+18:32:57 │ 🎬 Step 3: Assembling video...
+18:32:57 │ 🎬 Rendering: looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_full.mp4 (27s)
+18:33:04 │    ✂️ 8 beat-synced cuts planned
+18:33:05 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:33:06 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:33:08 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:33:09 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:33:10 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:33:11 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:33:12 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+18:33:13 │    📐 Clips stitched (effects baked in)
+18:33:13 │    🔊 Audio overlay applied
+18:33:13 │ ⚠️ Could not create producer watermark: Invalid font Arial, pillow failed to use it with error cannot open resource
+18:33:13 │    🔄 Rendering to looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_full.mp4 ...
+18:33:13 │    🚀 Using GPU Encoding (h264_nvenc)
+18:37:34 │    ✅ Video rendered: C:\N8N\output\looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_full.mp4 (12.4 MB)
+18:37:34 │ 
+18:37:34 │ 📝 Step 4: Generating Instagram metadata...
+18:37:35 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+18:37:35 │ AFC is enabled with max remote calls: 10.
+18:37:37 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+18:37:37 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 18.529086323s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}). Trying next...
+18:37:37 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+18:37:37 │ AFC is enabled with max remote calls: 10.
+18:37:37 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+18:37:37 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 18.11017112s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}). Trying next...
+18:37:37 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+18:37:37 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+18:37:55 │    ✅ OpenRouter responded successfully
+18:37:55 │ 🤖 AI generated metadata for 'Looperman L 1838758 0123783 Gabrieldumitra Police Sirens Sound Effect'
+18:37:55 │    📝 IG Caption: Mysterious tension building with "Police Sirens" 🚔
+Creating that dark ambient vi...
+18:37:55 │    #️⃣  25 IG hashtags generated
+18:37:55 │    📺 YT Title: Dark Ambient Type Beat "Police Sirens" | prodbyeviloid
+18:37:55 │    🏷️  0 YT tags generated
+18:37:55 │    🖼️ Cover at 3.0s
+18:37:55 │ 
+📋 Reel Metadata:
+18:37:55 │    Caption: Mysterious tension building with "Police Sirens" 🚔
+Creating that dark ambient vibe at 152 BPM
+DM for...
+18:37:55 │    Hashtags: 25 tags
+18:37:55 │ 
+18:37:55 │ 📤 Step 5: Uploading to Instagram...
+18:37:55 │ 📡 Video server started at http://192.168.1.19:57511/looperman-l-1838758-0123783-gabrieldumitra-police-sirens-sound-effect_full.mp4
+18:37:56 │ 📤 Creating media container...
+18:37:57 │    ❌ Container creation failed: Invalid OAuth access token - Cannot parse access token
+18:37:57 │ 📡 Video server stopped
+18:37:57 │ ❌ Instagram upload failed for Looperman L 1838758 0123783 Gabrieldumitra Police Sirens Sound Effect
+18:37:57 │ 
+18:37:57 │ 📺 Step 6: Uploading to YouTube Shorts...
+18:37:58 │ 🔐 Starting YouTube OAuth2 flow (browser will open)...
+20:54:30 │ 🚀 Beat-to-Instagram Reel Automation
+20:54:30 │ ============================================================
+20:54:30 │ 👀 WATCHING C:\N8N\beats for new beats...
+20:54:30 │    Mode: VIDEO 📹
+20:54:59 │ 🆕 New beat detected: iuyb.mp3
+20:55:01 │ ============================================================
+20:55:01 │ 🎵 PROCESSING: iuyb.mp3
+20:55:01 │ ============================================================
+20:55:01 │ 🎵 Analyzing audio: iuyb.mp3
+20:55:05 │    ⏱ Duration: 97.1s | 🥁 BPM: 144 | ⚡ Energy: high
+20:55:05 │    💥 Detected 125 drop/cut points (223 beats, 176 onsets)
+20:55:05 │    🔥 Found 2 best 30s segments
+20:55:05 │       Highlight 1: 8.0s – 38.0s
+20:55:05 │       Highlight 2: 38.0s – 68.0s
+20:55:07 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+20:55:07 │ AFC is enabled with max remote calls: 10.
+20:55:13 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+20:55:13 │    🤖 AI response: ```json
+{
+  "genre": "Future Bass",
+  "mood": "Euphoric Energy",
+  "keywords": [
+    "Neon City Nigh...
+20:55:13 │    ✅ Parsed: Iuyb | 144bpm | Future Bass | Euphoric Energy
+20:55:13 │    🔍 Keywords: Neon City Night, Driving Cinematic Roads, Festival Crowd Dancing, Vibrant Youth Lifestyle, Light Trails Blur, Abstract Motion Graphics
+20:55:13 │ 
+20:55:13 │ 📹 Step 2: Sourcing YouTube clips...
+20:55:13 │ 🤖 Generating AI-powered search queries...
+20:55:14 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+20:55:14 │ AFC is enabled with max remote calls: 10.
+20:55:14 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+20:55:14 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 41.153354608s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '41s'}]}}). Trying next...
+20:55:14 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+20:55:14 │ AFC is enabled with max remote calls: 10.
+20:55:14 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+20:55:14 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 40.665871968s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}). Trying next...
+20:55:14 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+20:55:14 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+20:55:17 │    ✅ OpenRouter responded successfully
+20:55:17 │    🤖 AI generated 8 search queries:
+20:55:17 │       🔍 flume music video
+20:55:17 │       🔍 san holo official video
+20:55:17 │       🔍 marshmello vibes
+20:55:17 │       🔍 illenium neon lights
+20:55:17 │       🔍 zeds dead festival crowd
+20:55:17 │       🔍 virtual riot driving cinematic
+20:55:17 │       🔍 neon city night vibes
+20:55:17 │       🔍 lit concert crowd dancing
+20:55:17 │ 🔍 Searching YouTube: 'flume music video'
+20:55:22 │    Found 3 result(s)
+20:55:22 │ 🔍 Searching YouTube: 'san holo official video'
+20:55:25 │    Found 3 result(s)
+20:55:25 │ 🔍 Searching YouTube: 'marshmello vibes'
+20:55:27 │    Found 3 result(s)
+20:55:27 │ 🔍 Searching YouTube: 'illenium neon lights'
+20:55:30 │    Found 3 result(s)
+20:55:30 │ 🔍 Searching YouTube: 'zeds dead festival crowd'
+20:55:32 │    Found 3 result(s)
+20:55:32 │ 🔍 Searching YouTube: 'virtual riot driving cinematic'
+20:55:35 │    Found 3 result(s)
+20:55:35 │ 🔍 Searching YouTube: 'neon city night vibes'
+20:55:38 │    Found 3 result(s)
+20:55:38 │ 🔍 Searching YouTube: 'lit concert crowd dancing'
+20:55:41 │    Found 3 result(s)
+20:55:41 │ 🤖 Ranking 24 clips by relevance...
+20:55:42 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+20:55:42 │ AFC is enabled with max remote calls: 10.
+20:55:42 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+20:55:42 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 12.954290163s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}). Trying next...
+20:55:42 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+20:55:42 │ AFC is enabled with max remote calls: 10.
+20:55:42 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+20:55:42 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 12.586034925s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}). Trying next...
+20:55:42 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+20:55:42 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+20:55:45 │    ✅ OpenRouter responded successfully
+20:55:45 │    🤖 Gemini ranked and selected 10 best clips
+20:55:45 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+20:55:45 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=-KPnyf8vwXI
+20:55:45 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=zU8JDmnrq2o
+20:55:45 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=uOFTqVi-qp4
+20:55:45 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=zmeYeAgXpqc
+20:56:01 │    ✅ Downloaded: iuyb_47ac62bd.mp4
+20:56:01 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=CHH48NKPAkk
+20:56:02 │    ✅ Downloaded: iuyb_7a103e09.mp4
+20:56:02 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=ALZHF5UqnU4
+20:56:12 │    ✅ Downloaded: iuyb_afc1ffe0.mp4
+20:56:12 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=klp-RReW0jY
+20:56:20 │    ✅ Downloaded: iuyb_1f0ae217.mp4
+20:56:20 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=5QB4IknK1b4
+20:56:28 │    ✅ Downloaded: iuyb_bce33363.mp4
+20:56:28 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=kpoNaxNs62I
+20:56:29 │    ✅ Downloaded: iuyb_67abf753.mp4
+20:56:29 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=VlXKPTHH-Y8
+20:56:32 │    ✅ Downloaded: iuyb_76978bac.mp4
+20:56:45 │    ✅ Downloaded: iuyb_02474a8c.mp4
+20:56:51 │    ✅ Downloaded: iuyb_9ffb1dd2.mp4
+20:56:51 │    ✅ Downloaded: iuyb_1295b80d.mp4
+20:56:51 │ 📦 Sourced 10 clip(s) for 'Iuyb'
+20:56:51 │ 
+20:56:51 │ 🎬 Step 3: Assembling video...
+20:56:51 │ 🎬 Rendering: iuyb_full.mp4 (97s)
+20:56:58 │    ✂️ 49 beat-synced cuts planned
+20:57:00 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:01 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:02 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:03 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:04 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:05 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:06 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:06 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:07 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:07 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:09 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:09 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:10 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:11 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:12 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:13 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:14 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:14 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:15 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:16 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:17 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:18 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:18 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:20 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:20 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:22 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:23 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:23 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:24 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:24 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:25 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:26 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:27 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:28 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:28 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:30 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:30 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:32 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:32 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:32 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:33 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:34 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:35 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:36 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:37 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:38 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:39 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:39 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+20:57:41 │    📐 Clips stitched (effects baked in)
+20:57:41 │    🔊 Audio overlay applied
+20:57:41 │ ⚠️ Could not create producer watermark: Invalid font Arial, pillow failed to use it with error cannot open resource
+20:57:41 │    🔄 Rendering to iuyb_full.mp4 ...
+20:57:41 │    🚀 Using GPU Encoding (h264_nvenc)
+21:13:48 │    ✅ Video rendered: C:\N8N\output\iuyb_full.mp4 (31.2 MB)
+21:13:48 │ 
+21:13:48 │ 🎯 Step 3b: Assembling 2 highlight clip(s)...
+21:13:48 │ 
+🎯 Highlight 1/2: 8.0s – 38.0s
+21:13:48 │ 🎬 Rendering: iuyb_highlight_1.mp4 (30s)
+21:13:54 │    ✂️ 13 beat-synced cuts planned
+21:13:57 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:13:58 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:13:58 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:13:59 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:00 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:02 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:02 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:03 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:04 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:05 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:06 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:07 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:14:08 │    📐 Clips stitched (effects baked in)
+21:14:08 │    🔊 Audio overlay applied
+21:14:08 │ ⚠️ Could not create producer watermark: Invalid font Arial, pillow failed to use it with error cannot open resource
+21:14:08 │    🔄 Rendering to iuyb_highlight_1.mp4 ...
+21:14:08 │    🚀 Using GPU Encoding (h264_nvenc)
+21:19:23 │    ✅ Video rendered: C:\N8N\output\iuyb_highlight_1.mp4 (8.8 MB)
+21:19:23 │ 
+🎯 Highlight 2/2: 38.0s – 68.0s
+21:19:23 │ 🎬 Rendering: iuyb_highlight_2.mp4 (30s)
+21:19:30 │    ✂️ 16 beat-synced cuts planned
+21:19:31 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:32 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:33 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:34 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:34 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:36 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:37 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:38 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:39 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:40 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:41 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:42 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:42 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:44 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:45 │ ⚠️ Subclip failed, using full clip: name '_apply_transition' is not defined
+21:19:46 │    📐 Clips stitched (effects baked in)
+21:19:46 │    🔊 Audio overlay applied
+21:19:46 │ ⚠️ Could not create producer watermark: Invalid font Arial, pillow failed to use it with error cannot open resource
+21:19:46 │    🔄 Rendering to iuyb_highlight_2.mp4 ...
+21:19:46 │    🚀 Using GPU Encoding (h264_nvenc)
+21:24:19 │ 🚀 Beat-to-Instagram Reel Automation
+21:24:19 │ ============================================================
+21:24:19 │ 👀 WATCHING C:\N8N\beats for new beats...
+21:24:19 │    Mode: VIDEO 📹
+21:24:43 │ 🆕 New beat detected: jbgbsrbg.mp3
+21:24:45 │ ============================================================
+21:24:45 │ 🎵 PROCESSING: jbgbsrbg.mp3
+21:24:45 │ ============================================================
+21:24:45 │ 🎵 Analyzing audio: jbgbsrbg.mp3
+21:24:50 │    ⏱ Duration: 19.2s | 🥁 BPM: 129 | ⚡ Energy: high
+21:24:50 │    💥 Detected 2 drop/cut points (31 beats, 2 onsets)
+21:24:52 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:24:52 │ AFC is enabled with max remote calls: 10.
+21:24:53 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+21:24:53 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 2.450336692s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}). Trying next...
+21:24:53 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+21:24:53 │ AFC is enabled with max remote calls: 10.
+21:24:53 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+21:24:53 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 2.00063317s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}). Trying next...
+21:24:53 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+21:24:53 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+21:24:56 │    ✅ OpenRouter responded successfully
+21:24:56 │    🤖 AI response: ```json
+{
+  "genre": "electronic",
+  "mood": "energetic",
+  "keywords": ["dancing", "party", "crowd"...
+21:24:56 │    ✅ Parsed: Jbgbsrbg | 129bpm | electronic | energetic
+21:24:56 │    🔍 Keywords: dancing, party, crowd, neon, strobe, fast-paced
+21:24:56 │ 
+21:24:56 │ 📹 Step 2: Sourcing YouTube clips...
+21:24:56 │ 🤖 Generating AI-powered search queries...
+21:24:57 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:24:57 │ AFC is enabled with max remote calls: 10.
+21:24:57 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+21:24:57 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 58.089580199s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}). Trying next...
+21:24:57 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+21:24:57 │ AFC is enabled with max remote calls: 10.
+21:24:57 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+21:24:57 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 57.661962462s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '57s'}]}}). Trying next...
+21:24:57 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+21:24:57 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+21:25:02 │    ✅ OpenRouter responded successfully
+21:25:02 │    🤖 AI generated 8 search queries:
+21:25:02 │       🔍 travis scott music video
+21:25:02 │       🔍 playboi carti vibes
+21:25:02 │       🔍 yeat official video
+21:25:02 │       🔍 dua lipa electro
+21:25:02 │       🔍 dark night city vibes
+21:25:02 │       🔍 lit concert crowd
+21:25:02 │       🔍 neon party aesthetic
+21:25:02 │       🔍 high energy performance
+21:25:02 │ 🔍 Searching YouTube: 'travis scott music video'
+21:25:05 │    Found 3 result(s)
+21:25:05 │ 🔍 Searching YouTube: 'playboi carti vibes'
+21:25:07 │    Found 3 result(s)
+21:25:07 │ 🔍 Searching YouTube: 'yeat official video'
+21:25:10 │    Found 3 result(s)
+21:25:10 │ 🔍 Searching YouTube: 'dua lipa electro'
+21:25:13 │    Found 3 result(s)
+21:25:13 │ 🔍 Searching YouTube: 'dark night city vibes'
+21:25:15 │    Found 3 result(s)
+21:25:15 │ 🔍 Searching YouTube: 'lit concert crowd'
+21:25:17 │    Found 3 result(s)
+21:25:17 │ 🔍 Searching YouTube: 'neon party aesthetic'
+21:25:20 │    Found 3 result(s)
+21:25:20 │ 🔍 Searching YouTube: 'high energy performance'
+21:25:22 │    Found 3 result(s)
+21:25:22 │ 🤖 Ranking 24 clips by relevance...
+21:25:23 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:25:23 │ AFC is enabled with max remote calls: 10.
+21:25:39 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+21:25:39 │    🤖 Gemini ranked and selected 10 best clips
+21:25:39 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+21:25:39 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=X7aF3nZOS98
+21:25:39 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=tfSS1e3kYeo
+21:25:39 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=8G8Fn0YRjvM
+21:25:39 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=QqzXvvdk3bQ
+21:25:55 │    ✅ Downloaded: jbgbsrbg_422f94bf.mp4
+21:25:55 │    ✅ Downloaded: jbgbsrbg_914e66ec.mp4
+21:25:55 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=_yHlFQqFLS0
+21:25:55 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=bd5l5NtzoWc
+21:26:05 │    ✅ Downloaded: jbgbsrbg_9d729b5d.mp4
+21:26:05 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=e2vBLd5Egnk
+21:26:20 │    ✅ Downloaded: jbgbsrbg_97a436e1.mp4
+21:26:20 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=Q4-jOuHO-z4
+21:26:21 │    ✅ Downloaded: jbgbsrbg_c68c64d3.mp4
+21:26:21 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=XhntM8ndIzc
+21:26:30 │    ✅ Downloaded: jbgbsrbg_81f0aafd.mp4
+21:26:30 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=r5lc5zfNdKk
+21:26:37 │    ✅ Downloaded: jbgbsrbg_10e09e9e.mp4
+21:26:37 │    ✅ Downloaded: jbgbsrbg_0c7579c0.mp4
+21:26:39 │    ✅ Downloaded: jbgbsrbg_a443ad64.mp4
+21:26:49 │    ✅ Downloaded: jbgbsrbg_30340cfe.mp4
+21:26:49 │ 📦 Sourced 10 clip(s) for 'Jbgbsrbg'
+21:26:49 │ 
+21:26:49 │ 🎬 Step 3: Assembling video...
+21:26:49 │ 🎬 Rendering: jbgbsrbg_full.mp4 (19s)
+21:26:56 │    ✂️ 7 beat-synced cuts planned
+21:27:04 │    📐 Clips stitched (effects baked in)
+21:27:04 │    🔊 Audio overlay applied
+21:27:04 │ 🎨 Analyzing audio for waveform visualizer...
+21:27:04 │    📊 576 frames | 19.2s | waveform-only mode
+21:27:04 │ 🎨 Rendering waveform visualizer (neon theme)...
+21:27:04 │    ✅ Waveform visualizer ready (576 frames, 19.2s)
+21:27:04 │    🎨 Waveform visualizer overlay added (neon theme)
+21:27:04 │    🔄 Rendering to jbgbsrbg_full.mp4 ...
+21:27:04 │    🚀 Using GPU Encoding (h264_nvenc)
+21:27:35 │ 🚀 Beat-to-Instagram Reel Automation
+21:27:35 │ ============================================================
+21:27:35 │ 👀 WATCHING C:\N8N\beats for new beats...
+21:27:35 │    Mode: VIDEO 📹

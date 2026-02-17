@@ -1,0 +1,13 @@
+yt-dlp
+moviepy>=2.0.0
+google-generativeai>=0.8.0
+requests
+python-dotenv
+librosa
+Pillow
+numpy
+soundfile
+google-api-python-client
+google-auth-oauthlib
+python-telegram-bot>=21.0
+watchdog

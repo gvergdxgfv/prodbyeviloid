@@ -1,0 +1,22 @@
+# Environment variables (secrets)
+.env
+client_secrets.json
+yt_token.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# Output directories
+beats/
+clips/
+output/
+
+# OS files
+.DS_Store
+Thumbs.db
