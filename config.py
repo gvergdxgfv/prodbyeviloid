@@ -75,11 +75,12 @@ def ensure_dirs():
 
 def load_api_keys():
     """Load API keys (called when actually needed, not at import time)."""
-    global GEMINI_API_KEY, IG_USER_ID, IG_ACCESS_TOKEN, OPENROUTER_API_KEY
+    global GEMINI_API_KEY, IG_USER_ID, IG_ACCESS_TOKEN, OPENROUTER_API_KEY, PEXELS_API_KEY
     GEMINI_API_KEY = _require("GEMINI_API_KEY").strip()
     IG_USER_ID = _require("IG_USER_ID").strip()
     IG_ACCESS_TOKEN = _require("IG_ACCESS_TOKEN").strip()
     OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
+    PEXELS_API_KEY = os.getenv("PEXELS_API_KEY", "").strip()
 
 
 def load_openai_key_only():

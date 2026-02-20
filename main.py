@@ -22,7 +22,8 @@ from pathlib import Path
 
 import config
 from modules.beat_parser import parse_beat, scan_beats_folder, BeatInfo
-from modules.youtube_sourcer import source_clips
+import modules.youtube_sourcer as youtube_sourcer
+import modules.pexels_sourcer as pexels_sourcer
 from modules.video_assembler import assemble_video, assemble_highlight_videos
 from modules.metadata_gen import generate_metadata
 from modules.ig_uploader import upload_to_instagram
@@ -83,10 +84,29 @@ def process_beat(
         if gpu:
              logger.info(f"   🚀 GPU Encoding: Enabled")
 
-    # ── Step 2: Source YouTube clips ──────────────────────
+    # ── Step 2: Source Clips ──────────────────────────────
     logger.info("")
-    logger.info("📹 Step 2: Sourcing YouTube clips...")
-    clips = source_clips(beat_info, dry_run=dry_run)
+    logger.info("📹 Step 2: Sourcing clips (YouTube + Pexels)...")
+    
+    # YouTube
+    yt_clips = []
+    if not dry_run:  # In dry run we skip actual sourcing usually, but here we simulate
+         try:
+             yt_clips = youtube_sourcer.source_clips(beat_info, max_clips=config.MAX_CLIPS_PER_BEAT)
+         except Exception as e:
+             logger.error(f"❌ YouTube sourcing failed: {e}")
+
+    # Pexels
+    pexels_clips = []
+    if not dry_run and config.PEXELS_API_KEY:
+         try:
+             pexels_clips = pexels_sourcer.source_clips(beat_info, max_clips=config.MAX_CLIPS_PER_BEAT)
+         except Exception as e:
+             logger.error(f"❌ Pexels sourcing failed: {e}")
+             
+    clips = yt_clips + pexels_clips
+    import random
+    random.shuffle(clips)
 
     if dry_run:
         logger.info("")

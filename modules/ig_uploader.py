@@ -15,13 +15,14 @@ from pathlib import Path
 from typing import Optional
 
 import requests
+from pyngrok import ngrok, conf
 
 import config
 from modules.metadata_gen import ReelMetadata
 
 logger = logging.getLogger(__name__)
 
-GRAPH_API_BASE = "https://graph.instagram.com/v21.0"
+GRAPH_API_BASE = "https://graph.facebook.com/v21.0"
 
 
 class _VideoServer:
@@ -36,6 +37,7 @@ class _VideoServer:
         self.port = port
         self._server: Optional[socketserver.TCPServer] = None
         self._thread: Optional[threading.Thread] = None
+        self._tunnel_url: Optional[str] = None
 
     def start(self) -> str:
         """Start the server and return the URL to the video."""
@@ -63,16 +65,36 @@ class _VideoServer:
 
         # Determine public URL
         public_host = config.PUBLIC_VIDEO_HOST
+        
+        # Configure ngrok auth if provided
+        if config.NGROK_AUTHTOKEN:
+            conf.get_default().auth_token = config.NGROK_AUTHTOKEN
+
         if public_host == "auto":
-            # Try to get the machine's IP
-            try:
-                s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-                s.connect(("8.8.8.8", 80))
-                ip = s.getsockname()[0]
-                s.close()
-            except Exception:
-                ip = "127.0.0.1"
-            public_host = f"http://{ip}:{self.port}"
+            # If we have an ngrok token, prefer ngrok for reliability
+            if config.NGROK_AUTHTOKEN:
+                try:
+                    logger.info("   🚀 Starting ngrok tunnel...")
+                    # bind_tls=True ensures we get an https URL
+                    self._tunnel_url = ngrok.connect(self.port, bind_tls=True).public_url
+                    public_host = self._tunnel_url
+                    logger.info(f"   ✅ Ngrok tunnel established: {public_host}")
+                except Exception as e:
+                    logger.error(f"   ❌ Ngrok connection failed: {e}")
+                    # Fallback to local IP logic below
+                    pass
+
+            # Fallback or if no token: Try to get the machine's IP
+            if not self._tunnel_url:
+                try:
+                    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                    s.connect(("8.8.8.8", 80))
+                    ip = s.getsockname()[0]
+                    s.close()
+                except Exception:
+                    ip = "127.0.0.1"
+                public_host = f"http://{ip}:{self.port}"
+                
         elif not public_host.startswith("http"):
             public_host = f"http://{public_host}:{self.port}"
 
@@ -82,6 +104,16 @@ class _VideoServer:
 
     def stop(self):
         """Shut down the server."""
+        if self._tunnel_url:
+            try:
+                ngrok.disconnect(self._tunnel_url)
+                # optionally kill the ngrok process if you want to be clean
+                # ngrok.kill() 
+                logger.info("   🔌 Ngrok tunnel closed")
+            except Exception as e:
+                logger.error(f"   ⚠️ Error closing tunnel: {e}")
+            self._tunnel_url = None
+
         if self._server:
             self._server.shutdown()
             logger.info("📡 Video server stopped")

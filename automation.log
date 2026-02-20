@@ -2046,3 +2046,185 @@ DM for...
 21:27:35 │ ============================================================
 21:27:35 │ 👀 WATCHING C:\N8N\beats for new beats...
 21:27:35 │    Mode: VIDEO 📹
+21:28:21 │ 🆕 New beat detected: SHIP - Sinus Rhythm.wav
+21:28:23 │ ============================================================
+21:28:23 │ 🎵 PROCESSING: SHIP - Sinus Rhythm.wav
+21:28:23 │ ============================================================
+21:28:23 │ 🎵 Analyzing audio: SHIP - Sinus Rhythm.wav
+21:28:29 │    ⏱ Duration: 10.4s | 🥁 BPM: 92 | ⚡ Energy: medium
+21:28:29 │    💥 Detected 15 drop/cut points (17 beats, 27 onsets)
+21:28:31 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:28:31 │ AFC is enabled with max remote calls: 10.
+21:28:32 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+21:28:32 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 23.632436126s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}). Trying next...
+21:28:32 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+21:28:32 │ AFC is enabled with max remote calls: 10.
+21:28:32 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+21:28:32 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 23.252796097s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}). Trying next...
+21:28:32 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+21:28:32 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+21:28:37 │    ✅ OpenRouter responded successfully
+21:28:37 │    🤖 AI response: ```json
+{
+  "genre": "ambient",
+  "mood": "contemplative",
+  "keywords": ["ocean waves", "cloud move...
+21:28:37 │    ✅ Parsed: Ship   Sinus Rhythm | 92bpm | ambient | contemplative
+21:28:37 │    🔍 Keywords: ocean waves, cloud movements, city lights, forest path, abstract patterns, minimalist landscapes
+21:28:37 │ 
+21:28:37 │ 📹 Step 2: Sourcing YouTube clips...
+21:28:37 │ 🤖 Generating AI-powered search queries...
+21:28:37 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:28:37 │ AFC is enabled with max remote calls: 10.
+21:28:38 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+21:28:38 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 17.357924596s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}). Trying next...
+21:28:38 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+21:28:38 │ AFC is enabled with max remote calls: 10.
+21:28:38 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+21:28:38 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 16.827920669s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}). Trying next...
+21:28:38 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+21:28:38 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+21:28:48 │    ✅ OpenRouter responded successfully
+21:28:48 │    🤖 AI generated 8 search queries:
+21:28:48 │       🔍 joji music video
+21:28:48 │       🔍 frank ocean mv
+21:28:48 │       🔍 the weeknd official video
+21:28:48 │       🔍 daniel caesar music video
+21:28:48 │       🔍 brent faiyaz visuals
+21:28:48 │       🔍 bryson tiller mv
+21:28:48 │       🔍 contemplative city vibes
+21:28:48 │       🔍 ocean wave aesthetic
+21:28:48 │ 🔍 Searching YouTube: 'joji music video'
+21:28:54 │    Found 3 result(s)
+21:28:54 │ 🔍 Searching YouTube: 'frank ocean mv'
+21:28:56 │    Found 3 result(s)
+21:28:56 │ 🔍 Searching YouTube: 'the weeknd official video'
+21:28:59 │    Found 3 result(s)
+21:28:59 │ 🔍 Searching YouTube: 'daniel caesar music video'
+21:29:02 │    Found 3 result(s)
+21:29:02 │ 🔍 Searching YouTube: 'brent faiyaz visuals'
+21:29:04 │    Found 3 result(s)
+21:29:04 │ 🔍 Searching YouTube: 'bryson tiller mv'
+21:29:09 │    Found 3 result(s)
+21:29:09 │ 🔍 Searching YouTube: 'contemplative city vibes'
+21:29:12 │    Found 3 result(s)
+21:29:12 │ 🔍 Searching YouTube: 'ocean wave aesthetic'
+21:29:15 │    Found 3 result(s)
+21:29:15 │ 🤖 Ranking 24 clips by relevance...
+21:29:15 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:29:15 │ AFC is enabled with max remote calls: 10.
+21:29:16 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+21:29:16 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 39.290872789s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}). Trying next...
+21:29:16 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+21:29:16 │ AFC is enabled with max remote calls: 10.
+21:29:16 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+21:29:16 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 38.949078046s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}). Trying next...
+21:29:16 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+21:29:16 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+21:29:19 │    ✅ OpenRouter responded successfully
+21:29:19 │    🤖 Gemini ranked and selected 10 best clips
+21:29:19 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+21:29:19 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=NgsWGfUlwJI
+21:29:19 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=K3Qzzggn--s
+21:29:19 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=acA8Rr3gEco
+21:29:19 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=K9AtF6lKsnU
+21:29:46 │    ✅ Downloaded: SHIP - Sinus Rhythm_c6de101c.mp4
+21:29:46 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=07XwUtF2lPQ
+21:29:49 │    ✅ Downloaded: SHIP - Sinus Rhythm_26d79dc0.mp4
+21:29:49 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=-YlFWMXxgtg
+21:29:50 │    ✅ Downloaded: SHIP - Sinus Rhythm_0e9e1e68.mp4
+21:29:50 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=uQFVqltOXRg
+21:30:06 │    ✅ Downloaded: SHIP - Sinus Rhythm_b9fe19a6.mp4
+21:30:06 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=hKgl5-lkT8U
+21:30:09 │    ✅ Downloaded: SHIP - Sinus Rhythm_4e30b372.mp4
+21:30:09 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=ugsCsPz7100
+21:30:22 │    ✅ Downloaded: SHIP - Sinus Rhythm_f8497e20.mp4
+21:30:22 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=Gj_sXdWbBbQ
+21:30:23 │    ✅ Downloaded: SHIP - Sinus Rhythm_25e6fa81.mp4
+21:30:35 │    ✅ Downloaded: SHIP - Sinus Rhythm_e314b976.mp4
+21:30:40 │    ✅ Downloaded: SHIP - Sinus Rhythm_18e09af6.mp4
+21:30:41 │    ✅ Downloaded: SHIP - Sinus Rhythm_845053b0.mp4
+21:30:41 │ 📦 Sourced 10 clip(s) for 'Ship   Sinus Rhythm'
+21:30:41 │ 
+21:30:41 │ 🎬 Step 3: Assembling video...
+21:30:41 │ 🎬 Rendering: SHIP - Sinus Rhythm_full.mp4 (10s)
+21:30:49 │    ✂️ 5 beat-synced cuts planned
+21:30:55 │    📐 Clips stitched (effects baked in)
+21:30:56 │    🔊 Audio overlay applied
+21:30:56 │ 🎨 Analyzing audio for waveform visualizer...
+21:30:56 │    📊 313 frames | 10.4s | waveform-only mode
+21:30:56 │ 🎨 Rendering waveform visualizer (neon theme)...
+21:30:56 │    ✅ Waveform visualizer ready (313 frames, 10.4s)
+21:30:56 │    🎨 Waveform visualizer overlay added (neon theme)
+21:30:56 │    🔄 Rendering to SHIP - Sinus Rhythm_full.mp4 ...
+21:30:56 │    🚀 Using GPU Encoding (h264_nvenc)
+21:34:41 │    ✅ Video rendered: C:\N8N\output\jbgbsrbg_full.mp4 (19.2 MB)
+21:34:41 │ 
+21:34:41 │ 📝 Step 4: Generating Instagram metadata...
+21:34:42 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:34:42 │ AFC is enabled with max remote calls: 10.
+21:34:44 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+21:34:44 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.854457564s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}). Trying next...
+21:34:44 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+21:34:44 │ AFC is enabled with max remote calls: 10.
+21:34:44 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+21:34:44 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 11.37601785s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}). Trying next...
+21:34:44 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+21:34:44 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+21:34:50 │    ✅ OpenRouter responded successfully
+21:34:50 │ 🤖 AI generated metadata for 'Jbgbsrbg'
+21:34:50 │    📝 IG Caption: "Jbgbsrbg" - that's pure energy right there! 🔥 Feel the vibes at 129 BPM. DM for...
+21:34:50 │    #️⃣  25 IG hashtags generated
+21:34:50 │    📺 YT Title: "Jbgbsrbg" - Energetic Electronic Type Beat | prodbyeviloid
+21:34:50 │    🏷️  15 YT tags generated
+21:34:50 │    🖼️ Cover at 3.0s
+21:34:50 │ 
+📋 Reel Metadata:
+21:34:50 │    Caption: "Jbgbsrbg" - that's pure energy right there! 🔥 Feel the vibes at 129 BPM. DM for exclusive beats 🔥...
+21:34:50 │    Hashtags: 25 tags
+21:34:50 │ 
+21:34:50 │ 📤 Step 5: Uploading to Instagram...
+21:34:50 │ 📡 Video server started at http://192.168.1.19:55558/jbgbsrbg_full.mp4
+21:34:51 │ 📤 Creating media container...
+21:34:52 │    ❌ Container creation failed: Invalid OAuth access token - Cannot parse access token
+21:34:52 │ 📡 Video server stopped
+21:34:52 │ ❌ Instagram upload failed for Jbgbsrbg
+21:34:52 │ 
+21:34:52 │ 📺 Step 6: Uploading to YouTube Shorts...
+21:34:52 │ 🔐 Starting YouTube OAuth2 flow (browser will open)...
+21:34:55 │    ✅ Video rendered: C:\N8N\output\SHIP - Sinus Rhythm_full.mp4 (10.4 MB)
+21:34:55 │ 
+21:34:55 │ 📝 Step 4: Generating Instagram metadata...
+21:34:55 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+21:34:55 │ AFC is enabled with max remote calls: 10.
+21:34:56 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+21:34:56 │ ⚠️ Quota/Error for gemini-2.5-flash (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 58.978923741s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}). Trying next...
+21:34:56 │    🤖 Trying Gemini Model: gemini-2.5-pro...
+21:34:56 │ AFC is enabled with max remote calls: 10.
+21:34:57 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+21:34:57 │ ⚠️ Quota/Error for gemini-2.5-pro (429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 58.479039944s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-pro', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerDay-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-pro'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}). Trying next...
+21:34:57 │ ⚠️ All Gemini models exhausted! Switching to OpenRouter fallback...
+21:34:57 │    🤖 Calling OpenRouter API (GLM-4.5 Air)...
+21:35:01 │    ✅ OpenRouter responded successfully
+21:35:01 │ 🤖 AI generated metadata for 'Ship   Sinus Rhythm'
+21:35:01 │    📝 IG Caption: Ship Sinus Rhythm - Let the ambient waves wash over you ✨
+DM for exclusive beats...
+21:35:01 │    #️⃣  24 IG hashtags generated
+21:35:01 │    📺 YT Title: Ambient Type Beat 2023 - 'Ship Sinus Rhythm' | prodbyeviloid
+21:35:01 │    🏷️  15 YT tags generated
+21:35:01 │    🖼️ Cover at 3.0s
+21:35:01 │ 
+📋 Reel Metadata:
+21:35:01 │    Caption: Ship Sinus Rhythm - Let the ambient waves wash over you ✨
+DM for exclusive beats 🔥...
+21:35:01 │    Hashtags: 24 tags
+21:35:01 │ 
+21:35:01 │ 📤 Step 5: Uploading to Instagram...
+21:35:01 │ 📡 Video server started at http://192.168.1.19:55567/SHIP - Sinus Rhythm_full.mp4
+21:35:02 │ 📤 Creating media container...
+21:35:03 │    ❌ Container creation failed: Invalid OAuth access token - Cannot parse access token
+21:35:03 │ 📡 Video server stopped
+21:35:03 │ ❌ Instagram upload failed for Ship   Sinus Rhythm
+21:35:03 │ 
+21:35:03 │ 📺 Step 6: Uploading to YouTube Shorts...
+21:35:04 │ 🔐 Starting YouTube OAuth2 flow (browser will open)...

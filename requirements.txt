@@ -11,3 +11,5 @@ google-api-python-client
 google-auth-oauthlib
 python-telegram-bot>=21.0
 watchdog
+
+pyngrok

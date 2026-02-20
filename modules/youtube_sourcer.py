@@ -339,7 +339,7 @@ def _get_video_duration(filepath: Path) -> float:
         return 0.0
 
 
-def source_clips(beat_info: BeatInfo, dry_run: bool = False) -> List[ClipInfo]:
+def source_clips(beat_info: BeatInfo, dry_run: bool = False, max_clips: int = 5) -> List[ClipInfo]:
     """
     AI-powered clip sourcing: uses Gemini to generate smart search queries,
     searches YouTube, ranks results by relevance, and downloads the best clips.
@@ -347,6 +347,7 @@ def source_clips(beat_info: BeatInfo, dry_run: bool = False) -> List[ClipInfo]:
     Args:
         beat_info: Parsed beat metadata with visual keywords
         dry_run: If True, only search but don't download
+        max_clips: Maximum number of clips to source (default 5)
 
     Returns:
         List of ClipInfo for downloaded clips
@@ -355,7 +356,9 @@ def source_clips(beat_info: BeatInfo, dry_run: bool = False) -> List[ClipInfo]:
     clip_dir = config.CLIPS_DIR / beat_info.filename
     clip_dir.mkdir(parents=True, exist_ok=True)
 
-    max_clips = config.MAX_CLIPS_PER_BEAT
+    if not max_clips:
+        max_clips = config.MAX_CLIPS_PER_BEAT
+    segment_dur = config.CLIP_SEGMENT_DURATION
     segment_dur = config.CLIP_SEGMENT_DURATION
 
     # ── Step 1: Generate smart search queries via Gemini ──
