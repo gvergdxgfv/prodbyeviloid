@@ -1,12 +1,3 @@
-"""
-Video Assembler Module (FFmpeg Native)
-======================================
-Combines downloaded YouTube clips with a beat audio file into
-9:16 vertical videos suitable for Instagram Reels / YouTube Shorts.
-
-Fully hardware-accelerated via FFmpeg.
-"""
-
 import logging
 import subprocess
 from pathlib import Path
@@ -30,7 +21,7 @@ def _build_visualizer_filtergraph(
     beat_info: BeatInfo,
     theme_name: str,
     producer_tag: str
-) -> tuple[str, str]:
+) -> str:
     """Returns the filtergraph string and the new video output pad name."""
     
     font_path = "/Windows/Fonts/ariblk.ttf"
@@ -48,6 +39,7 @@ def _build_visualizer_filtergraph(
     if not producer_tag:
         producer_tag = config.PRODUCER_TAG
         
+    # Scale waveform to be wide but not too tall
     lines = []
     # 1. Generate showwaves from audio
     lines.append(f"[{audio_idx}:a]showwaves=s=960x400:mode=cline:colors={theme_color}:scale=sqrt[wave]")
@@ -75,11 +67,13 @@ def _render_ffmpeg_video(
 ) -> Path:
     logger.info(f"🎞️ Building FFmpeg assembly for {output_path.name}")
     
-    fade_duration = 0.4
+    fade_duration = 0.5
     selected_clips = []
     current_time = 0.0
     
+    # Calculate how many clips we need to reach the target duration
     for clip in clips:
+        # Avoid extremely short clips breaking crossfades
         clip_dur = clip.duration
         if clip_dur < fade_duration * 3:
             continue 
@@ -119,8 +113,10 @@ def _render_ffmpeg_video(
     filter_lines = []
     
     # 3. Scale and normalize all input videos
+    # Note: audio is index 0. Video inputs start at 1.
     for i in range(len(selected_clips)):
         v_idx = i + 1
+        # Crop to 9:16 vertical filling frame completely, normalise to FPS and layout format
         scale_filter = (
             f"[{v_idx}:v]scale={TARGET_W}:{TARGET_H}:force_original_aspect_ratio=increase,"
             f"crop={TARGET_W}:{TARGET_H},setsar=1,fps={TARGET_FPS},format=yuv420p[v_s{i}]"
@@ -129,18 +125,18 @@ def _render_ffmpeg_video(
 
     # 4. Crossfade all clips sequentially
     current_v_out = "v_s0"
-    if len(selected_clips) > 1:
-        current_offset = selected_clips[0].duration - fade_duration
+    current_offset = selected_clips[0].duration - fade_duration
+    
+    for i in range(1, len(selected_clips)):
+        next_v_in = f"v_s{i}"
+        next_v_out = f"v_c{i}"
         
-        for i in range(1, len(selected_clips)):
-            next_v_in = f"v_s{i}"
-            next_v_out = f"v_c{i}"
-            
-            xfade = f"[{current_v_out}][{next_v_in}]xfade=transition=fade:duration={fade_duration}:offset={current_offset:.2f}[{next_v_out}]"
-            filter_lines.append(xfade)
-            
-            current_v_out = next_v_out
-            current_offset += (selected_clips[i].duration - fade_duration)
+        # xfade requires identical formats, which we guaranteed in step 3.
+        xfade = f"[{current_v_out}][{next_v_in}]xfade=transition=fade:duration={fade_duration}:offset={current_offset:.2f}[{next_v_out}]"
+        filter_lines.append(xfade)
+        
+        current_v_out = next_v_out
+        current_offset += (selected_clips[i].duration - fade_duration)
 
     # 5. Apply Visualizer if requested
     if visualizer:
@@ -152,13 +148,6 @@ def _render_ffmpeg_video(
             producer_tag=producer_tag
         )
         filter_lines.append(viz_lines)
-    else:
-        # If no visualizer, still draw producer watermark
-        watermark_lines, current_v_out = _build_producer_watermark_filtergraph(
-            video_link_out=current_v_out,
-            producer_tag=producer_tag
-        )
-        filter_lines.append(watermark_lines)
         
     filtergraph = ";".join(filter_lines)
     
@@ -171,7 +160,7 @@ def _render_ffmpeg_video(
         logger.info("   🚀 Using GPU Encoding (h264_nvenc)")
         cmd.extend([
             "-c:v", "h264_nvenc",
-            "-preset", "p1",
+            "-preset", "p1",  # p1 is fastest for NVENC
             "-rc", "vbr", "-cq", "28", "-b:v", "5M", "-spatial_aq", "1"
         ])
     else:
@@ -182,10 +171,11 @@ def _render_ffmpeg_video(
             "-crf", "23"
         ])
 
+    # Audio encoding and duration cut
     cmd.extend([
         "-c:a", "aac",
         "-b:a", "192k",
-        "-t", str(target_duration), # Hard stop!
+        "-t", str(target_duration), # Hard stop at the target duration!
         str(output_path)
     ])
 
@@ -197,70 +187,3 @@ def _render_ffmpeg_video(
     except subprocess.CalledProcessError as e:
         logger.error(f"❌ FFmpeg assembled render failed: {e}")
         raise
-
-def _build_producer_watermark_filtergraph(
-    video_link_out: str,
-    producer_tag: str
-) -> tuple[str, str]:
-    if not producer_tag:
-        producer_tag = config.PRODUCER_TAG
-    font_path = "/Windows/Fonts/ariblk.ttf"
-    if not os.path.exists("C:/Windows/Fonts/ariblk.ttf"):
-        font_path = "/Windows/Fonts/arial.ttf"
-        
-    line = f"[{video_link_out}]drawtext=fontfile='{font_path}':text='{producer_tag}':fontcolor=white:fontsize=32:x=(w-text_w)/2:y=h-100:bordercolor=black:borderw=1[v_mark]"
-    return line, "v_mark"
-
-
-def assemble_video(
-    beat_info: BeatInfo,
-    clips: List[ClipInfo],
-    visualizer: bool = False,
-    viz_theme: str = "neon",
-    producer_tag: str = None,
-    gpu_enabled: bool = True,
-) -> Path:
-    output_path = config.OUTPUT_DIR / f"{beat_info.filename}_full.mp4"
-    target_duration = min(beat_info.duration, config.VIDEO_DURATION_MAX)
-
-    return _render_ffmpeg_video(
-        beat_info, clips, output_path, target_duration,
-        visualizer=visualizer, viz_theme=viz_theme,
-        producer_tag=producer_tag,
-        gpu_enabled=gpu_enabled,
-    )
-
-
-def assemble_highlight_videos(
-    beat_info: BeatInfo,
-    clips: List[ClipInfo],
-    visualizer: bool = False,
-    viz_theme: str = "neon",
-    producer_tag: str = None,
-    gpu_enabled: bool = True,
-) -> List[Path]:
-    if not beat_info.best_segments:
-        logger.info("   ℹ️ No highlight segments detected")
-        return []
-
-    highlight_paths = []
-
-    for i, (seg_start, seg_end) in enumerate(beat_info.best_segments, 1):
-        seg_duration = seg_end - seg_start
-        output_path = config.OUTPUT_DIR / f"{beat_info.filename}_highlight_{i}.mp4"
-
-        logger.info(f"\n🎯 Highlight {i}/{len(beat_info.best_segments)}: {seg_start:.1f}s – {seg_end:.1f}s")
-
-        try:
-            path = _render_ffmpeg_video(
-                beat_info, clips, output_path, seg_duration,
-                visualizer=visualizer, viz_theme=viz_theme,
-                producer_tag=producer_tag,
-                audio_start=seg_start, audio_end=seg_end,
-                gpu_enabled=gpu_enabled,
-            )
-            highlight_paths.append(path)
-        except Exception as e:
-            logger.error(f"   ❌ Highlight {i} failed: {e}", exc_info=True)
-
-    return highlight_paths

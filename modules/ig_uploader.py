@@ -22,6 +22,7 @@ from modules.metadata_gen import ReelMetadata
 
 logger = logging.getLogger(__name__)
 
+# Instagram Content Publishing requires the Facebook Graph API base
 GRAPH_API_BASE = "https://graph.facebook.com/v21.0"
 
 
@@ -98,8 +99,11 @@ class _VideoServer:
         elif not public_host.startswith("http"):
             public_host = f"http://{public_host}:{self.port}"
 
-        url = f"{public_host}/{video_name}"
-        logger.info(f"📡 Video server started at {url}")
+        import urllib.parse
+        encoded_name = urllib.parse.quote(video_name)
+        url = f"{public_host}/{encoded_name}"
+        logger.info(f"📡 Video server started at {url}. Waiting 3 seconds for tunnel to stabilize...")
+        time.sleep(3) # Give ngrok and the local server a moment to start
         return url
 
     def stop(self):
@@ -138,11 +142,20 @@ def _create_media_container(
         "access_token": config.IG_ACCESS_TOKEN,
     }
 
-    if cover_url:
+    if cover_url and cover_url.startswith("http"):
         params["cover_url"] = cover_url
 
-    logger.info("📤 Creating media container...")
+    logger.info(f"📤 Final Exact Params to Facebook: {params}")
+    
+    # Internal check: is the video server actually accessible right now?
+    try:
+        logger.info(f"🔍 Testing internal accessibility of {video_url}...")
+        test_resp = requests.head(video_url, timeout=5)
+        logger.info(f"🔍 Internal test status: {test_resp.status_code}")
+    except Exception as e:
+        logger.warning(f"⚠️ Internal test failed: {e}")
 
+    logger.info(f"📤 Creating media container w/ URL: {video_url}")
     try:
         resp = requests.post(endpoint, data=params, timeout=30)
         data = resp.json()
@@ -152,8 +165,7 @@ def _create_media_container(
             logger.info(f"   ✅ Container created: {container_id}")
             return container_id
         else:
-            error = data.get("error", {})
-            logger.error(f"   ❌ Container creation failed: {error.get('message', data)}")
+            logger.error(f"   ❌ Container creation failed. API Response: {data}")
             return None
 
     except Exception as e:
@@ -237,6 +249,10 @@ def upload_to_instagram(
     if not video_path.exists():
         logger.error(f"❌ Video file not found: {video_path}")
         return False
+
+    # Ensure API keys are loaded
+    if not config.IG_USER_ID or not config.IG_ACCESS_TOKEN:
+        config.load_api_keys()
 
     # Start temporary video server
     server = _VideoServer(video_path)

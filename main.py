@@ -56,7 +56,8 @@ def process_beat(
     viz_theme: str = "neon",
     youtube: bool = False,
     highlights: bool = True,
-    gpu: bool = False,
+    gpu: bool = True,
+    ig_highlight_only: bool = False,
 ) -> bool:
     """
     Run the full pipeline for a single beat file.
@@ -98,7 +99,7 @@ def process_beat(
 
     # Pexels
     pexels_clips = []
-    if not dry_run and config.PEXELS_API_KEY:
+    if not dry_run and getattr(config, "PEXELS_API_KEY", None):
          try:
              pexels_clips = pexels_sourcer.source_clips(beat_info, max_clips=config.MAX_CLIPS_PER_BEAT)
          except Exception as e:
@@ -175,7 +176,13 @@ def process_beat(
 
     logger.info("")
     logger.info("📤 Step 5: Uploading to Instagram...")
-    ig_success = upload_to_instagram(output_path, metadata)
+    
+    upload_path = output_path
+    if ig_highlight_only and highlight_paths:
+        upload_path = highlight_paths[0]
+        logger.info(f"   (Using highlight for IG upload: {upload_path.name})")
+
+    ig_success = upload_to_instagram(upload_path, metadata)
 
     if ig_success:
         logger.info("")
@@ -291,14 +298,15 @@ Examples:
     parser.add_argument("--beat", "-b", type=str, help="Process a specific beat file")
     parser.add_argument("--no-upload", action="store_true", help="Render video but skip Instagram upload")
     parser.add_argument("--dry-run", action="store_true", help="Preview without downloading or rendering")
-    parser.add_argument("--no-visualizer", dest="visualizer", action="store_false", default=True, help="Disable audio-reactive visualizer overlay")
+    parser.add_argument("--visualizer", action="store_true", help="Enable audio-reactive visualizer overlay")
     parser.add_argument("--viz-theme", type=str, default="neon", choices=["neon", "fire", "ice", "purple"], help="Visualizer theme")
     parser.add_argument("--youtube", "-yt", action="store_true", help="Also upload to YouTube Shorts")
     parser.add_argument("--verbose", "-v", action="store_true", help="Enable verbose/debug logging")
     parser.add_argument("--no-highlights", action="store_true", help="Skip generating highlight clips")
+    parser.add_argument("--ig-highlight-only", action="store_true", help="Upload only the first highlight clip to Instagram")
     parser.add_argument("--deforum", action="store_true", help="Use Stable Diffusion Deforum pipeline instead of video clips")
     parser.add_argument("--watch", "-w", action="store_true", help="Watch beats/ folder and auto-process new files")
-    parser.add_argument("--gpu", action="store_true", help="Enable GPU acceleration (NVENC) for faster rendering")
+    parser.add_argument("--no-gpu", dest="gpu", action="store_false", default=True, help="Disable GPU acceleration (NVENC) for faster rendering")
 
     args = parser.parse_args()
 
@@ -351,6 +359,7 @@ Examples:
                             youtube=args.youtube,
                             highlights=not args.no_highlights,
                             gpu=args.gpu,
+                            ig_highlight_only=args.ig_highlight_only,
                         )
                     logger.info("✅ Auto-processing complete. Watching for next beat...")
                 except Exception as e:
@@ -411,6 +420,7 @@ Examples:
                     youtube=args.youtube,
                     highlights=not args.no_highlights,
                     gpu=args.gpu,
+                    ig_highlight_only=args.ig_highlight_only,
                 )
         except Exception as e:
             logger.error(f"❌ Unexpected error processing {beat_path.name}: {e}", exc_info=True)

@@ -9,7 +9,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import List
 
-import google.generativeai as genai
+from google import genai
 
 import config
 from modules.beat_parser import BeatInfo
@@ -36,8 +36,7 @@ def generate_metadata(beat_info: BeatInfo) -> ReelMetadata:
     Produces engaging captions and hashtags for both
     Instagram Reels and YouTube Shorts.
     """
-    genai.configure(api_key=config.GEMINI_API_KEY)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    client = genai.Client(api_key=config.GEMINI_API_KEY)
 
     prompt = f"""You are a social media expert for a music producer called "prodbyeviloid".
 Generate metadata for posting a beat video on Instagram Reels AND YouTube Shorts.

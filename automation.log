@@ -2228,3 +2228,1188 @@ DM for exclusive beats 🔥...
 21:35:03 │ 
 21:35:03 │ 📺 Step 6: Uploading to YouTube Shorts...
 21:35:04 │ 🔐 Starting YouTube OAuth2 flow (browser will open)...
+01:04:20 │ 🚀 Beat-to-Instagram Reel Automation
+01:04:20 │ ============================================================
+01:04:20 │ 📂 Found 1 beat(s) to process
+
+01:04:20 │ 
+[1/1] Processing ^.mp3
+01:04:20 │ ============================================================
+01:04:20 │ 🎵 PROCESSING: ^.mp3
+01:04:20 │ ============================================================
+01:04:20 │ 🎵 Analyzing audio: ^.mp3
+01:04:33 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+01:04:33 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+01:04:33 │    🔥 Found 2 best 30s segments
+01:04:33 │       Highlight 1: 24.0s – 54.0s
+01:04:33 │       Highlight 2: 61.0s – 91.0s
+01:04:33 │    ⚠️ Gemini keyword generation failed: cannot import name 'genai' from 'google' (unknown location)
+01:04:33 │    ✅ Parsed: ^ | 112bpm |  | 
+01:04:33 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+01:04:33 │ 
+01:04:33 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+01:04:33 │ 🤖 Generating AI-powered search queries...
+01:04:33 │    ⚠️ AI query generation failed: cannot import name 'genai' from 'google' (unknown location)
+01:04:33 │    🎯 Fallback queries (genre=hip hop, bpm=112, energy=medium)
+01:04:33 │ 🔍 Searching YouTube: 'aesthetic drone footage city music video aesthetic'
+01:05:05 │    Found 3 result(s)
+01:05:05 │ 🔍 Searching YouTube: 'cinematic urban footage 4k music video aesthetic'
+01:06:10 │    ⚠️ YouTube search timed out for: cinematic urban footage 4k music video aesthetic
+01:06:10 │ 🔍 Searching YouTube: 'kendrick lamar music video'
+01:06:19 │    Found 3 result(s)
+01:06:19 │ 🔍 Searching YouTube: 'j cole official video'
+01:06:28 │    Found 3 result(s)
+01:06:28 │ 🔍 Searching YouTube: 'jid music video'
+01:06:35 │    Found 3 result(s)
+01:06:35 │ 🔍 Searching YouTube: 'joey badass vibes'
+01:06:42 │    Found 3 result(s)
+01:06:42 │ 🔍 Searching YouTube: '21 savage official video'
+01:07:05 │    Found 3 result(s)
+01:07:05 │ 🔍 Searching YouTube: 'hip hop lifestyle aesthetic'
+01:07:15 │    Found 3 result(s)
+01:07:15 │ 🤖 Ranking 21 clips by relevance...
+01:07:15 │    ⚠️ Gemini ranking failed, using default order: cannot import name 'genai' from 'google' (unknown location)
+01:07:15 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+01:07:15 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=WHNNHAoaZD4
+01:07:15 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=jmogAj3u-mU
+01:07:15 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=8jT9ygmMvMg
+01:07:15 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=tvTRZJ-4EyI
+01:08:35 │    ✅ Downloaded: ^_4746c079.mp4
+01:08:36 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=H58vbez_m4E
+01:09:01 │    ✅ Downloaded: ^_9a19779e.mp4
+01:09:01 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=zI383uEwA6Q
+01:09:40 │    ⚠️ Download timed out: https://www.youtube.com/watch?v=tvTRZJ-4EyI
+01:09:40 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=WILNIXZr2oc
+01:09:47 │    ⚠️ Download timed out: https://www.youtube.com/watch?v=jmogAj3u-mU
+01:09:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=pvf_Qv4rmLM
+01:14:20 │ 🚀 Beat-to-Instagram Reel Automation
+01:14:20 │ ============================================================
+01:14:20 │ 📂 Found 1 beat(s) to process
+
+01:14:20 │ 
+[1/1] Processing ^.mp3
+01:14:20 │ ============================================================
+01:14:20 │ 🎵 PROCESSING: ^.mp3
+01:14:20 │ ============================================================
+01:14:20 │ 🎵 Analyzing audio: ^.mp3
+01:14:25 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+01:14:25 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+01:14:25 │    🔥 Found 2 best 30s segments
+01:14:25 │       Highlight 1: 24.0s – 54.0s
+01:14:25 │       Highlight 2: 61.0s – 91.0s
+01:14:25 │    ⚠️ Gemini keyword generation failed: cannot import name 'genai' from 'google' (unknown location)
+01:14:25 │    ✅ Parsed: ^ | 112bpm |  | 
+01:14:25 │    🔍 Keywords: cinematic urban footage 4k, aesthetic drone footage city, abstract visual effects dark background
+01:14:25 │ 
+01:14:25 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+01:14:25 │ 🤖 Generating AI-powered search queries...
+01:14:25 │    ⚠️ AI query generation failed: cannot import name 'genai' from 'google' (unknown location)
+01:14:25 │    🎯 Fallback queries (genre=hip hop, bpm=112, energy=medium)
+01:14:25 │ 🔍 Searching YouTube: 'aesthetic drone footage city music video aesthetic'
+01:23:33 │ 🚀 Beat-to-Instagram Reel Automation
+01:23:33 │ ============================================================
+01:23:33 │ 📂 Found 1 beat(s) to process
+
+01:23:33 │ 
+[1/1] Processing ^.mp3
+01:23:33 │ ============================================================
+01:23:33 │ 🎵 PROCESSING: ^.mp3
+01:23:33 │ ============================================================
+01:23:33 │ 🎵 Analyzing audio: ^.mp3
+01:23:38 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+01:23:38 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+01:23:38 │    🔥 Found 2 best 30s segments
+01:23:38 │       Highlight 1: 24.0s – 54.0s
+01:23:38 │       Highlight 2: 61.0s – 91.0s
+01:23:39 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+01:23:39 │ AFC is enabled with max remote calls: 10.
+01:23:50 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+01:23:50 │    🤖 AI response: ```json
+{
+  "genre": "Synth-pop",
+  "mood": "Smooth Uplifting",
+  "keywords": [
+    "Retro Cityscape...
+01:23:50 │    ✅ Parsed: ^ | 112bpm | Synth-pop | Smooth Uplifting
+01:23:50 │    🔍 Keywords: Retro Cityscape Night, Aesthetic Driving Cinematic, Neon Glow Abstract, Urban Reflection Vibes, Summer Sunset Ocean, Chill People Lifestyle
+01:23:50 │ 
+01:23:50 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+01:23:50 │ 🤖 Generating AI-powered search queries...
+01:23:50 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+01:23:50 │ AFC is enabled with max remote calls: 10.
+01:23:59 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+01:23:59 │    🤖 AI generated 8 search queries:
+01:23:59 │       🔍 Dua Lipa music video
+01:23:59 │       🔍 The Weeknd official video
+01:23:59 │       🔍 Tame Impala music video
+01:23:59 │       🔍 Daft Punk music video
+01:23:59 │       🔍 The Weeknd mv
+01:23:59 │       🔍 Retro cityscape night drive
+01:23:59 │       🔍 Neon glow urban vibes
+01:23:59 │       🔍 Summer sunset ocean aesthetic
+01:23:59 │ 🔍 Searching YouTube: 'Dua Lipa music video'
+01:24:02 │    Found 3 result(s)
+01:24:02 │ 🔍 Searching YouTube: 'The Weeknd official video'
+01:24:05 │    Found 3 result(s)
+01:24:05 │ 🔍 Searching YouTube: 'Tame Impala music video'
+01:24:07 │    Found 3 result(s)
+01:24:07 │ 🔍 Searching YouTube: 'Daft Punk music video'
+01:24:10 │    Found 3 result(s)
+01:24:10 │ 🔍 Searching YouTube: 'The Weeknd mv'
+01:24:13 │    Found 3 result(s)
+01:24:13 │ 🔍 Searching YouTube: 'Retro cityscape night drive'
+01:24:15 │    Found 3 result(s)
+01:24:15 │ 🔍 Searching YouTube: 'Neon glow urban vibes'
+01:24:18 │    Found 3 result(s)
+01:24:18 │ 🔍 Searching YouTube: 'Summer sunset ocean aesthetic'
+01:24:20 │    Found 3 result(s)
+01:24:20 │ 🤖 Ranking 22 clips by relevance...
+01:24:21 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+01:24:21 │ AFC is enabled with max remote calls: 10.
+01:24:44 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+01:24:44 │    🤖 Gemini ranked and selected 10 best clips
+01:24:44 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+01:24:44 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=TUVcZfQe-Kw
+01:24:44 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=suAR1PYFNYA
+01:24:44 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=5EpyN_6dqyk
+01:24:44 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=bn8gP5N8hqM
+01:24:57 │    ✅ Downloaded: ^_a603744f.mp4
+01:24:57 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=4NRXx6U8ABQ
+01:25:00 │    ✅ Downloaded: ^_05b5d047.mp4
+01:25:00 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=pFptt7Cargc
+01:25:02 │    ✅ Downloaded: ^_5b95e625.mp4
+01:25:02 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=a5uQMwRMHcs
+01:25:03 │    ✅ Downloaded: ^_1d07cd42.mp4
+01:25:03 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=ySLc8gZ3oEc
+01:25:09 │    ✅ Downloaded: ^_1cf001ff.mp4
+01:25:09 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=K0HSD_i2DvA
+01:25:10 │    ✅ Downloaded: ^_04af5757.mp4
+01:25:10 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=2fDzCWNS3ig
+01:25:14 │    ✅ Downloaded: ^_7ddce4d7.mp4
+01:25:14 │    ✅ Downloaded: ^_4e24affa.mp4
+01:25:20 │    ✅ Downloaded: ^_a25dae8d.mp4
+01:25:25 │    ✅ Downloaded: ^_7aab0749.mp4
+01:25:25 │ 📦 Sourced 10 clip(s) for '^'
+01:25:25 │ 
+01:25:25 │ 🎬 Step 3: Assembling video...
+01:25:25 │ 🎬 Rendering: ^_full.mp4 (102s)
+01:25:33 │    ✂️ 40 beat-synced cuts planned
+01:26:08 │    📐 Clips stitched (effects baked in)
+01:26:08 │    🔊 Audio overlay applied
+01:26:08 │ 🎨 Analyzing audio for waveform visualizer...
+01:26:09 │    📊 3050 frames | 101.7s | waveform-only mode
+01:26:09 │ 🎨 Rendering waveform visualizer (neon theme)...
+01:26:09 │    ✅ Waveform visualizer ready (3050 frames, 101.7s)
+01:26:09 │    🎨 Waveform visualizer overlay added (neon theme)
+01:26:09 │    🔄 Rendering to ^_full.mp4 ...
+02:02:54 │ 🚀 Beat-to-Instagram Reel Automation
+02:02:54 │ ============================================================
+02:02:54 │ 📂 Found 1 beat(s) to process
+
+02:02:54 │ 
+[1/1] Processing ^.mp3
+02:02:54 │ ============================================================
+02:02:54 │ 🎵 PROCESSING: ^.mp3
+02:02:54 │ ============================================================
+02:02:54 │ 🎵 Analyzing audio: ^.mp3
+02:02:59 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+02:02:59 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+02:02:59 │    🔥 Found 2 best 30s segments
+02:02:59 │       Highlight 1: 24.0s – 54.0s
+02:02:59 │       Highlight 2: 61.0s – 91.0s
+02:03:00 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:03:00 │ AFC is enabled with max remote calls: 10.
+02:03:08 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:03:08 │    🤖 AI response: ```json
+{
+  "genre": "Chill R&B / Lo-fi Hip-Hop",
+  "mood": "Urban Groove",
+  "keywords": [
+    "Nig...
+02:03:08 │    ✅ Parsed: ^ | 112bpm | Chill R&B / Lo-fi Hip-Hop | Urban Groove
+02:03:08 │    🔍 Keywords: Night city drive aesthetic, Rooftop city lights chill, Cozy cafe relaxed ambiance, Street style fashion walk, Cinematic city rain reflection, Abstract neon light patterns
+02:03:08 │ 
+02:03:08 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+02:03:08 │ 🤖 Generating AI-powered search queries...
+02:03:09 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:03:09 │ AFC is enabled with max remote calls: 10.
+02:05:18 │ 🚀 Beat-to-Instagram Reel Automation
+02:05:18 │ ============================================================
+02:05:18 │ 📂 Found 1 beat(s) to process
+
+02:05:18 │ 
+[1/1] Processing ^.mp3
+02:05:18 │ ============================================================
+02:05:18 │ 🎵 PROCESSING: ^.mp3
+02:05:18 │ ============================================================
+02:05:18 │ 🎵 Analyzing audio: ^.mp3
+02:05:22 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+02:05:22 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+02:05:22 │    🔥 Found 2 best 30s segments
+02:05:22 │       Highlight 1: 24.0s – 54.0s
+02:05:22 │       Highlight 2: 61.0s – 91.0s
+02:05:23 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:05:23 │ AFC is enabled with max remote calls: 10.
+02:05:30 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:05:30 │    🤖 AI response: ```json
+{
+  "genre": "Alternative R&B",
+  "mood": "Wavy Groove",
+  "keywords": [
+    "night city aes...
+02:05:30 │    ✅ Parsed: ^ | 112bpm | Alternative R&B | Wavy Groove
+02:05:30 │    🔍 Keywords: night city aesthetic, cinematic driving pov, rooftop sunset friends, abstract liquid motion, creative studio ambient, urban rain reflections
+02:05:30 │ 
+02:05:30 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+02:05:30 │ 🤖 Generating AI-powered search queries...
+02:05:31 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:05:31 │ AFC is enabled with max remote calls: 10.
+02:05:37 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:05:37 │    🤖 AI generated 8 search queries:
+02:05:37 │       🔍 cinematic night city drive aesthetic
+02:05:37 │       🔍 rainy neon city street aesthetic
+02:05:37 │       🔍 rooftop sunset friends aesthetic
+02:05:37 │       🔍 golden hour city view visuals
+02:05:37 │       🔍 abstract liquid motion aesthetic
+02:05:37 │       🔍 wavy iridescent liquid visuals 4k
+02:05:37 │       🔍 moody ambient studio light aesthetic
+02:05:37 │       🔍 soft focus cinematic indoor aesthetic
+02:05:37 │ 🔍 Searching YouTube: 'cinematic night city drive aesthetic'
+02:05:41 │    Found 3 result(s)
+02:05:41 │ 🔍 Searching YouTube: 'rainy neon city street aesthetic'
+02:05:43 │    Found 3 result(s)
+02:05:43 │ 🔍 Searching YouTube: 'rooftop sunset friends aesthetic'
+02:05:47 │    Found 3 result(s)
+02:05:47 │ 🔍 Searching YouTube: 'golden hour city view visuals'
+02:05:49 │    Found 3 result(s)
+02:05:49 │ 🔍 Searching YouTube: 'abstract liquid motion aesthetic'
+02:05:52 │    Found 3 result(s)
+02:05:52 │ 🔍 Searching YouTube: 'wavy iridescent liquid visuals 4k'
+02:05:56 │    Found 3 result(s)
+02:05:56 │ 🔍 Searching YouTube: 'moody ambient studio light aesthetic'
+02:05:59 │    Found 3 result(s)
+02:05:59 │ 🔍 Searching YouTube: 'soft focus cinematic indoor aesthetic'
+02:06:02 │    Found 3 result(s)
+02:06:02 │ 🤖 Ranking 22 clips by relevance...
+02:06:03 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:06:03 │ AFC is enabled with max remote calls: 10.
+02:10:22 │ 🚀 Beat-to-Instagram Reel Automation
+02:10:22 │ ============================================================
+02:10:22 │ 📂 Found 1 beat(s) to process
+
+02:10:22 │ 
+[1/1] Processing ^.mp3
+02:10:22 │ ============================================================
+02:10:22 │ 🎵 PROCESSING: ^.mp3
+02:10:22 │ ============================================================
+02:10:22 │ 🎵 Analyzing audio: ^.mp3
+02:10:26 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+02:10:26 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+02:10:26 │    🔥 Found 2 best 30s segments
+02:10:26 │       Highlight 1: 24.0s – 54.0s
+02:10:26 │       Highlight 2: 61.0s – 91.0s
+02:10:27 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:10:27 │ AFC is enabled with max remote calls: 10.
+02:10:37 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:10:37 │    🤖 AI response: ```json
+{
+  "genre": "Indie Pop",
+  "mood": "Smooth Groovy",
+  "keywords": [
+    "Urban Lifestyle Ae...
+02:10:37 │    ✅ Parsed: ^ | 112bpm | Indie Pop | Smooth Groovy
+02:10:37 │    🔍 Keywords: Urban Lifestyle Aesthetic, Golden Hour Vlog, Scenic Road Trip, Coffee Shop Chill, Beach Sunset Vibes, Friends Laughing Natural
+02:10:37 │ 
+02:10:37 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+02:10:37 │ 🤖 Generating AI-powered search queries...
+02:10:37 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:10:37 │ AFC is enabled with max remote calls: 10.
+02:10:43 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:10:43 │    🤖 AI generated 8 search queries:
+02:10:43 │       🔍 LANY live concert aesthetic
+02:10:43 │       🔍 The 1975 city performance
+02:10:43 │       🔍 Dayglow studio chill vibe
+02:10:43 │       🔍 COIN beach sunset concert
+02:10:43 │       🔍 Peach Pit golden hour performance
+02:10:43 │       🔍 Urban street chill aesthetic
+02:10:43 │       🔍 Golden hour road trip vlog
+02:10:43 │       🔍 Coffee shop relaxation aesthetic
+02:10:43 │ 🔍 Searching YouTube: 'LANY live concert aesthetic'
+02:10:46 │    Found 3 result(s)
+02:10:46 │ 🔍 Searching YouTube: 'The 1975 city performance'
+02:10:49 │    Found 3 result(s)
+02:10:49 │ 🔍 Searching YouTube: 'Dayglow studio chill vibe'
+02:10:52 │    Found 3 result(s)
+02:10:52 │ 🔍 Searching YouTube: 'COIN beach sunset concert'
+02:10:55 │    Found 3 result(s)
+02:10:55 │ 🔍 Searching YouTube: 'Peach Pit golden hour performance'
+02:10:57 │    Found 3 result(s)
+02:10:57 │ 🔍 Searching YouTube: 'Urban street chill aesthetic'
+02:11:00 │    Found 3 result(s)
+02:11:00 │ 🔍 Searching YouTube: 'Golden hour road trip vlog'
+02:11:03 │    Found 3 result(s)
+02:11:03 │ 🔍 Searching YouTube: 'Coffee shop relaxation aesthetic'
+02:11:06 │    Found 3 result(s)
+02:11:06 │ ❌ YouTube sourcing failed: '>=' not supported between instances of 'NoneType' and 'int'
+02:11:06 │ ❌ No clips could be sourced. Aborting.
+02:11:06 │ ⏱️ Took 43.5s
+
+02:11:06 │ 
+============================================================
+02:11:06 │ 📊 SUMMARY
+02:11:06 │ ============================================================
+02:11:06 │   ❌ ^.mp3 (43.5s)
+02:11:06 │ 
+  0/1 beat(s) processed successfully
+02:21:04 │ 🚀 Beat-to-Instagram Reel Automation
+02:21:04 │ ============================================================
+02:21:04 │ 📂 Found 1 beat(s) to process
+
+02:21:04 │ 
+[1/1] Processing ^.mp3
+02:21:04 │ ============================================================
+02:21:04 │ 🎵 PROCESSING: ^.mp3
+02:21:04 │ ============================================================
+02:21:04 │ 🎵 Analyzing audio: ^.mp3
+02:21:14 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+02:21:14 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+02:21:14 │    🔥 Found 2 best 30s segments
+02:21:14 │       Highlight 1: 24.0s – 54.0s
+02:21:14 │       Highlight 2: 61.0s – 91.0s
+02:21:16 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:21:16 │ AFC is enabled with max remote calls: 10.
+02:21:26 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:21:26 │    🤖 AI response: ```json
+{
+  "genre": "Lo-fi Hip-Hop",
+  "mood": "Chill Groove",
+  "keywords": [
+    "City nightlife ...
+02:21:26 │    ✅ Parsed: ^ | 112bpm | Lo-fi Hip-Hop | Chill Groove
+02:21:26 │    🔍 Keywords: City nightlife aesthetic, Cozy rainy day, Sunset drive pov, Analog film grain, Coffee shop vibes, Night train window view
+02:21:26 │ 
+02:21:26 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+02:21:26 │ 🤖 Generating AI-powered search queries...
+02:21:27 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:21:27 │ AFC is enabled with max remote calls: 10.
+02:21:34 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:21:34 │    🤖 AI generated 8 search queries:
+02:21:34 │       🔍 J Cole live performance
+02:21:34 │       🔍 Kendrick Lamar studio session
+02:21:34 │       🔍 Joey Bada$$ street vibe
+02:21:34 │       🔍 A$AP Rocky concert energy
+02:21:34 │       🔍 J Cole behind scenes
+02:21:34 │       🔍 Night city driving aesthetic
+02:21:34 │       🔍 Rainy coffee shop chill
+02:21:34 │       🔍 Lo fi film grain aesthetic
+02:21:34 │ 🔍 Searching YouTube: 'J Cole live performance'
+02:21:40 │    Found 3 result(s)
+02:21:40 │ 🔍 Searching YouTube: 'Kendrick Lamar studio session'
+02:21:49 │    Found 3 result(s)
+02:21:49 │ 🔍 Searching YouTube: 'Joey Bada$$ street vibe'
+02:22:00 │    Found 3 result(s)
+02:22:00 │ 🔍 Searching YouTube: 'A$AP Rocky concert energy'
+02:22:06 │    Found 3 result(s)
+02:22:06 │ 🔍 Searching YouTube: 'J Cole behind scenes'
+02:22:09 │    Found 3 result(s)
+02:22:09 │ 🔍 Searching YouTube: 'Night city driving aesthetic'
+02:22:13 │    Found 3 result(s)
+02:22:13 │ 🔍 Searching YouTube: 'Rainy coffee shop chill'
+02:22:15 │    Found 3 result(s)
+02:22:15 │ 🔍 Searching YouTube: 'Lo fi film grain aesthetic'
+02:22:18 │    Found 3 result(s)
+02:22:18 │ ❌ YouTube sourcing failed: '>=' not supported between instances of 'NoneType' and 'int'
+02:22:18 │ ❌ Unexpected error processing ^.mp3: module 'config' has no attribute 'PEXELS_API_KEY'
+Traceback (most recent call last):
+  File "C:\N8N\main.py", line 414, in main
+    success = process_beat(
+        beat_path,
+    ...<7 lines>...
+        ig_highlight_only=args.ig_highlight_only,
+    )
+  File "C:\N8N\main.py", line 102, in process_beat
+    if not dry_run and config.PEXELS_API_KEY:
+                       ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'PEXELS_API_KEY'. Did you mean: 'GEMINI_API_KEY'?
+02:22:18 │ ⏱️ Took 73.7s
+
+02:22:18 │ 
+============================================================
+02:22:18 │ 📊 SUMMARY
+02:22:18 │ ============================================================
+02:22:18 │   ❌ ^.mp3 (73.7s)
+02:22:18 │ 
+  0/1 beat(s) processed successfully
+02:22:46 │ 🚀 Beat-to-Instagram Reel Automation
+02:22:46 │ ============================================================
+02:22:46 │ 📂 Found 1 beat(s) to process
+
+02:22:46 │ 
+[1/1] Processing ^.mp3
+02:22:46 │ ============================================================
+02:22:46 │ 🎵 PROCESSING: ^.mp3
+02:22:46 │ ============================================================
+02:22:46 │ 🎵 Analyzing audio: ^.mp3
+02:22:50 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+02:22:50 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+02:22:50 │    🔥 Found 2 best 30s segments
+02:22:50 │       Highlight 1: 24.0s – 54.0s
+02:22:50 │       Highlight 2: 61.0s – 91.0s
+02:22:51 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:22:51 │ AFC is enabled with max remote calls: 10.
+02:22:58 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:22:58 │    🤖 AI response: ```json
+{
+  "genre": "Indietronica",
+  "mood": "Dreamy, Pensive",
+  "keywords": [
+    "Neon City Nig...
+02:22:58 │    ✅ Parsed: ^ | 112bpm | Indietronica | Dreamy, Pensive
+02:22:58 │    🔍 Keywords: Neon City Nights, Rooftop Silhouette, Cinematic Driving, Foggy Mountain Road, Solo Urban Explorer, Vaporwave Aesthetic
+02:22:58 │ 
+02:22:58 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+02:22:58 │ 🤖 Generating AI-powered search queries...
+02:22:58 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:22:58 │ AFC is enabled with max remote calls: 10.
+02:23:05 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:23:05 │    🤖 AI generated 8 search queries:
+02:23:05 │       🔍 J. Cole cinematic moments
+02:23:05 │       🔍 Kendrick Lamar aesthetic visuals
+02:23:05 │       🔍 Joey Bada$$ city night
+02:23:05 │       🔍 A$AP Rocky night drive
+02:23:05 │       🔍 J. Cole studio session
+02:23:05 │       🔍 Kendrick Lamar live mood
+02:23:05 │       🔍 Night city driving aesthetic
+02:23:05 │       🔍 Foggy mountain road cinematic
+02:23:05 │ 🔍 Searching YouTube: 'J. Cole cinematic moments'
+02:23:08 │    Found 3 result(s)
+02:23:08 │ 🔍 Searching YouTube: 'Kendrick Lamar aesthetic visuals'
+02:23:10 │    Found 3 result(s)
+02:23:10 │ 🔍 Searching YouTube: 'Joey Bada$$ city night'
+02:23:17 │    Found 3 result(s)
+02:23:17 │ 🔍 Searching YouTube: 'A$AP Rocky night drive'
+02:23:20 │    Found 3 result(s)
+02:23:20 │ 🔍 Searching YouTube: 'J. Cole studio session'
+02:23:23 │    Found 3 result(s)
+02:23:23 │ 🔍 Searching YouTube: 'Kendrick Lamar live mood'
+02:23:25 │    Found 3 result(s)
+02:23:25 │ 🔍 Searching YouTube: 'Night city driving aesthetic'
+02:23:28 │    Found 3 result(s)
+02:23:28 │ 🔍 Searching YouTube: 'Foggy mountain road cinematic'
+02:23:30 │    Found 3 result(s)
+02:23:30 │ 🤖 Ranking 24 clips by relevance...
+02:23:31 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:23:31 │ AFC is enabled with max remote calls: 10.
+02:23:51 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:23:51 │    🤖 Gemini ranked and selected 10 best clips
+02:23:51 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+02:23:51 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=135bv6GhD2M (segment 239s - 249s)
+02:23:51 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=q5T8pYs_UnY (segment 49s - 59s)
+02:23:51 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=YycD7wKeOMI (segment 44s - 54s)
+02:23:51 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=TcGLexQ6Fyg (segment 1123s - 1133s)
+02:24:29 │    ✅ Downloaded: ^_b4a39370_44s.mp4
+02:24:29 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=BWxztzJDqpo (segment 28s - 38s)
+02:24:31 │    ✅ Downloaded: ^_b7489998_239s.mp4
+02:24:31 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=azC7-tBI6gw (segment 974s - 984s)
+02:24:33 │    ✅ Downloaded: ^_4845299e_1123s.mp4
+02:24:33 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=GF8aaTu2kg0 (segment 65s - 75s)
+02:24:45 │    ✅ Downloaded: ^_09a08ac0_49s.mp4
+02:24:45 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=uAPUkgeiFVY (segment 249s - 259s)
+02:25:00 │    ✅ Downloaded: ^_0631cf53_974s.mp4
+02:25:00 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=40xZVEFVBuE (segment 2614s - 2624s)
+02:25:04 │    ✅ Downloaded: ^_17c8c53d_65s.mp4
+02:25:04 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=-Xh4BNbxpI8 (segment 1758s - 1768s)
+02:26:09 │    ✅ Downloaded: ^_c13e28de_28s.mp4
+02:26:10 │    ✅ Downloaded: ^_714d8da8_249s.mp4
+02:26:23 │    ✅ Downloaded: ^_0ecf688e_2614s.mp4
+02:26:32 │    ✅ Downloaded: ^_fb880434_1758s.mp4
+02:26:32 │ 📦 Sourced 10 clip(s) for '^'
+02:26:32 │ 
+02:26:32 │ 🎬 Step 3: Assembling video...
+02:26:32 │ 🎞️ Building FFmpeg assembly for ^_full.mp4
+02:26:32 │    🚀 Using GPU Encoding (h264_nvenc)
+02:26:56 │ 
+02:26:56 │ 🎯 Step 3b: Assembling 2 highlight clip(s)...
+02:26:56 │ 
+🎯 Highlight 1/2: 24.0s – 54.0s
+02:26:56 │ 🎞️ Building FFmpeg assembly for ^_highlight_1.mp4
+02:26:56 │    🚀 Using GPU Encoding (h264_nvenc)
+02:27:04 │ 
+🎯 Highlight 2/2: 61.0s – 91.0s
+02:27:04 │ 🎞️ Building FFmpeg assembly for ^_highlight_2.mp4
+02:27:04 │    🚀 Using GPU Encoding (h264_nvenc)
+02:27:13 │ 
+02:27:13 │ 📝 Step 4: Generating Instagram metadata...
+02:27:15 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:27:15 │ AFC is enabled with max remote calls: 10.
+02:27:26 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:27:26 │ 🤖 AI generated metadata for '^'
+02:27:26 │    📝 IG Caption: Lost in the sound of '^'. 🌌 Dive into this dreamy indietronica vibe and let your...
+02:27:26 │    #️⃣  25 IG hashtags generated
+02:27:26 │    📺 YT Title: Dreamy Indietronica Type Beat - '^' | prodbyeviloid
+02:27:26 │    🏷️  15 YT tags generated
+02:27:26 │    🖼️ Cover at 5.0s
+02:27:26 │ 
+📋 Reel Metadata:
+02:27:26 │    Caption: Lost in the sound of '^'. 🌌 Dive into this dreamy indietronica vibe and let your mind wander.
+Perfec...
+02:27:26 │    Hashtags: 25 tags
+02:27:26 │ 
+02:27:26 │ ⏭️ Upload skipped (--no-upload). Videos saved:
+02:27:26 │    Full:  C:\N8N\output\^_full.mp4
+02:27:26 │    Clip:  C:\N8N\output\^_highlight_1.mp4
+02:27:26 │    Clip:  C:\N8N\output\^_highlight_2.mp4
+02:27:26 │ 
+📋 Full caption for manual upload:
+Lost in the sound of '^'. 🌌 Dive into this dreamy indietronica vibe and let your mind wander.
+Perfect for artists looking for that pensive, atmospheric sound.
+Link in bio for leases 💰
+
+.
+.
+.
+#Indietronica #indiepop #electronicmusic #chillwave #dreamybeats #pensivemood #chillvibes #laidbackbeats #atmosphericmusic #beatmaker #musicproducer #typebeat #newbeat #beatforsale #instrumentalmusic #musicproduction #unsignedartist #explorepage #reelsmusic #instagramreels #beatmakers #producerlife #independentartist #upcomingartist #soundcloud
+02:27:26 │ ⏱️ Took 280.9s
+
+02:27:26 │ 
+============================================================
+02:27:26 │ 📊 SUMMARY
+02:27:26 │ ============================================================
+02:27:26 │   ✅ ^.mp3 (280.9s)
+02:27:26 │ 
+  1/1 beat(s) processed successfully
+02:36:46 │ 🚀 Beat-to-Instagram Reel Automation
+02:36:46 │ ============================================================
+02:36:46 │ 📂 Found 1 beat(s) to process
+
+02:36:46 │ 
+[1/1] Processing ^.mp3
+02:36:46 │ ============================================================
+02:36:46 │ 🎵 PROCESSING: ^.mp3
+02:36:46 │ ============================================================
+02:36:46 │ 🎵 Analyzing audio: ^.mp3
+02:36:51 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+02:36:51 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+02:36:51 │    🔥 Found 2 best 30s segments
+02:36:51 │       Highlight 1: 24.0s – 54.0s
+02:36:51 │       Highlight 2: 61.0s – 91.0s
+02:36:52 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:36:52 │ AFC is enabled with max remote calls: 10.
+02:36:59 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:36:59 │    🤖 AI response: ```json
+{
+  "genre": "Lo-fi Hip-Hop",
+  "mood": "Urban Chill",
+  "keywords": [
+    "City night aesth...
+02:36:59 │    ✅ Parsed: ^ | 112bpm | Lo-fi Hip-Hop | Urban Chill
+02:36:59 │    🔍 Keywords: City night aesthetic, Lo-fi study montage, Rainy window view, Cozy coffee shop, Urban neon lights, Late night drive aesthetic
+02:36:59 │ 
+02:36:59 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+02:36:59 │ 🤖 Generating AI-powered search queries...
+02:37:00 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:37:00 │ AFC is enabled with max remote calls: 10.
+02:37:05 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:37:05 │    🤖 AI generated 8 search queries:
+02:37:05 │       🔍 J. Cole live performance
+02:37:05 │       🔍 Kendrick Lamar behind scenes
+02:37:05 │       🔍 Joey Bada$$ studio session
+02:37:05 │       🔍 A$AP Rocky night aesthetic
+02:37:05 │       🔍 J. Cole street interview
+02:37:05 │       🔍 Night city driving POV
+02:37:05 │       🔍 Rainy window city aesthetic
+02:37:05 │       🔍 Lo-fi coffee shop study
+02:37:05 │ 🔍 Searching YouTube: 'J. Cole live performance'
+02:37:08 │    Found 3 result(s)
+02:37:08 │ 🔍 Searching YouTube: 'Kendrick Lamar behind scenes'
+02:37:11 │    Found 3 result(s)
+02:37:11 │ 🔍 Searching YouTube: 'Joey Bada$$ studio session'
+02:37:14 │    Found 3 result(s)
+02:37:14 │ 🔍 Searching YouTube: 'A$AP Rocky night aesthetic'
+02:37:17 │    Found 3 result(s)
+02:37:17 │ 🔍 Searching YouTube: 'J. Cole street interview'
+02:37:20 │    Found 3 result(s)
+02:37:20 │ 🔍 Searching YouTube: 'Night city driving POV'
+02:37:23 │    Found 3 result(s)
+02:37:23 │ 🔍 Searching YouTube: 'Rainy window city aesthetic'
+02:37:26 │    Found 3 result(s)
+02:37:26 │ 🔍 Searching YouTube: 'Lo-fi coffee shop study'
+02:37:29 │    Found 3 result(s)
+02:37:29 │ 🤖 Ranking 24 clips by relevance...
+02:37:29 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:37:29 │ AFC is enabled with max remote calls: 10.
+02:37:47 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:37:47 │    🤖 Gemini ranked and selected 10 best clips
+02:37:47 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+02:37:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=kQG7oNIGzn4 (segment 111s - 121s)
+02:37:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=C45SCUK5rgg (segment 547s - 557s)
+02:37:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=AvS8vco1F_Q (segment 222s - 232s)
+02:37:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=Gx4JEBwVlXo (segment 256s - 266s)
+02:38:43 │    ✅ Downloaded: ^_898074ce_256s.mp4
+02:38:43 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=r6WbbU_lLCA (segment 154s - 164s)
+02:38:53 │    ✅ Downloaded: ^_f09c4e5d_111s.mp4
+02:38:53 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=-Xh4BNbxpI8 (segment 529s - 539s)
+02:38:58 │    ✅ Downloaded: ^_b11e41a8_547s.mp4
+02:38:58 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=xg1gNlxto2M (segment 8453s - 8463s)
+02:39:05 │    ✅ Downloaded: ^_59b37e5e_222s.mp4
+02:39:05 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=YJb6DZpunDU (segment 21s - 31s)
+02:39:07 │    ✅ Downloaded: ^_842b7f2f_154s.mp4
+02:39:07 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=Kbj2Zss-5GY (segment 106s - 116s)
+02:39:30 │    ✅ Downloaded: ^_e184314f_21s.mp4
+02:39:30 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=NLOcJDAsX9I (segment 2494s - 2504s)
+02:39:38 │    ✅ Downloaded: ^_dde44295_8453s.mp4
+02:39:47 │    ✅ Downloaded: ^_7c5c1c65_106s.mp4
+02:39:50 │    ✅ Downloaded: ^_fb880434_529s.mp4
+02:39:55 │    ✅ Downloaded: ^_09f50caf_2494s.mp4
+02:39:55 │ 📦 Sourced 10 clip(s) for '^'
+02:39:55 │ 
+02:39:55 │ 🎬 Step 3: Assembling video...
+02:39:55 │ 🎞️ Building FFmpeg assembly for ^_full.mp4
+02:39:55 │    🚀 Using GPU Encoding (h264_nvenc)
+02:41:33 │ ❌ FFmpeg error: ffmpeg version 8.0.1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[mp3 @ 00000194eb392740] Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'C:\N8N\beats\^.mp3':
+  Metadata:
+    TBPM            : 170
+    encoded_by      : LAME in FL Studio 21
+    date            : 2026
+  Duration: 00:01:41.69, start: 0.000000, bitrate: 256 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 256 kb/s
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_b11e41a8_547s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomav01iso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.01, start: 0.000000, bitrate: 2410 kb/s
+  Stream #1:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 1920x1080, 1626 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #1:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_898074ce_256s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomav01iso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 2735 kb/s
+  Stream #2:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 1920x1080, 2367 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #2:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #3, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_e184314f_21s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.12, start: 0.000000, bitrate: 2328 kb/s
+  Stream #3:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2120 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #3:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #4, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_7c5c1c65_106s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.12, start: 0.000000, bitrate: 2508 kb/s
+  Stream #4:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2024 kb/s, 29.97 fps, 29.97 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #4:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Input #5, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_59b37e5e_222s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.11, start: 0.000000, bitrate: 6206 kb/s
+  Stream #5:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 4655 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #5:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #6, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_fb880434_529s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomav01iso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.01, start: 0.000000, bitrate: 5707 kb/s
+  Stream #6:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p10le(tv, bt2020nc/bt2020/smpte2084), 1920x1080, 5409 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+    Side data:
+      Mastering Display Metadata, has_primaries:1 has_luminance:1 r(0.6800,0.3200) g(0.2650,0.6900) b(0.1500 0.0600) wp(0.3127, 0.3290) min_luminance=0.010000, max_luminance=1000.000000
+      Content Light Level Metadata, MaxCLL=1000, MaxFALL=400
+  Stream #6:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #7, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_f09c4e5d_111s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:09.16, start: 0.000000, bitrate: 3485 kb/s
+  Stream #7:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 2523 kb/s, 23.98 fps, 23.98 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #7:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Input #8, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_09f50caf_2494s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomav01iso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.02, start: 0.000000, bitrate: 2184 kb/s
+  Stream #8:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 1920x1080, 1645 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #8:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #9, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_dde44295_8453s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomav01iso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 1879 kb/s
+  Stream #9:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 1920x1080, 1340 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #9:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #10, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_842b7f2f_154s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomav01iso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 1627 kb/s
+  Stream #10:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 1920x1080, 1285 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #10:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Input #11, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\N8N\clips\^\^_b11e41a8_547s.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomav01iso2mp41
+    encoder         : Lavf62.3.100
+  Duration: 00:00:10.01, start: 0.000000, bitrate: 2410 kb/s
+  Stream #11:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 1920x1080, 1626 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #11:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (mp3float) -> showwaves:default
+  Stream #1:0 (libdav1d) -> scale:default
+  Stream #2:0 (libdav1d) -> scale:default
+  Stream #3:0 (h264) -> scale:default
+  Stream #4:0 (h264) -> scale:default
+  Stream #5:0 (h264) -> scale:default
+  Stream #6:0 (libdav1d) -> scale:default
+  Stream #7:0 (h264) -> scale:default
+  Stream #8:0 (libdav1d) -> scale:default
+  Stream #9:0 (libdav1d) -> scale:default
+  Stream #10:0 (libdav1d) -> scale:default
+  Stream #11:0 (libdav1d) -> scale:default
+  drawtext:default -> Stream #0:0 (h264_nvenc)
+  Stream #0:0 -> #0:1 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, mp4, to 'C:\N8N\output\^_full.mp4':
+  Metadata:
+    TBPM            : 170
+    encoded_by      : LAME in FL Studio 21
+    date            : 2026
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (Main) (avc1 / 0x31637661), rgba(pc, gbr/unknown/unknown, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 h264_nvenc
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc62.11.100 aac
+frame=    6 fps=2.3 q=25.0 size=       0KiB time=00:00:00.20 bitrate=   1.9kbits/s speed=0.0774x elapsed=0:00:02.58    
+frame=   29 fps=9.4 q=24.0 size=     768KiB time=00:00:00.96 bitrate=6508.8kbits/s speed=0.312x elapsed=0:00:03.09    
+frame=   57 fps= 16 q=25.0 size=    2048KiB time=00:00:01.90 bitrate=8830.3kbits/s speed=0.524x elapsed=0:00:03.62    
+frame=   89 fps= 22 q=26.0 size=    3072KiB time=00:00:02.96 bitrate=8483.0kbits/s speed=0.717x elapsed=0:00:04.13    
+frame=  121 fps= 26 q=24.0 size=    4096KiB time=00:00:04.03 bitrate=8319.4kbits/s speed=0.868x elapsed=0:00:04.64    
+frame=  153 fps= 30 q=24.0 size=    5376KiB time=00:00:05.10 bitrate=8635.4kbits/s speed=0.986x elapsed=0:00:05.17    
+frame=  181 fps= 32 q=24.0 size=    6400KiB time=00:00:06.03 bitrate=8689.9kbits/s speed=1.06x elapsed=0:00:05.68    
+frame=  213 fps= 34 q=26.0 size=    7424KiB time=00:00:07.10 bitrate=8565.9kbits/s speed=1.14x elapsed=0:00:06.20    
+frame=  237 fps= 35 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=1.17x elapsed=0:00:06.72    
+frame=  237 fps= 33 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=1.09x elapsed=0:00:07.25    
+frame=  237 fps= 30 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=1.02x elapsed=0:00:07.78    
+frame=  237 fps= 29 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.953x elapsed=0:00:08.28    
+frame=  237 fps= 27 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.897x elapsed=0:00:08.80    
+frame=  237 fps= 25 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.847x elapsed=0:00:09.32    
+frame=  237 fps= 24 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.803x elapsed=0:00:09.83    
+frame=  237 fps= 23 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.763x elapsed=0:00:10.35    
+frame=  237 fps= 22 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.727x elapsed=0:00:10.87    
+frame=  237 fps= 21 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.694x elapsed=0:00:11.38    
+frame=  237 fps= 20 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.663x elapsed=0:00:11.90    
+frame=  237 fps= 19 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.636x elapsed=0:00:12.41    
+frame=  237 fps= 18 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.611x elapsed=0:00:12.93    
+frame=  237 fps= 18 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.588x elapsed=0:00:13.44    
+frame=  237 fps= 17 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.565x elapsed=0:00:13.98    
+frame=  237 fps= 16 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.544x elapsed=0:00:14.51    
+frame=  237 fps= 16 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.525x elapsed=0:00:15.04    
+frame=  237 fps= 15 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.507x elapsed=0:00:15.58    
+frame=  237 fps= 15 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.49x elapsed=0:00:16.11    
+frame=  237 fps= 14 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.475x elapsed=0:00:16.63    
+frame=  237 fps= 14 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.46x elapsed=0:00:17.17    
+frame=  237 fps= 13 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.446x elapsed=0:00:17.69    
+frame=  237 fps= 13 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.434x elapsed=0:00:18.21    
+frame=  237 fps= 13 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.421x elapsed=0:00:18.75    
+frame=  237 fps= 12 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.41x elapsed=0:00:19.27    
+frame=  237 fps= 12 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.399x elapsed=0:00:19.80    
+frame=  237 fps= 12 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.388x elapsed=0:00:20.34    
+frame=  237 fps= 11 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.378x elapsed=0:00:20.87    
+frame=  237 fps= 11 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.369x elapsed=0:00:21.41    
+frame=  237 fps= 11 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.36x elapsed=0:00:21.95    
+frame=  237 fps= 11 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.351x elapsed=0:00:22.47    
+frame=  237 fps= 10 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.343x elapsed=0:00:23.01    
+frame=  237 fps= 10 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.335x elapsed=0:00:23.57    
+frame=  237 fps=9.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.328x elapsed=0:00:24.10    
+frame=  237 fps=9.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.321x elapsed=0:00:24.62    
+frame=  237 fps=9.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.314x elapsed=0:00:25.15    
+frame=  237 fps=9.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.308x elapsed=0:00:25.67    
+frame=  237 fps=9.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.301x elapsed=0:00:26.21    
+frame=  237 fps=8.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.295x elapsed=0:00:26.74    
+frame=  237 fps=8.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.29x elapsed=0:00:27.25    
+frame=  237 fps=8.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.284x elapsed=0:00:27.78    
+frame=  237 fps=8.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.279x elapsed=0:00:28.32    
+frame=  237 fps=8.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.274x elapsed=0:00:28.86    
+frame=  237 fps=8.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.269x elapsed=0:00:29.39    
+frame=  237 fps=7.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.264x elapsed=0:00:29.92    
+frame=  237 fps=7.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.259x elapsed=0:00:30.45    
+frame=  237 fps=7.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.255x elapsed=0:00:30.96    
+frame=  237 fps=7.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.251x elapsed=0:00:31.47    
+frame=  237 fps=7.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.247x elapsed=0:00:31.99    
+frame=  237 fps=7.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.243x elapsed=0:00:32.53    
+frame=  237 fps=7.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.239x elapsed=0:00:33.06    
+frame=  237 fps=7.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.235x elapsed=0:00:33.58    
+frame=  237 fps=6.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.231x elapsed=0:00:34.12    
+frame=  237 fps=6.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.228x elapsed=0:00:34.65    
+frame=  237 fps=6.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.225x elapsed=0:00:35.18    
+frame=  237 fps=6.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.221x elapsed=0:00:35.69    
+frame=  237 fps=6.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.218x elapsed=0:00:36.23    
+frame=  237 fps=6.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.215x elapsed=0:00:36.76    
+frame=  237 fps=6.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.212x elapsed=0:00:37.32    
+frame=  237 fps=6.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.209x elapsed=0:00:37.83    
+frame=  237 fps=6.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.206x elapsed=0:00:38.37    
+frame=  237 fps=6.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.203x elapsed=0:00:38.91    
+frame=  237 fps=6.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed= 0.2x elapsed=0:00:39.42    
+frame=  237 fps=5.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.198x elapsed=0:00:39.96    
+frame=  237 fps=5.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.195x elapsed=0:00:40.51    
+frame=  237 fps=5.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.192x elapsed=0:00:41.08    
+frame=  237 fps=5.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.19x elapsed=0:00:41.60    
+frame=  237 fps=5.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.187x elapsed=0:00:42.13    
+frame=  237 fps=5.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.185x elapsed=0:00:42.68    
+frame=  237 fps=5.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.183x elapsed=0:00:43.23    
+frame=  237 fps=5.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.181x elapsed=0:00:43.75    
+frame=  237 fps=5.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.178x elapsed=0:00:44.30    
+frame=  237 fps=5.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.176x elapsed=0:00:44.81    
+frame=  237 fps=5.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.174x elapsed=0:00:45.34    
+frame=  237 fps=5.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.172x elapsed=0:00:45.89    
+frame=  237 fps=5.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.17x elapsed=0:00:46.43    
+frame=  237 fps=5.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.168x elapsed=0:00:46.97    
+frame=  237 fps=5.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.166x elapsed=0:00:47.49    
+frame=  237 fps=4.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.165x elapsed=0:00:48.02    
+frame=  237 fps=4.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.163x elapsed=0:00:48.56    
+frame=  237 fps=4.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.161x elapsed=0:00:49.08    
+frame=  237 fps=4.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.159x elapsed=0:00:49.61    
+frame=  237 fps=4.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.158x elapsed=0:00:50.15    
+frame=  237 fps=4.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.156x elapsed=0:00:50.67    
+frame=  237 fps=4.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.154x elapsed=0:00:51.21    
+frame=  237 fps=4.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.153x elapsed=0:00:51.75    
+frame=  237 fps=4.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.151x elapsed=0:00:52.29    
+frame=  237 fps=4.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.15x elapsed=0:00:52.82    
+frame=  237 fps=4.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.148x elapsed=0:00:53.33    
+frame=  237 fps=4.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.147x elapsed=0:00:53.84    
+frame=  237 fps=4.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.145x elapsed=0:00:54.37    
+frame=  237 fps=4.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.144x elapsed=0:00:54.91    
+frame=  237 fps=4.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.142x elapsed=0:00:55.44    
+frame=  237 fps=4.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.141x elapsed=0:00:55.98    
+frame=  237 fps=4.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.14x elapsed=0:00:56.54    
+frame=  237 fps=4.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.138x elapsed=0:00:57.06    
+frame=  237 fps=4.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.137x elapsed=0:00:57.62    
+frame=  237 fps=4.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.136x elapsed=0:00:58.16    
+frame=  237 fps=4.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.135x elapsed=0:00:58.68    
+frame=  237 fps=4.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.133x elapsed=0:00:59.21    
+frame=  237 fps=4.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.132x elapsed=0:00:59.74    
+frame=  237 fps=3.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.131x elapsed=0:01:00.26    
+frame=  237 fps=3.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.13x elapsed=0:01:00.83    
+frame=  237 fps=3.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.129x elapsed=0:01:01.36    
+frame=  237 fps=3.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.128x elapsed=0:01:01.90    
+frame=  237 fps=3.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.127x elapsed=0:01:02.43    
+frame=  237 fps=3.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.125x elapsed=0:01:02.96    
+frame=  237 fps=3.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.124x elapsed=0:01:03.50    
+frame=  237 fps=3.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.123x elapsed=0:01:04.03    
+frame=  237 fps=3.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.122x elapsed=0:01:04.56    
+frame=  237 fps=3.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.121x elapsed=0:01:05.08    
+frame=  237 fps=3.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.12x elapsed=0:01:05.61    
+frame=  237 fps=3.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.119x elapsed=0:01:06.15    
+frame=  237 fps=3.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.118x elapsed=0:01:06.67    
+frame=  237 fps=3.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.117x elapsed=0:01:07.25    
+frame=  237 fps=3.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.117x elapsed=0:01:07.77    
+frame=  237 fps=3.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.116x elapsed=0:01:08.31    
+frame=  237 fps=3.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.115x elapsed=0:01:08.84    
+frame=  237 fps=3.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.114x elapsed=0:01:09.36    
+frame=  237 fps=3.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.113x elapsed=0:01:09.88    
+frame=  237 fps=3.4 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.112x elapsed=0:01:10.41    
+frame=  237 fps=3.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.111x elapsed=0:01:10.94    
+frame=  237 fps=3.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.11x elapsed=0:01:11.50    
+frame=  237 fps=3.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.11x elapsed=0:01:12.02    
+frame=  237 fps=3.3 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.109x elapsed=0:01:12.55    
+frame=  237 fps=3.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.108x elapsed=0:01:13.12    
+frame=  237 fps=3.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.107x elapsed=0:01:13.66    
+frame=  237 fps=3.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.106x elapsed=0:01:14.19    
+frame=  237 fps=3.2 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.106x elapsed=0:01:14.73    
+frame=  237 fps=3.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.105x elapsed=0:01:15.28    
+frame=  237 fps=3.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.104x elapsed=0:01:15.81    
+frame=  237 fps=3.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.103x elapsed=0:01:16.34    
+frame=  237 fps=3.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.103x elapsed=0:01:16.87    
+frame=  237 fps=3.1 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.102x elapsed=0:01:17.39    
+frame=  237 fps=3.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.101x elapsed=0:01:17.93    
+frame=  237 fps=3.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.101x elapsed=0:01:18.45    
+frame=  237 fps=3.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed= 0.1x elapsed=0:01:18.99    
+frame=  237 fps=3.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0994x elapsed=0:01:19.51    
+frame=  237 fps=3.0 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0987x elapsed=0:01:20.03    
+frame=  237 fps=2.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0981x elapsed=0:01:20.55    
+frame=  237 fps=2.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0974x elapsed=0:01:21.08    
+frame=  237 fps=2.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0968x elapsed=0:01:21.62    
+frame=  237 fps=2.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0962x elapsed=0:01:22.16    
+frame=  237 fps=2.9 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0955x elapsed=0:01:22.70    
+frame=  237 fps=2.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0949x elapsed=0:01:23.23    
+frame=  237 fps=2.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0943x elapsed=0:01:23.75    
+frame=  237 fps=2.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0937x elapsed=0:01:24.28    
+frame=  237 fps=2.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0932x elapsed=0:01:24.80    
+frame=  237 fps=2.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0926x elapsed=0:01:25.32    
+frame=  237 fps=2.8 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.092x elapsed=0:01:25.84    
+frame=  237 fps=2.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0914x elapsed=0:01:26.39    
+frame=  237 fps=2.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0909x elapsed=0:01:26.91    
+frame=  237 fps=2.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0903x elapsed=0:01:27.45    
+frame=  237 fps=2.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0898x elapsed=0:01:27.98    
+frame=  237 fps=2.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0893x elapsed=0:01:28.49    
+frame=  237 fps=2.7 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0887x elapsed=0:01:29.03    
+frame=  237 fps=2.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0882x elapsed=0:01:29.56    
+frame=  237 fps=2.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0877x elapsed=0:01:30.08    
+frame=  237 fps=2.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0872x elapsed=0:01:30.63    
+frame=  237 fps=2.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0867x elapsed=0:01:31.14    
+frame=  237 fps=2.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0862x elapsed=0:01:31.66    
+frame=  237 fps=2.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0857x elapsed=0:01:32.19    
+frame=  237 fps=2.6 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0852x elapsed=0:01:32.72    
+frame=  237 fps=2.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0847x elapsed=0:01:33.24    
+frame=  237 fps=2.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0843x elapsed=0:01:33.75    
+frame=  237 fps=2.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0838x elapsed=0:01:34.28    
+frame=  237 fps=2.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0833x elapsed=0:01:34.79    
+frame=  237 fps=2.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0829x elapsed=0:01:35.31    
+frame=  237 fps=2.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.0824x elapsed=0:01:35.82    
+frame=  237 fps=2.5 q=24.0 size=    8192KiB time=00:00:07.90 bitrate=8494.8kbits/s speed=0.082x elapsed=0:01:36.33    
+[fc#0 @ 00000194eb37adc0] Task finished with error code: -12 (Cannot allocate memory)
+[fc#0 @ 00000194eb37adc0] Terminating thread with return code -12 (Cannot allocate memory)
+[out#0/mp4 @ 00000194ebadbcc0] video:8260KiB audio:200KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.095780%
+frame=  239 fps=2.5 q=24.0 Lsize=    8468KiB time=00:00:07.96 bitrate=8707.1kbits/s speed=0.0824x elapsed=0:01:36.72    
+[aac @ 00000194eb963380] Qavg: 977.797
+Conversion failed!
+
+02:41:33 │ ❌ FFmpeg assembled render failed with exit code 4294967284
+02:41:33 │ ❌ Video assembly failed: Command '['ffmpeg', '-y', '-ss', '0.0', '-i', 'C:\\N8N\\beats\\^.mp3', '-i', 'C:\\N8N\\clips\\^\\^_b11e41a8_547s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_898074ce_256s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_e184314f_21s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_7c5c1c65_106s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_59b37e5e_222s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_fb880434_529s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_f09c4e5d_111s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_09f50caf_2494s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_dde44295_8453s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_842b7f2f_154s.mp4', '-i', 'C:\\N8N\\clips\\^\\^_b11e41a8_547s.mp4', '-filter_complex', "[1:v]scale=2160:-2,setsar=1,zoompan=z='min(zoom+0.0015,1.5)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s0];[2:v]scale=2160:-2,setsar=1,zoompan=z='max(zoom-0.0015,1.0)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s1];[3:v]scale=2160:-2,setsar=1,zoompan=z='min(zoom+0.0015,1.5)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s2];[4:v]scale=2160:-2,setsar=1,zoompan=z='max(zoom-0.0015,1.0)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s3];[5:v]scale=2160:-2,setsar=1,zoompan=z='min(zoom+0.0015,1.5)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s4];[6:v]scale=2160:-2,setsar=1,zoompan=z='max(zoom-0.0015,1.0)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s5];[7:v]scale=2160:-2,setsar=1,zoompan=z='min(zoom+0.0015,1.5)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s6];[8:v]scale=2160:-2,setsar=1,zoompan=z='max(zoom-0.0015,1.0)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s7];[9:v]scale=2160:-2,setsar=1,zoompan=z='min(zoom+0.0015,1.5)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s8];[10:v]scale=2160:-2,setsar=1,zoompan=z='max(zoom-0.0015,1.0)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s9];[11:v]scale=2160:-2,setsar=1,zoompan=z='min(zoom+0.0015,1.5)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,eq=saturation=1.2:contrast=1.1:brightness=0.02,vignette=angle=0.3,fps=30,format=yuv420p[v_s10];[v_s0][v_s1]xfade=transition=circlecrop:duration=0.4:offset=9.61[v_c1];[v_c1][v_s2]xfade=transition=pixelize:duration=0.4:offset=19.21[v_c2];[v_c2][v_s3]xfade=transition=wiperight:duration=0.4:offset=28.93[v_c3];[v_c3][v_s4]xfade=transition=dissolve:duration=0.4:offset=38.64[v_c4];[v_c4][v_s5]xfade=transition=hblur:duration=0.4:offset=48.35[v_c5];[v_c5][v_s6]xfade=transition=fade:duration=0.4:offset=57.96[v_c6];[v_c6][v_s7]xfade=transition=circlecrop:duration=0.4:offset=66.72[v_c7];[v_c7][v_s8]xfade=transition=pixelize:duration=0.4:offset=76.34[v_c8];[v_c8][v_s9]xfade=transition=wiperight:duration=0.4:offset=85.94[v_c9];[v_c9][v_s10]xfade=transition=dissolve:duration=0.4:offset=95.54[v_c10];[v_c10]eq=brightness='0 + 0.15*between(t,12.957,13.057)*(1-(t-12.957)/0.1) + 0.15*between(t,13.468,13.568)*(1-(t-13.468)/0.1) + 0.15*between(t,14.907,15.007)*(1-(t-14.907)/0.1) + 0.15*between(t,15.418,15.518)*(1-(t-15.418)/0.1) + 0.15*between(t,18.065,18.165)*(1-(t-18.065)/0.1) + 0.15*between(t,18.599,18.699)*(1-(t-18.599)/0.1) + 0.15*between(t,19.133,19.233)*(1-(t-19.133)/0.1) + 0.15*between(t,23.359,23.459)*(1-(t-23.359)/0.1) + 0.15*between(t,24.427,24.527)*(1-(t-24.427)/0.1) + 0.15*between(t,25.472,25.572)*(1-(t-25.472)/0.1) + 0.15*between(t,26.006,26.106)*(1-(t-26.006)/0.1) + 0.15*between(t,26.540,26.640)*(1-(t-26.540)/0.1) + 0.15*between(t,26.703,26.803)*(1-(t-26.703)/0.1) + 0.15*between(t,27.051,27.151)*(1-(t-27.051)/0.1) + 0.15*between(t,27.585,27.685)*(1-(t-27.585)/0.1) + 0.15*between(t,28.119,28.219)*(1-(t-28.119)/0.1) + 0.15*between(t,29.884,29.984)*(1-(t-29.884)/0.1) + 0.15*between(t,30.766,30.866)*(1-(t-30.766)/0.1) + 0.15*between(t,31.835,31.935)*(1-(t-31.835)/0.1) + 0.15*between(t,32.369,32.469)*(1-(t-32.369)/0.1) + 0.15*between(t,32.903,33.003)*(1-(t-32.903)/0.1) + 0.15*between(t,33.948,34.048)*(1-(t-33.948)/0.1) + 0.15*between(t,35.527,35.627)*(1-(t-35.527)/0.1) + 0.15*between(t,36.061,36.161)*(1-(t-36.061)/0.1) + 0.15*between(t,38.197,38.297)*(1-(t-38.197)/0.1) + 0.15*between(t,39.242,39.342)*(1-(t-39.242)/0.1) + 0.15*between(t,40.310,40.410)*(1-(t-40.310)/0.1) + 0.15*between(t,41.355,41.455)*(1-(t-41.355)/0.1) + 0.15*between(t,41.889,41.989)*(1-(t-41.889)/0.1) + 0.15*between(t,42.423,42.523)*(1-(t-42.423)/0.1) + 0.15*between(t,43.468,43.568)*(1-(t-43.468)/0.1) + 0.15*between(t,44.002,44.102)*(1-(t-44.002)/0.1) + 0.15*between(t,44.536,44.636)*(1-(t-44.536)/0.1) + 0.15*between(t,46.835,46.935)*(1-(t-46.835)/0.1) + 0.15*between(t,47.345,47.445)*(1-(t-47.345)/0.1) + 0.15*between(t,48.762,48.862)*(1-(t-48.762)/0.1) + 0.15*between(t,49.296,49.396)*(1-(t-49.296)/0.1) + 0.15*between(t,49.644,49.744)*(1-(t-49.644)/0.1) + 0.15*between(t,52.477,52.577)*(1-(t-52.477)/0.1) + 0.15*between(t,53.011,53.111)*(1-(t-53.011)/0.1) + 0.15*between(t,54.428,54.528)*(1-(t-54.428)/0.1) + 0.15*between(t,54.938,55.038)*(1-(t-54.938)/0.1) + 0.15*between(t,58.120,58.220)*(1-(t-58.120)/0.1) + 0.15*between(t,58.654,58.754)*(1-(t-58.654)/0.1) + 0.15*between(t,60.070,60.170)*(1-(t-60.070)/0.1) + 0.15*between(t,60.581,60.681)*(1-(t-60.581)/0.1) + 0.15*between(t,61.115,61.215)*(1-(t-61.115)/0.1) + 0.15*between(t,62.183,62.283)*(1-(t-62.183)/0.1) + 0.15*between(t,62.880,62.980)*(1-(t-62.880)/0.1) + 0.15*between(t,63.762,63.862)*(1-(t-63.762)/0.1)'[v_flashed];[0:a]showwaves=s=960x400:mode=cline:colors=0x00FFCC:scale=sqrt[wave];[v_flashed][wave]overlay=(W-w)/2:(H-h)/2+100[v_viz];[v_viz]drawtext=fontfile='/Windows/Fonts/ariblk.ttf':text='^':fontcolor=white:fontsize=50:x=(w-text_w)/2:y=(h-text_h)/2-150[v_txt1];[v_txt1]drawtext=fontfile='/Windows/Fonts/ariblk.ttf':text='prodbyeviloid':fontcolor=white:fontsize=40:x=(w-text_w)/2:y=h-150[v_txt2]", '-map', '[v_txt2]', '-map', '0:a', '-c:v', 'h264_nvenc', '-preset', 'p1', '-rc', 'vbr', '-cq', '28', '-b:v', '5M', '-spatial_aq', '1', '-c:a', 'aac', '-b:a', '192k', '-t', '101.69469387755102', 'C:\\N8N\\output\\^_full.mp4']' returned non-zero exit status 4294967284.
+02:41:33 │ ⏱️ Took 287.0s
+
+02:41:33 │ 
+============================================================
+02:41:33 │ 📊 SUMMARY
+02:41:33 │ ============================================================
+02:41:33 │   ❌ ^.mp3 (287.0s)
+02:41:33 │ 
+  0/1 beat(s) processed successfully
+02:42:45 │ 🚀 Beat-to-Instagram Reel Automation
+02:42:45 │ ============================================================
+02:42:45 │ 📂 Found 1 beat(s) to process
+
+02:42:45 │ 
+[1/1] Processing ^.mp3
+02:42:45 │ ============================================================
+02:42:45 │ 🎵 PROCESSING: ^.mp3
+02:42:45 │ ============================================================
+02:42:45 │ 🎵 Analyzing audio: ^.mp3
+02:42:50 │    ⏱ Duration: 101.7s | 🥁 BPM: 112 | ⚡ Energy: medium
+02:42:50 │    💥 Detected 101 drop/cut points (170 beats, 234 onsets)
+02:42:50 │    🔥 Found 2 best 30s segments
+02:42:50 │       Highlight 1: 24.0s – 54.0s
+02:42:50 │       Highlight 2: 61.0s – 91.0s
+02:42:51 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:42:51 │ AFC is enabled with max remote calls: 10.
+02:42:58 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:42:58 │    🤖 AI response: ```json
+{
+  "genre": "Lo-fi Hip Hop",
+  "mood": "Mellow Groove",
+  "keywords": [
+    "Rainy city nig...
+02:42:58 │    ✅ Parsed: ^ | 112bpm | Lo-fi Hip Hop | Mellow Groove
+02:42:58 │    🔍 Keywords: Rainy city night, Coffee shop ambient, Golden hour city, Retro anime aesthetic, Skateboarding cruise, Urban exploration alone
+02:42:58 │ 
+02:42:58 │ 📹 Step 2: Sourcing clips (YouTube + Pexels)...
+02:42:58 │ 🤖 Generating AI-powered search queries...
+02:42:59 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:42:59 │ AFC is enabled with max remote calls: 10.
+02:43:06 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:43:06 │    🤖 AI generated 8 search queries:
+02:43:06 │       🔍 J. Cole studio chill
+02:43:06 │       🔍 Kendrick Lamar live mellow
+02:43:06 │       🔍 Joey Bada$$ behind scenes
+02:43:06 │       🔍 A$AP Rocky fashion vibe
+02:43:06 │       🔍 J. Cole concert vibe
+02:43:06 │       🔍 Skateboarding cruise city
+02:43:06 │       🔍 Rainy city night drive
+02:43:06 │       🔍 Coffee shop window rain
+02:43:06 │ 🔍 Searching YouTube: 'J. Cole studio chill'
+02:43:09 │    Found 3 result(s)
+02:43:09 │ 🔍 Searching YouTube: 'Kendrick Lamar live mellow'
+02:43:11 │    Found 3 result(s)
+02:43:11 │ 🔍 Searching YouTube: 'Joey Bada$$ behind scenes'
+02:43:14 │    Found 3 result(s)
+02:43:14 │ 🔍 Searching YouTube: 'A$AP Rocky fashion vibe'
+02:43:17 │    Found 3 result(s)
+02:43:17 │ 🔍 Searching YouTube: 'J. Cole concert vibe'
+02:43:19 │    Found 3 result(s)
+02:43:19 │ 🔍 Searching YouTube: 'Skateboarding cruise city'
+02:43:22 │    Found 3 result(s)
+02:43:22 │ 🔍 Searching YouTube: 'Rainy city night drive'
+02:43:24 │    Found 3 result(s)
+02:43:24 │ 🔍 Searching YouTube: 'Coffee shop window rain'
+02:43:27 │    Found 3 result(s)
+02:43:27 │ 🤖 Ranking 24 clips by relevance...
+02:43:28 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:43:28 │ AFC is enabled with max remote calls: 10.
+02:43:47 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:43:47 │    🤖 Gemini ranked and selected 10 best clips
+02:43:47 │ 🚀 Downloading 10 clips in parallel (workers=4)...
+02:43:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=YHwUmMl1crE (segment 77s - 87s)
+02:43:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=m5edw2U_24Y (segment 301s - 311s)
+02:43:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=_IuAIp46xC4 (segment 83s - 93s)
+02:43:47 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=mw5sEjF3xW4 (segment 87s - 97s)
+02:43:59 │    ✅ Downloaded: ^_4c017667_83s.mp4
+02:43:59 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=Yw2ZiWw9Wzk (segment 81s - 91s)
+02:44:00 │    ✅ Downloaded: ^_9d6a8431_77s.mp4
+02:44:00 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=LXxKwksf810 (segment 421s - 431s)
+02:44:11 │    ✅ Downloaded: ^_2e42ca5c_301s.mp4
+02:44:11 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=F6VfsJ7LAlE (segment 124s - 134s)
+02:44:11 │    ✅ Downloaded: ^_be5c095e_87s.mp4
+02:44:11 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=Ec3LoKpGJxY (segment 35s - 45s)
+02:44:17 │    ✅ Downloaded: ^_609a4c12_81s.mp4
+02:44:17 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=57C0tVbe_bE (segment 161s - 171s)
+02:44:18 │    ✅ Downloaded: ^_bc1ee85f_421s.mp4
+02:44:18 │    ⬇️ Downloading clip: https://www.youtube.com/watch?v=xKAPHmQJ5CE (segment 101s - 111s)
+02:44:20 │    ✅ Downloaded: ^_34b5cd11_124s.mp4
+02:44:26 │    ✅ Downloaded: ^_a0305853_35s.mp4
+02:44:35 │    ✅ Downloaded: ^_2f1551b1_101s.mp4
+02:44:43 │    ✅ Downloaded: ^_f0bc7686_161s.mp4
+02:44:44 │ 📦 Sourced 10 clip(s) for '^'
+02:44:44 │ 
+02:44:44 │ 🎬 Step 3: Assembling video...
+02:44:44 │ 🎞️ Building FFmpeg assembly for ^_full.mp4
+02:44:44 │    🚀 Using GPU Encoding (h264_nvenc)
+02:45:04 │ 
+02:45:04 │ 🎯 Step 3b: Assembling 2 highlight clip(s)...
+02:45:04 │ 
+🎯 Highlight 1/2: 24.0s – 54.0s
+02:45:04 │ 🎞️ Building FFmpeg assembly for ^_highlight_1.mp4
+02:45:04 │    🚀 Using GPU Encoding (h264_nvenc)
+02:45:10 │ 
+🎯 Highlight 2/2: 61.0s – 91.0s
+02:45:10 │ 🎞️ Building FFmpeg assembly for ^_highlight_2.mp4
+02:45:10 │    🚀 Using GPU Encoding (h264_nvenc)
+02:45:17 │ 
+02:45:17 │ 📝 Step 4: Generating Instagram metadata...
+02:45:18 │    🤖 Trying Gemini Model: gemini-2.5-flash...
+02:45:18 │ AFC is enabled with max remote calls: 10.
+02:45:26 │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+02:45:26 │ 🤖 AI generated metadata for '^'
+02:45:26 │    📝 IG Caption: Drifting into a mellow groove with my new Lo-fi Hip Hop beat, '^'. 🎧 Perfect for...
+02:45:26 │    #️⃣  25 IG hashtags generated
+02:45:26 │    📺 YT Title: Lo-fi Hip Hop Type Beat '^' | Mellow Groove 🎧 | prodbyeviloid
+02:45:26 │    🏷️  15 YT tags generated
+02:45:26 │    🖼️ Cover at 4.0s
+02:45:26 │ 
+📋 Reel Metadata:
+02:45:26 │    Caption: Drifting into a mellow groove with my new Lo-fi Hip Hop beat, '^'. 🎧 Perfect for chilling out or spa...
+02:45:26 │    Hashtags: 25 tags
+02:45:26 │ 
+02:45:26 │ ⏭️ Upload skipped (--no-upload). Videos saved:
+02:45:26 │    Full:  C:\N8N\output\^_full.mp4
+02:45:26 │    Clip:  C:\N8N\output\^_highlight_1.mp4
+02:45:26 │    Clip:  C:\N8N\output\^_highlight_2.mp4
+02:45:26 │ 
+📋 Full caption for manual upload:
+Drifting into a mellow groove with my new Lo-fi Hip Hop beat, '^'. 🎧 Perfect for chilling out or sparking some creativity. Link in bio for leases 💰
+
+.
+.
+.
+#lofihiphop #lofibeats #mellowgroove #chillbeats #chillvibes #studybeats #relaxmusic #beatmaker #producerlife #typebeat #musicproducer #flstudio #ableton #newmusic #unsignedartist #explorepage #viralreels #artistssupportingartists #reels #instagramreels #shortsvideo #beatvideo #prodbyeviloid #hiphop #instrumental
+02:45:26 │ ⏱️ Took 160.8s
+
+02:45:26 │ 
+============================================================
+02:45:26 │ 📊 SUMMARY
+02:45:26 │ ============================================================
+02:45:26 │   ✅ ^.mp3 (160.8s)
+02:45:26 │ 
+  1/1 beat(s) processed successfully

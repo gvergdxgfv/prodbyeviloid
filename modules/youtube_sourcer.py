@@ -36,15 +36,31 @@ def _generate_search_queries(beat_info: BeatInfo) -> List[str]:
     Use Gemini to generate smart YouTube search queries
     tailored to the beat's genre, mood, and energy.
     """
-    # Determine likely genre from BPM + energy for better prompting
     bpm = beat_info.bpm or 120
     energy = (beat_info.energy or "medium").lower()
     genre_hint = beat_info.genre or _guess_genre(bpm, energy)
 
+    # Pre-select matching artists based on genre_hint to thoroughly guide the AI
+    artist_mapping = {
+        "trap": "Travis Scott, Future, Playboi Carti, Metro Boomin",
+        "drill": "Central Cee, Pop Smoke, Chief Keef, Fivio Foreign",
+        "hip hop": "J. Cole, Kendrick Lamar, Joey Bada$$, A$AP Rocky",
+        "rnb": "Don Toliver, The Weeknd, Bryson Tiller, Brent Faiyaz",
+        "lofi": "Joji, Mac Miller, Post Malone (chill vibes)",
+        "rage": "Yeat, Ken Carson, Destroy Lonely, Playboi Carti",
+        "pop": "The Weeknd, Post Malone, Dua Lipa",
+        "sad": "Post Malone, J. Cole, XXXTentacion, Juice WRLD",
+    }
+    
+    # If mood suggests sadness, override artists
+    if beat_info.mood and any(m in beat_info.mood.lower() for m in ["sad", "emotional", "depressed", "melancholy"]):
+        target_artists = artist_mapping["sad"]
+    else:
+        target_artists = artist_mapping.get(genre_hint.lower(), artist_mapping["hip hop"])
+
     prompt = f"""You are a music video director sourcing clips for a beat video.
-Given the beat info below, generate 8 YouTube search queries to find MUSIC VIDEO clips
-of artists that match this beat's genre and vibe. We want clips of artists vibing,
-performing, lifestyle shots — NOT stock footage or cinematography reels.
+Given the beat info below, generate 8 YouTube search queries to find a mix of 
+ARTIST clips and LIFESTYLE clips that match this beat's genre and vibe.
 
 Beat info:
 - Name: "{beat_info.name}"
@@ -55,23 +71,12 @@ Beat info:
 - Visual keywords already detected: {', '.join(beat_info.visual_keywords[:5]) if beat_info.visual_keywords else "none"}
 
 Rules for search queries:
-- 5-6 queries MUST be for actual MUSIC VIDEOS of artists matching this genre:
-  * Trap / dark trap → Travis Scott, Playboi Carti, Future, Metro Boomin, Young Thug
-  * Hood trap → Don Toliver, 21 Savage, Gunna, Lil Baby, Rod Wave
-  * Drill → Pop Smoke, Central Cee, Fivio Foreign, Kay Flock
-  * RnB / chill → The Weeknd, Daniel Caesar, SZA, Brent Faiyaz, Bryson Tiller
-  * Lofi / chill → Joji, Mac Miller, Frank Ocean
-  * Rage / hyperpop → Yeat, Ken Carson, Destroy Lonely, Lancey Foux
-  * Boom bap → Kendrick Lamar, J. Cole, Joey Bada$$, JID
-  * Electro / pop → Dua Lipa, The Weeknd, Daft Punk, Tame Impala
-  Use queries like: "travis scott music video", "don toliver official video",
-  "the weeknd mv", "playboi carti vibes", "21 savage music video"
-- 2-3 queries for LIFESTYLE/VIBE footage matching the mood:
-  * Dark → "dark night city driving vibes", "late night vibes aesthetic"
-  * Chill → "summer vibes aesthetic", "golden hour vibes"
-  * Hype → "lit concert crowd", "luxury lifestyle aesthetic"
-- DO NOT search for "stock footage", "no copyright", "royalty free"
-- Keep queries SHORT (3-7 words max)
+- 5-6 queries MUST feature these specific artists that fit the genre: {target_artists}
+  Use queries like: "[Artist Name] concert lit", "[Artist Name] studio session making music", "[Artist Name] partying"
+- 2-3 queries MUST be for random lifestyle/action clips that fit the vibe:
+  * e.g., "fast car night racing aesthetic", "dirt bike riding", "luxury lifestyle party", "night city driving POV"
+- DO NOT search for "stock footage", "no copyright", "royalty free".
+- Keep queries SHORT (3-7 words max).
 
 Respond with EXACTLY 8 lines, one search query per line, nothing else:"""
 
@@ -114,13 +119,13 @@ def _guess_genre(bpm: int, energy: str) -> str:
 
 # Genre -> artist/vibe mapping for fallback queries
 _GENRE_QUERIES = {
-    "trap":     ["travis scott music video", "playboi carti vibes", "future music video", "metro boomin type beat visual", "young thug official video", "dark trap aesthetic night city", "luxury car night vibes", "concert crowd lit"],
-    "drill":    ["pop smoke music video", "central cee official video", "fivio foreign music video", "uk drill music video", "kay flock official video", "dark urban night shots", "city nightlife aesthetic", "drill rap vibes"],
-    "hip hop":  ["kendrick lamar music video", "j cole official video", "jid music video", "joey badass vibes", "21 savage official video", "hip hop lifestyle aesthetic", "studio session rap vibes", "urban street culture"],
-    "rnb":      ["the weeknd music video", "sza official video", "brent faiyaz vibes", "daniel caesar music video", "bryson tiller official video", "golden hour aesthetic", "moody night vibes", "romantic city lights"],
-    "lofi":     ["joji music video", "mac miller vibes", "frank ocean aesthetic", "lofi girl animation", "chill vibes aesthetic sunset", "rainy window cozy night", "anime aesthetic vibes", "vintage film grain aesthetic"],
-    "rage":     ["yeat music video", "ken carson official video", "destroy lonely vibes", "lancey foux music video", "hyperpop aesthetic glitch", "rave party lights", "cyberpunk city neon", "fast car racing aesthetic"],
-    "pop":      ["dua lipa music video", "the weeknd starboy mv", "daft punk official video", "tame impala vibes", "post malone music video", "neon lights party aesthetic", "summer vibes beach", "colorful aesthetic dance"],
+    "trap":     ["travis scott concert lit", "future music video", "playboi carti partying", "metro boomin studio session", "fast car night racing aesthetic", "luxury lifestyle vibe"],
+    "drill":    ["pop smoke music video", "central cee concert", "chief keef vibes", "night city driving POV", "dirt bike riding aesthetic"],
+    "hip hop":  ["j cole studio session", "kendrick lamar performing", "asap rocky music video", "old school hip hop aesthetic", "skateboarding city vibes"],
+    "rnb":      ["don toliver partying", "the weeknd music video", "brent faiyaz studio", "late night city driving aesthetic", "moody club lights aesthetic"],
+    "lofi":     ["joji music video", "mac miller studio session", "post malone sad visual", "chill anime aesthetic loop", "rainy night drive aesthetic"],
+    "rage":     ["yeat concert moshpit", "ken carson performing", "playboi carti lit", "fast car racing neon", "underground rave aesthetic"],
+    "pop":      ["the weeknd starboy mv", "post malone partying", "dua lipa concert", "party crowd lit aesthetic", "sunset beach driving"],
 }
 
 
@@ -259,25 +264,37 @@ def _download_clip(
     output_dir: Path,
     clip_name: str,
     segment_duration: int = 10,
+    video_duration: float = 0.0,
 ) -> Optional[Path]:
     """
-    Download a segment of a YouTube video using yt-dlp.
-    Downloads only the first `segment_duration` seconds.
+    Download a random middle segment of a YouTube video using yt-dlp.
+    Avoids intros and outros by calculating a safe start range.
     """
+    import random
     url_hash = hashlib.md5(video_url.encode()).hexdigest()[:8]
-    output_path = output_dir / f"{clip_name}_{url_hash}.mp4"
+    
+    # Calculate safe random start time to skip boring intros
+    start_sec = 0
+    if video_duration > segment_duration * 3:
+        min_start = int(video_duration * 0.15)
+        max_start = int(video_duration * 0.85) - segment_duration
+        if max_start > min_start:
+            start_sec = random.randint(min_start, max_start)
+
+    end_sec = start_sec + segment_duration
+    output_path = output_dir / f"{clip_name}_{url_hash}_{start_sec}s.mp4"
 
     if output_path.exists():
         logger.info(f"   ⏭️ Already cached: {output_path.name}")
         return output_path
 
-    logger.info(f"   ⬇️ Downloading clip: {video_url}")
+    logger.info(f"   ⬇️ Downloading clip: {video_url} (segment {start_sec}s - {end_sec}s)")
 
     cmd = [
         "yt-dlp",
         video_url,
         "-o", str(output_path),
-        "--download-sections", f"*0:00-0:{segment_duration:02d}",
+        "--download-sections", f"*{start_sec}-{end_sec}",
         "-f", "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[height<=1080][ext=mp4]/best",
         "--merge-output-format", "mp4",
         "--no-playlist",
@@ -382,7 +399,7 @@ def source_clips(beat_info: BeatInfo, dry_run: bool = False, max_clips: int = 5)
             break
 
     # Filter to reasonable duration videos
-    all_videos = [v for v in all_videos if v.get("duration", 0) >= segment_dur or v.get("duration", 0) == 0]
+    all_videos = [v for v in all_videos if (v.get("duration") or 0) >= segment_dur or (v.get("duration") or 0) == 0]
 
     if dry_run:
         logger.info(f"🏃 DRY RUN — Found {len(all_videos)} candidate clips:")
@@ -404,10 +421,11 @@ def source_clips(beat_info: BeatInfo, dry_run: bool = False, max_clips: int = 5)
     def _download_task(video_data):
         """Helper to download a single clip and return ClipInfo."""
         path = _download_clip(
-            video_data["url"],
-            clip_dir,
-            beat_info.filename,
-            segment_dur,
+            video_url=video_data["url"],
+            output_dir=clip_dir,
+            clip_name=beat_info.filename,
+            segment_duration=segment_dur,
+            video_duration=video_data.get("duration", 0.0)
         )
         if path and path.exists():
             duration = _get_video_duration(path)

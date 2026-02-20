@@ -3,7 +3,7 @@ import json
 import math
 from pathlib import Path
 from typing import Dict, List, Optional
-import google.generativeai as genai
+from google import genai
 
 import config
 from modules.beat_parser import BeatInfo
@@ -17,9 +17,7 @@ class DeforumSettingsGenerator:
     """
     
     def __init__(self):
-        genai.configure(api_key=config.GEMINI_API_KEY)
-        # Use flash model for speed and cost
-        self.model = genai.GenerativeModel("gemini-1.5-flash")
+        self.client = genai.Client(api_key=config.GEMINI_API_KEY)
 
     def generate_settings(self, beat_info: BeatInfo, fps: int = 30) -> str:
         """
