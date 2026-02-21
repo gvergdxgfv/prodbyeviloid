@@ -101,8 +101,11 @@ def source_clips(beat_info: BeatInfo, max_clips: int = 3) -> List[ClipInfo]:
     """
     Source clips from Pexels based on beat beat_info.
     """
-    if not config.PEXELS_API_KEY:
-        return []
+    if not max_clips or max_clips == 3: # 3 is the default fallthrough in main.py
+        # Provide half as many Pexels clips as YouTube clips (e.g. 5 Pexels + 10 YT for 60s)
+        calculated_clips = int((beat_info.duration / 60.0) * 5)
+        max_clips = max(3, calculated_clips)
+        logger.info(f"⏱️ Track duration is {beat_info.duration:.1f}s. Dynamically scaling to source {max_clips} Pexels clips.")
 
     logger.info("🎨 Sourcing detailed clips from Pexels...")
 

@@ -76,7 +76,7 @@ def _get_authenticated_service():
             flow = InstalledAppFlow.from_client_secrets_file(
                 str(secrets_file), SCOPES
             )
-            credentials = flow.run_local_server(port=0)
+            credentials = flow.run_local_server(port=8080)
 
         # Save credentials for next time
         with open(str(token_file), "w") as f:
@@ -98,41 +98,19 @@ def _build_shorts_metadata(
     Returns dict with 'snippet' and 'status' for the API call.
     """
     # Build title (max 100 chars)
-    title_parts = [f"🔥 {beat_name}"]
-    if genre:
-        title_parts.append(f"| {genre.title()}")
-    if bpm:
-        title_parts.append(f"| {int(bpm)} BPM")
-    title_parts.append("| #Shorts")
-    title = " ".join(title_parts)[:100]
+    # Using the AI generated title, optimally appending #Shorts if not present and there is space
+    title = metadata.yt_title
+    if "#Shorts" not in title and len(title) + 8 <= 100:
+        title += " #Shorts"
+    title = title[:100]
 
     # Build description
-    desc_lines = [
-        metadata.caption,
-        "",
-        "━━━━━━━━━━━━━━━━━━━━━━━",
-        f"🎵 Beat: {beat_name}",
-    ]
-    if genre:
-        desc_lines.append(f"🎸 Genre: {genre.title()}")
-    if bpm:
-        desc_lines.append(f"🥁 BPM: {int(bpm)}")
-    desc_lines.extend([
-        "━━━━━━━━━━━━━━━━━━━━━━━",
-        "",
-        "📩 DM for exclusive beats",
-        "🔗 Links in description",
-        "",
-        " ".join(f"#{tag}" for tag in metadata.hashtags[:15]),
-        "#Shorts #beats #producer",
-    ])
-    description = "\n".join(desc_lines)[:5000]  # YT max is 5000
+    description = metadata.yt_description[:5000]  # YT max is 5000
 
     # Tags (max 500 chars total)
-    tags = ["Shorts", "beats", "producer", "typebeat", "instrumental"]
-    tags.extend(metadata.hashtags[:20])
-    if genre:
-        tags.append(genre)
+    tags = metadata.yt_tags[:20] if metadata.yt_tags else []
+    if "Shorts" not in [t.lower() for t in tags]:
+        tags.append("Shorts")
 
     return {
         "snippet": {

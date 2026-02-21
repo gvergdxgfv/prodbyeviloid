@@ -34,51 +34,47 @@ class ClipInfo:
 def _generate_search_queries(beat_info: BeatInfo) -> List[str]:
     """
     Use Gemini to generate smart YouTube search queries
-    tailored to the beat's genre, mood, and energy.
+    tailored to the beat's genre, mood, and dynamically extracted energy.
     """
+    import random
+    
     bpm = beat_info.bpm or 120
     energy = (beat_info.energy or "medium").lower()
+    brightness = beat_info.brightness or "neutral"
+    rhythm = beat_info.rhythm or "straight"
     genre_hint = beat_info.genre or _guess_genre(bpm, energy)
 
-    # Pre-select matching artists based on genre_hint to thoroughly guide the AI
-    artist_mapping = {
-        "trap": "Travis Scott, Future, Playboi Carti, Metro Boomin",
-        "drill": "Central Cee, Pop Smoke, Chief Keef, Fivio Foreign",
-        "hip hop": "J. Cole, Kendrick Lamar, Joey Bada$$, A$AP Rocky",
-        "rnb": "Don Toliver, The Weeknd, Bryson Tiller, Brent Faiyaz",
-        "lofi": "Joji, Mac Miller, Post Malone (chill vibes)",
-        "rage": "Yeat, Ken Carson, Destroy Lonely, Playboi Carti",
-        "pop": "The Weeknd, Post Malone, Dua Lipa",
-        "sad": "Post Malone, J. Cole, XXXTentacion, Juice WRLD",
-    }
-    
-    # If mood suggests sadness, override artists
-    if beat_info.mood and any(m in beat_info.mood.lower() for m in ["sad", "emotional", "depressed", "melancholy"]):
-        target_artists = artist_mapping["sad"]
-    else:
-        target_artists = artist_mapping.get(genre_hint.lower(), artist_mapping["hip hop"])
+    # Seed the AI to ensure varied results every single execution
+    random_seed = random.randint(1000, 9999)
 
     prompt = f"""You are a music video director sourcing clips for a beat video.
-Given the beat info below, generate 8 YouTube search queries to find a mix of 
-ARTIST clips and LIFESTYLE clips that match this beat's genre and vibe.
+Given the audio analysis below, generate 7 UNIQUE YouTube search queries to find clips that match this beat's vibe.
 
 Beat info:
-- Name: "{beat_info.name}"
 - Genre: {genre_hint}
 - Mood: {beat_info.mood or "vibes"}
 - BPM: {bpm}
-- Energy: {energy}
-- Visual keywords already detected: {', '.join(beat_info.visual_keywords[:5]) if beat_info.visual_keywords else "none"}
+- Timbre: {brightness.upper()} (Dark = bass heavy/gritty | Bright = synths/melodic)
+- Rhythm: {rhythm.upper()} (Bouncy = syncopated/trap | Straight = 4-on-the-floor)
+- Energy: {energy.upper()}
+- Visual keywords: {', '.join(beat_info.visual_keywords[:5]) if getattr(beat_info, 'visual_keywords', None) else "none"}
 
-Rules for search queries:
-- 5 queries MUST feature these specific artists that fit the genre: {target_artists}
-  Use queries like: "[Artist Name] concert lit", "[Artist Name] studio session making music", "[Artist Name] partying"
-- 2 queries MUST be for random lifestyle/action clips that fit the vibe:
-  * e.g., "fast car night racing aesthetic", "dirt bike riding", "luxury lifestyle party", "night city driving POV"
-- DO NOT search for "stock footage", "no copyright", "royalty free".
-- Keep queries SHORT (3-7 words max).
+CRITICAL RULES [Seed: {random_seed}]:
+1. ARTIST MUSIC VIDEO QUERIES (4 queries): Pick 4 DIFFERENT artists that fit this genre/timbre. Search specifically for their MUSIC VIDEOS — NOT concerts, NOT podcasts, NOT interviews.
+   - GOOD: "[Artist] music partyingist] music clip", "[Artist] visual"
+   - BAD: "[Artist] concert", "[Artist] interview", "[Artist] podcast", "[Artist] reaction"
+   - Vary the artists every run — don't always use the same names.
+2. CINEMATIC B-ROLL (3 queries): Pure visual/aesthetic clips that strictly match the Timbre and Energy:
+   - DARK+BOUNCY: "gritty neon city timelapse", "rain slick streets cinematic"
+   - DARK+STRAIGHT: "dark fog forest 4k", "industrial urban night aesthetic"
+   - BRIGHT+BOUNCY: "vibrant street graffiti slow motion", "colorful city rooftop"
+   - BRIGHT+STRAIGHT: "ocean waves drone 4k", "mountain sunrise timelapse"
+3. DO NOT search for: stock footage, royalty free, no copyright, podcast, reaction, compilation.
+4. Keep queries SHORT (3-6 words max).
 
 Respond with EXACTLY 7 lines, one search query per line, nothing else:"""
+
+
 
     try:
         from modules import ai_helper
@@ -145,6 +141,24 @@ def _fallback_queries(beat_info: BeatInfo) -> List[str]:
 
     logger.info(f"   🎯 Fallback queries (genre={genre}, bpm={bpm}, energy={energy})")
     return queries[:8]
+
+
+# Keywords that indicate a clip is NOT useful for a music video
+_BAD_CLIP_KEYWORDS = [
+    "podcast", "interview", "reaction", "react", "review", "explained",
+    "full album", "album", "lyrics", "lyric video", "documentary", 
+    "behind the scenes", "making of", "vlog", "compilation", "news",
+    "commentary", "essay", "discussion", "analysis", "breakdown",
+    "watch party", "piano tutorial", "guitar lesson", "tutorial",
+    "highlights reel", "best moments", "top 10", "ranking",
+]
+
+def _is_good_clip(video: dict) -> bool:
+    """Return True if the video is suitable for a music video (not a podcast/interview/reaction)."""
+    title = (video.get("title") or "").lower()
+    return not any(kw in title for kw in _BAD_CLIP_KEYWORDS)
+
+
 
 
 def _rank_results_with_ai(videos: List[dict], beat_info: BeatInfo, max_clips: int) -> List[dict]:
@@ -253,6 +267,10 @@ def _search_youtube(query: str, max_results: int = 5) -> List[dict]:
 
     except subprocess.TimeoutExpired:
         logger.warning(f"   ⚠️ YouTube search timed out for: {query}")
+        return []
+    except KeyboardInterrupt:
+        # Python 3.14 on Windows raises KeyboardInterrupt on subprocess timeout
+        logger.warning(f"   ⚠️ YouTube search interrupted (timeout) for: {query}")
         return []
     except Exception as e:
         logger.error(f"   ❌ YouTube search failed: {e}")
@@ -373,9 +391,13 @@ def source_clips(beat_info: BeatInfo, dry_run: bool = False, max_clips: int = 5)
     clip_dir = config.CLIPS_DIR / beat_info.filename
     clip_dir.mkdir(parents=True, exist_ok=True)
 
-    if not max_clips:
-        max_clips = config.MAX_CLIPS_PER_BEAT
-    segment_dur = config.CLIP_SEGMENT_DURATION
+    if not max_clips or max_clips == config.MAX_CLIPS_PER_BEAT:
+        # User requested dynamic scaling: e.g., 10 clips per 60 seconds of audio
+        # We ensure a minimum floor of 5 clips just in case the audio track is very short.
+        calculated_clips = int((beat_info.duration / 60.0) * 10)
+        max_clips = max(5, calculated_clips)
+        logger.info(f"⏱️ Track duration is {beat_info.duration:.1f}s. Dynamically scaling to source {max_clips} YouTube clips.")
+
     segment_dur = config.CLIP_SEGMENT_DURATION
 
     # ── Step 1: Generate smart search queries via Gemini ──

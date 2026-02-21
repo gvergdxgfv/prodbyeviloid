@@ -32,6 +32,8 @@ class BeatInfo:
     genre: str = ""                 # Inferred genre
     mood: str = ""                  # Inferred mood
     energy: str = "medium"          # low / medium / high
+    brightness: str = "neutral"     # dark / neutral / bright
+    rhythm: str = "straight"        # straight / bouncy
     visual_keywords: List[str] = field(default_factory=list)
     beat_times: List[float] = field(default_factory=list)  # Beat timestamps in seconds
     drop_times: List[float] = field(default_factory=list)   # Strong beats / onset drops (ideal cut points)
@@ -117,7 +119,24 @@ def _analyze_audio(filepath: Path) -> dict:
     else:
         energy = "low"
 
-    logger.info(f"   ⏱ Duration: {duration:.1f}s | 🥁 BPM: {tempo:.0f} | ⚡ Energy: {energy}")
+    # Timbre analysis (Spectral Centroid)
+    centroids = librosa.feature.spectral_centroid(y=y, sr=sr)[0]
+    avg_centroid = float(np.mean(centroids))
+    
+    # 2000Hz is roughly the dividing line for "bright" vs "dark" trap/hip-hop
+    if avg_centroid > 2500:
+        brightness = "bright"
+    elif avg_centroid < 1500:
+        brightness = "dark"
+    else:
+        brightness = "neutral"
+
+    # Rhythm complexity (Onset variance)
+    onset_env = librosa.onset.onset_strength(y=y, sr=sr)
+    onset_var = float(np.var(onset_env))
+    rhythm = "bouncy" if onset_var > 1.5 else "straight"
+
+    logger.info(f"   ⏱ Duration: {duration:.1f}s | 🥁 BPM: {tempo:.0f} | ⚡ Energy: {energy} | 🌈 Timbre: {brightness} | 🌊 Rhythm: {rhythm}")
 
     # ── Onset / Drop detection ──
     # Find transient onsets (hits, drops, percussive moments)
@@ -202,9 +221,10 @@ def _analyze_audio(filepath: Path) -> dict:
         "beat_times": beat_times,
         "drop_times": drop_times,
         "energy": energy,
+        "brightness": brightness,
+        "rhythm": rhythm,
         "best_segments": best_segments,
     }
-
 
 def _generate_visual_keywords(beat_info: BeatInfo) -> BeatInfo:
     """
@@ -214,6 +234,8 @@ def _generate_visual_keywords(beat_info: BeatInfo) -> BeatInfo:
     beat_name = beat_info.filename
     bpm = beat_info.bpm
     energy = beat_info.energy
+    brightness = beat_info.brightness
+    rhythm = beat_info.rhythm
     duration = beat_info.duration
 
     prompt = f"""You are a music video director. Given a beat's metadata, generate:
@@ -225,7 +247,12 @@ Beat Info:
 - Name: "{beat_name}"
 - BPM: {bpm}
 - Energy: {energy}
+- Timbre: {brightness} (bright acoustic vs dark bass)
+- Rhythm: {rhythm} (straight vs syncopated bouncy)
 - Duration: {duration}s
+
+Based on the Timbre and Rhythm, make the visual keywords EXACTLY match the sonic profile of the audio.
+If it's Dark and Bouncy, suggest gritty, fast-paced visuals. If it's Bright and Straight, suggest vibrant, smooth visuals.
 
 Respond in JSON format:
 {{
@@ -280,9 +307,29 @@ def _fallback_keywords(beat_info: BeatInfo) -> List[str]:
     return keywords[:5]
 
 
+def _is_gibberish_name(filename: str) -> bool:
+    """Return True if the filename looks like random gibberish or an auto-generated name."""
+    import re
+    name = filename.lower()
+    # Looperman-style ids
+    if name.startswith("looperman-"):
+        return True
+    # Very short (≤8) with no vowels -> gibberish like 'jbgbsrbg'
+    letters_only = re.sub(r"[^a-z]", "", name)
+    if len(letters_only) <= 8:
+        vowels = sum(1 for c in letters_only if c in "aeiou")
+        if vowels == 0 or (len(letters_only) >= 4 and vowels / len(letters_only) < 0.15):
+            return True
+    # All lowercase alphanumeric with no spaces/underscores, length <= 6
+    if re.fullmatch(r"[a-z0-9]{1,6}", name):
+        return True
+    return False
+
+
 def parse_beat(beat_path: Path) -> BeatInfo:
     """
     Parse a single beat file: analyze audio + generate visual keywords.
+    Gibberish filenames are renamed using AI to meaningful beat names.
     """
     filename = beat_path.stem
     parsed = _parse_filename(filename)
@@ -300,6 +347,8 @@ def parse_beat(beat_path: Path) -> BeatInfo:
         genre=parsed.get("genre", ""),
         mood=parsed.get("mood", ""),
         energy=audio["energy"],
+        brightness=audio["brightness"],
+        rhythm=audio["rhythm"],
         beat_times=audio["beat_times"],
         drop_times=audio["drop_times"],
         best_segments=audio["best_segments"],
@@ -307,6 +356,23 @@ def parse_beat(beat_path: Path) -> BeatInfo:
 
     # Use AI to fill in missing metadata and generate visual keywords
     beat_info = _generate_visual_keywords(beat_info)
+
+    # Always AI-generate a creative beat name based on sonic profile
+    try:
+        from modules import ai_helper
+        logger.info(f"   🏷️ Generating AI beat name for '{filename}'...")
+        ai_name = ai_helper.generate_beat_name(
+            genre=beat_info.genre or "hip hop",
+            mood=beat_info.mood or "vibes",
+            bpm=beat_info.bpm,
+            energy=beat_info.energy,
+            original_name=filename,
+        )
+        if ai_name and ai_name.strip():
+            logger.info(f"   ✨ AI named: '{beat_info.name}' → '{ai_name}'")
+            beat_info.name = ai_name.strip()
+    except Exception as e:
+        logger.warning(f"   ⚠️ AI naming failed, keeping filename: {e}")
 
     logger.info(f"   ✅ Parsed: {beat_info.name} | {beat_info.bpm}bpm | {beat_info.genre} | {beat_info.mood}")
     logger.info(f"   🔍 Keywords: {', '.join(beat_info.visual_keywords)}")

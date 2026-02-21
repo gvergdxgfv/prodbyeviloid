@@ -89,3 +89,29 @@ def _generate_with_openrouter(prompt: str) -> str:
              if 'resp' in locals(): logger.error(f"   Response: {resp.text}")
         except: pass
         return ""
+
+def generate_beat_name(genre: str, mood: str, bpm: float, energy: str, original_name: str) -> str:
+    """Uses the LLM to invent a highly creative and concise name for the beat based on its sonic profile."""
+    
+    prompt = f"""
+    You are an elite hip-hop and electronic music producer naming your latest beat.
+    
+    The user uploaded a track with the raw filename: "{original_name}"
+    Audio Analysis:
+    - Genre: {genre}
+    - Mood: {mood}
+    - BPM: {bpm}
+    - Energy Level: {energy}
+    
+    INSTRUCTIONS:
+    1. Invent a highly creative, evocative, and professional 1 to 3 word title for this beat.
+    2. Do NOT use generic words like "Type Beat", "Instrumental", "BPM", "mp3", "Prod", "Audio", "Track".
+    3. The name should reflect the Genre, Mood, and Energy (e.g., a dark trap beat could be "Wraith" or "Midnight Protocol", a bright pop beat could be "Neon Summer").
+    4. Return ONLY the name itself, capitalized beautifully. No quotes, no intro text.
+    """
+    
+    logger.info("   🤖 Asking AI to invent a better name for the beat...")
+    new_name = generate_text(prompt, model_name="gemini-2.5-flash")
+    
+    # Clean up any rogue quotes the AI might have included despite instructions
+    return new_name.strip(" '\"\n\r") if new_name else original_name

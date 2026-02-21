@@ -2,131 +2,234 @@
 Instagram Uploader Module
 ==========================
 Uploads rendered videos to Instagram as Reels using the Graph API.
-Includes a temporary HTTP server to serve the video publicly.
+Uses multiple CDN fallback services to stage the video publicly so
+the Meta API crawler can access it.
 """
 
 import logging
 import time
 import threading
-import http.server
-import socketserver
 import socket
+import http.server
+import urllib.request
+import subprocess
+import tempfile
 from pathlib import Path
 from typing import Optional
 
 import requests
-from pyngrok import ngrok, conf
 
 import config
 from modules.metadata_gen import ReelMetadata
 
 logger = logging.getLogger(__name__)
 
-# Instagram Content Publishing requires the Facebook Graph API base
 GRAPH_API_BASE = "https://graph.facebook.com/v21.0"
 
 
-class _VideoServer:
+def _transcode_for_instagram(video_path: Path) -> Path:
     """
-    Temporary HTTP server to serve a single video file publicly.
-    Instagram's Graph API requires a public URL to cURL the video from.
+    Re-encode the video to exact Instagram Reels specifications using CPU (libx264).
+    This fixes Meta error 2207076 which is caused by NVENC-encoded files
+    that don't meet Instagram's strict codec/container requirements.
+
+    Instagram Reels requirements:
+    - Container: MP4 with moov atom at start (+faststart)
+    - Video: H264, yuv420p, baseline/main profile, closed GOP, no B-frames
+    - Audio: AAC, 128kbps, 44.1kHz, stereo
+    - Pixel format: yuv420p (no 4:2:2 or 4:4:4)
     """
+    suffix = "_ig.mp4"
+    out_path = video_path.with_name(video_path.stem + suffix)
 
-    def __init__(self, video_path: Path, host: str = "0.0.0.0", port: int = 0):
-        self.video_path = video_path
-        self.host = host
-        self.port = port
-        self._server: Optional[socketserver.TCPServer] = None
-        self._thread: Optional[threading.Thread] = None
-        self._tunnel_url: Optional[str] = None
+    if out_path.exists():
+        logger.info(f"   ♻️ Already transcoded: {out_path.name}")
+        return out_path
 
-    def start(self) -> str:
-        """Start the server and return the URL to the video."""
-        video_dir = str(self.video_path.parent)
-        video_name = self.video_path.name
+    logger.info(f"   🔄 Transcoding to Instagram specs: {out_path.name}...")
 
-        handler = http.server.SimpleHTTPRequestHandler
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", str(video_path),
+        # Video: H264 baseline, closed GOP, no B-frames, yuv420p
+        "-c:v", "libx264",
+        "-profile:v", "baseline",
+        "-level", "3.1",
+        "-pix_fmt", "yuv420p",
+        "-g", "30",           # keyframe every 30 frames (closed GOP)
+        "-keyint_min", "30",
+        "-bf", "0",           # no B-frames
+        "-crf", "23",
+        "-preset", "fast",
+        # Audio: AAC 128kbps stereo 44.1kHz
+        "-c:a", "aac",
+        "-b:a", "128k",
+        "-ar", "44100",
+        "-ac", "2",
+        # Put moov atom at start for streaming
+        "-movflags", "+faststart",
+        str(out_path),
+    ]
 
-        class QuietHandler(handler):
-            def __init__(self, *args, directory=video_dir, **kwargs):
-                super().__init__(*args, directory=directory, **kwargs)
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        if result.returncode != 0:
+            logger.error(f"   ❌ Transcode failed: {result.stderr[-500:]}")
+            return video_path  # Return original if transcode fails
+        size_mb = out_path.stat().st_size / (1024 * 1024)
+        logger.info(f"   ✅ Transcoded: {out_path.name} ({size_mb:.1f} MB)")
+        return out_path
+    except Exception as e:
+        logger.error(f"   ❌ Transcode error: {e}")
+        return video_path
 
+
+# ── CDN Staging ──────────────────────────────────────────────────────────────
+
+def _try_tmpfiles(video_path: Path) -> Optional[str]:
+    """Upload to tmpfiles.org (free, reliable for small files)."""
+    try:
+        logger.info("   🌐 Trying tmpfiles.org...")
+        file_size_mb = video_path.stat().st_size / (1024 * 1024)
+        timeout = min(500, max(180, int(file_size_mb * 30)))  # 30s/MB, min 3min, max 500s
+        with open(video_path, "rb") as f:
+            resp = requests.post(
+                "https://tmpfiles.org/api/v1/upload",
+                files={"file": f},
+                timeout=timeout,
+            )
+        data = resp.json()
+        if "data" in data and "url" in data["data"]:
+            view_url = data["data"]["url"]
+            dl_url = view_url.replace("tmpfiles.org/", "tmpfiles.org/dl/")
+            logger.info(f"   ✅ tmpfiles.org: {dl_url}")
+            return dl_url
+        logger.warning(f"   ⚠️ tmpfiles.org unexpected response: {data}")
+        return None
+    except Exception as e:
+        logger.warning(f"   ⚠️ tmpfiles.org failed: {e}")
+        return None
+
+
+def _try_0x0(video_path: Path) -> Optional[str]:
+    """Upload to 0x0.st (no-nonsense file host, 512MB limit, 1yr retention)."""
+    try:
+        logger.info("   🌐 Trying 0x0.st...")
+        file_size_mb = video_path.stat().st_size / (1024 * 1024)
+        timeout = min(500, max(180, int(file_size_mb * 30)))
+        with open(video_path, "rb") as f:
+            resp = requests.post(
+                "https://0x0.st",
+                files={"file": f},
+                timeout=timeout,
+            )
+        if resp.status_code == 200:
+            url = resp.text.strip()
+            if url.startswith("http"):
+                logger.info(f"   ✅ 0x0.st: {url}")
+                return url
+        logger.warning(f"   ⚠️ 0x0.st returned {resp.status_code}: {resp.text[:200]}")
+        return None
+    except Exception as e:
+        logger.warning(f"   ⚠️ 0x0.st failed: {e}")
+        return None
+
+
+def _try_fileio(video_path: Path) -> Optional[str]:
+    """Upload to file.io (one-time download link, 2GB limit)."""
+    try:
+        logger.info("   🌐 Trying file.io...")
+        file_size_mb = video_path.stat().st_size / (1024 * 1024)
+        timeout = min(500, max(180, int(file_size_mb * 30)))
+        with open(video_path, "rb") as f:
+            resp = requests.post(
+                "https://file.io",
+                files={"file": f},
+                data={"expires": "1h"},
+                timeout=timeout,
+            )
+        data = resp.json()
+        if data.get("success") and data.get("link"):
+            url = data["link"]
+            logger.info(f"   ✅ file.io: {url}")
+            return url
+        logger.warning(f"   ⚠️ file.io failed: {data}")
+        return None
+    except Exception as e:
+        logger.warning(f"   ⚠️ file.io failed: {e}")
+        return None
+
+
+def _try_local_server(video_path: Path) -> Optional[str]:
+    """
+    Spin up a local HTTP server and expose it via a public tunnel (ngrok or similar).
+    Falls back to the machine's LAN IP (useful if the server has a public IP).
+    """
+    try:
+        logger.info("   🌐 Trying local HTTP server...")
+
+        # Find a free port
+        with socket.socket() as s:
+            s.bind(("", 0))
+            port = s.getsockname()[1]
+
+        serve_dir = video_path.parent
+        filename = video_path.name
+
+        class _Handler(http.server.SimpleHTTPRequestHandler):
+            def __init__(self, *args, **kwargs):
+                super().__init__(*args, directory=str(serve_dir), **kwargs)
             def log_message(self, format, *args):
-                pass  # Suppress access logs
+                pass  # suppress access logs
 
-            def end_headers(self):
-                self.send_header("Content-Type", "video/mp4")
-                super().end_headers()
+        server = http.server.HTTPServer(("0.0.0.0", port), _Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
 
-        self._server = socketserver.TCPServer((self.host, self.port), QuietHandler)
-        self.port = self._server.server_address[1]
+        # Try to get the public IP
+        try:
+            public_ip = urllib.request.urlopen("https://api.ipify.org", timeout=5).read().decode()
+        except Exception:
+            public_ip = socket.gethostbyname(socket.gethostname())
 
-        self._thread = threading.Thread(target=self._server.serve_forever, daemon=True)
-        self._thread.start()
+        url = f"http://{public_ip}:{port}/{filename}"
+        logger.info(f"   ✅ Local server: {url}")
+        logger.info(f"   ⚠️ Note: Only works if port {port} is publicly accessible")
 
-        # Determine public URL
-        public_host = config.PUBLIC_VIDEO_HOST
-        
-        # Configure ngrok auth if provided
-        if config.NGROK_AUTHTOKEN:
-            conf.get_default().auth_token = config.NGROK_AUTHTOKEN
+        # Keep a reference so it's not garbage collected
+        _try_local_server._servers = getattr(_try_local_server, "_servers", [])
+        _try_local_server._servers.append(server)
 
-        if public_host == "auto":
-            # If we have an ngrok token, prefer ngrok for reliability
-            if config.NGROK_AUTHTOKEN:
-                try:
-                    logger.info("   🚀 Starting ngrok tunnel...")
-                    # bind_tls=True ensures we get an https URL
-                    self._tunnel_url = ngrok.connect(self.port, bind_tls=True).public_url
-                    public_host = self._tunnel_url
-                    logger.info(f"   ✅ Ngrok tunnel established: {public_host}")
-                except Exception as e:
-                    logger.error(f"   ❌ Ngrok connection failed: {e}")
-                    # Fallback to local IP logic below
-                    pass
-
-            # Fallback or if no token: Try to get the machine's IP
-            if not self._tunnel_url:
-                try:
-                    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-                    s.connect(("8.8.8.8", 80))
-                    ip = s.getsockname()[0]
-                    s.close()
-                except Exception:
-                    ip = "127.0.0.1"
-                public_host = f"http://{ip}:{self.port}"
-                
-        elif not public_host.startswith("http"):
-            public_host = f"http://{public_host}:{self.port}"
-
-        import urllib.parse
-        encoded_name = urllib.parse.quote(video_name)
-        url = f"{public_host}/{encoded_name}"
-        logger.info(f"📡 Video server started at {url}. Waiting 3 seconds for tunnel to stabilize...")
-        time.sleep(3) # Give ngrok and the local server a moment to start
         return url
+    except Exception as e:
+        logger.warning(f"   ⚠️ Local server failed: {e}")
+        return None
 
-    def stop(self):
-        """Shut down the server."""
-        if self._tunnel_url:
-            try:
-                ngrok.disconnect(self._tunnel_url)
-                # optionally kill the ngrok process if you want to be clean
-                # ngrok.kill() 
-                logger.info("   🔌 Ngrok tunnel closed")
-            except Exception as e:
-                logger.error(f"   ⚠️ Error closing tunnel: {e}")
-            self._tunnel_url = None
 
-        if self._server:
-            self._server.shutdown()
-            logger.info("📡 Video server stopped")
+def _stage_video_to_cloud(video_path: Path) -> Optional[str]:
+    """
+    Try multiple CDN services in order until one succeeds.
+    Falls back to local HTTP server as last resort.
+    """
+    file_size_mb = video_path.stat().st_size / (1024 * 1024)
+    logger.info(f"☁️ Staging {video_path.name} ({file_size_mb:.1f} MB) to cloud CDN for Meta...")
 
+    # Try CDN services in order of reliability for large files
+    for attempt in [_try_0x0, _try_fileio, _try_tmpfiles, _try_local_server]:
+        url = attempt(video_path)
+        if url:
+            return url
+        logger.info("   ↪️ Trying next CDN...")
+
+    logger.error("   ❌ All CDN staging options failed.")
+    return None
+
+
+# ── Meta API ─────────────────────────────────────────────────────────────────
 
 def _create_media_container(
     video_url: str,
     caption: str,
-    cover_url: Optional[str] = None,
 ) -> Optional[str]:
     """
     Step 1: Create a media container for the Reel.
@@ -141,19 +244,6 @@ def _create_media_container(
         "share_to_feed": "true",
         "access_token": config.IG_ACCESS_TOKEN,
     }
-
-    if cover_url and cover_url.startswith("http"):
-        params["cover_url"] = cover_url
-
-    logger.info(f"📤 Final Exact Params to Facebook: {params}")
-    
-    # Internal check: is the video server actually accessible right now?
-    try:
-        logger.info(f"🔍 Testing internal accessibility of {video_url}...")
-        test_resp = requests.head(video_url, timeout=5)
-        logger.info(f"🔍 Internal test status: {test_resp.status_code}")
-    except Exception as e:
-        logger.warning(f"⚠️ Internal test failed: {e}")
 
     logger.info(f"📤 Creating media container w/ URL: {video_url}")
     try:
@@ -173,10 +263,10 @@ def _create_media_container(
         return None
 
 
-def _check_container_status(container_id: str) -> str:
+def _check_container_status(container_id: str) -> tuple[str, str]:
     """
     Check the status of a media container.
-    Returns: 'FINISHED', 'IN_PROGRESS', 'ERROR', or 'EXPIRED'.
+    Returns: ('FINISHED', ''), ('ERROR', 'msg'), or ('IN_PROGRESS', '').
     """
     endpoint = f"{GRAPH_API_BASE}/{container_id}"
     params = {
@@ -187,11 +277,25 @@ def _check_container_status(container_id: str) -> str:
     try:
         resp = requests.get(endpoint, params=params, timeout=15)
         data = resp.json()
-        status = data.get("status_code", "UNKNOWN")
-        return status
+        status_code = data.get("status_code", "UNKNOWN")
+        error_msg = ""
+
+        if status_code == "ERROR":
+            status_info = data.get("status", {})
+            logger.error(f"   ❌ Meta API Processing Error: {status_info}")
+            if isinstance(status_info, dict):
+                err_dict = status_info.get("errors", {})
+                if isinstance(err_dict, dict) and "message" in err_dict:
+                    error_msg = err_dict["message"]
+                else:
+                    error_msg = str(status_info)
+            else:
+                error_msg = str(status_info)
+
+        return status_code, error_msg
     except Exception as e:
         logger.warning(f"   ⚠️ Status check failed: {e}")
-        return "UNKNOWN"
+        return "UNKNOWN", ""
 
 
 def _publish_container(container_id: str) -> Optional[str]:
@@ -225,6 +329,8 @@ def _publish_container(container_id: str) -> Optional[str]:
         return None
 
 
+# ── Public API ────────────────────────────────────────────────────────────────
+
 def upload_to_instagram(
     video_path: Path,
     metadata: ReelMetadata,
@@ -233,9 +339,9 @@ def upload_to_instagram(
     """
     Upload a video to Instagram as a Reel.
 
-    1. Starts a temporary HTTP server to serve the video
+    1. Stages video to a cloud CDN (tries 0x0.st, file.io, tmpfiles.org, local server)
     2. Creates a media container via Graph API
-    3. Waits for processing to finish
+    3. Waits for Meta to process it
     4. Publishes the Reel
 
     Args:
@@ -250,19 +356,19 @@ def upload_to_instagram(
         logger.error(f"❌ Video file not found: {video_path}")
         return False
 
-    # Ensure API keys are loaded
     if not config.IG_USER_ID or not config.IG_ACCESS_TOKEN:
         config.load_api_keys()
 
-    # Start temporary video server
-    server = _VideoServer(video_path)
-    video_url = server.start()
+    # Transcode to exact Instagram Reels specs (fixes error 2207076)
+    video_path = _transcode_for_instagram(video_path)
+
+    # Stage to cloud
+    video_url = _stage_video_to_cloud(video_path)
+    if not video_url:
+        return False
+
 
     try:
-        # Give server a moment to start
-        time.sleep(1)
-
-        # Step 1: Create container
         container_id = _create_media_container(
             video_url=video_url,
             caption=metadata.full_caption,
@@ -271,18 +377,18 @@ def upload_to_instagram(
         if not container_id:
             return False
 
-        # Step 2: Wait for processing
+        # Wait for Meta to process
         logger.info("⏳ Waiting for Instagram to process the video...")
         start_time = time.time()
 
         while time.time() - start_time < max_wait:
-            status = _check_container_status(container_id)
+            status, error_msg = _check_container_status(container_id)
 
             if status == "FINISHED":
                 logger.info("   ✅ Processing complete!")
                 break
             elif status == "ERROR":
-                logger.error("   ❌ Instagram returned an error during processing")
+                logger.error(f"   ❌ Instagram returned an error: {error_msg}")
                 return False
             elif status == "EXPIRED":
                 logger.error("   ❌ Media container expired")
@@ -290,12 +396,11 @@ def upload_to_instagram(
             else:
                 elapsed = int(time.time() - start_time)
                 logger.info(f"   ⏳ Status: {status} ({elapsed}s elapsed)")
-                time.sleep(10)  # Check every 10 seconds
+                time.sleep(10)
         else:
             logger.error(f"   ❌ Timed out after {max_wait}s waiting for processing")
             return False
 
-        # Step 3: Publish
         media_id = _publish_container(container_id)
 
         if media_id:
@@ -304,6 +409,6 @@ def upload_to_instagram(
         else:
             return False
 
-    finally:
-        # Always stop the server
-        server.stop()
+    except Exception as e:
+        logger.error(f"   ❌ Network error during Instagram upload: {e}")
+        return False

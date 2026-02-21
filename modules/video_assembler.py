@@ -10,8 +10,9 @@ Fully hardware-accelerated via FFmpeg.
 import logging
 import subprocess
 from pathlib import Path
-from typing import List
+from typing import List, Callable, Optional
 import os
+import re
 
 from modules.beat_parser import BeatInfo
 from modules.youtube_sourcer import ClipInfo
@@ -72,6 +73,7 @@ def _render_ffmpeg_video(
     audio_start: float = 0.0,
     audio_end: float = None,
     gpu_enabled: bool = True,
+    progress_callback: Optional[Callable[[float], None]] = None,
 ) -> Path:
     logger.info(f"🎞️ Building FFmpeg assembly for {output_path.name}")
     
@@ -205,20 +207,28 @@ def _render_ffmpeg_video(
         logger.info("   🚀 Using GPU Encoding (h264_nvenc)")
         cmd.extend([
             "-c:v", "h264_nvenc",
-            "-preset", "p1",
-            "-rc", "vbr", "-cq", "28", "-b:v", "5M", "-spatial_aq", "1"
+            "-preset", "p2",
+            "-profile:v", "high",
+            "-pix_fmt", "yuv420p",
+            "-b:v", "5M", "-maxrate", "5M", "-bufsize", "10M",
+            "-bf", "2",
+            "-movflags", "+faststart"
         ])
     else:
-        logger.info("   🐢 Using CPU Encoding (libx264 ultrafast)")
+        logger.info("   🐢 Using CPU Encoding (libx264)")
         cmd.extend([
             "-c:v", "libx264",
-            "-preset", "ultrafast",
-            "-crf", "23"
+            "-preset", "fast",
+            "-profile:v", "high",
+            "-pix_fmt", "yuv420p",
+            "-b:v", "5M", "-maxrate", "5M", "-bufsize", "10M",
+            "-movflags", "+faststart"
         ])
 
     cmd.extend([
         "-c:a", "aac",
-        "-b:a", "192k",
+        "-b:a", "256k",
+        "-ar", "48000",
         "-t", str(target_duration), # Hard stop!
         str(output_path)
     ])
@@ -226,7 +236,29 @@ def _render_ffmpeg_video(
     logger.debug(f"Render CMD: {' '.join(cmd)}")
     
     try:
-        subprocess.run(cmd, check=True)
+        if progress_callback:
+            process = subprocess.Popen(cmd, stderr=subprocess.PIPE, universal_newlines=True, encoding="utf-8", errors="replace")
+            time_pattern = re.compile(r"time=(\d{2}:\d{2}:\d{2}\.\d{2})")
+            
+            for line in process.stderr:
+                match = time_pattern.search(line)
+                if match:
+                    t_str = match.group(1)
+                    parts = t_str.split(':')
+                    if len(parts) == 3:
+                        t_sec = float(parts[0]) * 3600 + float(parts[1]) * 60 + float(parts[2])
+                        percent = min(1.0, t_sec / target_duration)
+                        progress_callback(percent)
+                        
+            process.wait()
+            if process.returncode != 0:
+                raise subprocess.CalledProcessError(process.returncode, cmd)
+        else:
+            subprocess.run(cmd, check=True)
+            
+        if progress_callback:
+            progress_callback(1.0)
+            
         return output_path
     except subprocess.CalledProcessError as e:
         logger.error(f"❌ FFmpeg assembled render failed: {e}")
@@ -253,6 +285,7 @@ def assemble_video(
     viz_theme: str = "neon",
     producer_tag: str = None,
     gpu_enabled: bool = True,
+    progress_callback: Optional[Callable[[float], None]] = None,
 ) -> Path:
     output_path = config.OUTPUT_DIR / f"{beat_info.filename}_full.mp4"
     target_duration = min(beat_info.duration, config.VIDEO_DURATION_MAX)
@@ -262,6 +295,7 @@ def assemble_video(
         visualizer=visualizer, viz_theme=viz_theme,
         producer_tag=producer_tag,
         gpu_enabled=gpu_enabled,
+        progress_callback=progress_callback,
     )
 
 
@@ -272,6 +306,7 @@ def assemble_highlight_videos(
     viz_theme: str = "neon",
     producer_tag: str = None,
     gpu_enabled: bool = True,
+    progress_callback: Optional[Callable[[int, float], None]] = None,
 ) -> List[Path]:
     if not beat_info.best_segments:
         logger.info("   ℹ️ No highlight segments detected")
@@ -286,12 +321,18 @@ def assemble_highlight_videos(
         logger.info(f"\n🎯 Highlight {i}/{len(beat_info.best_segments)}: {seg_start:.1f}s – {seg_end:.1f}s")
 
         try:
+            # Wrap the callback to pass the index if needed by the UI
+            def _cb(p):
+                if progress_callback:
+                    progress_callback(i, p)
+                    
             path = _render_ffmpeg_video(
                 beat_info, clips, output_path, seg_duration,
                 visualizer=visualizer, viz_theme=viz_theme,
                 producer_tag=producer_tag,
                 audio_start=seg_start, audio_end=seg_end,
                 gpu_enabled=gpu_enabled,
+                progress_callback=_cb,
             )
             highlight_paths.append(path)
         except Exception as e:

@@ -27,6 +27,7 @@ import modules.pexels_sourcer as pexels_sourcer
 from modules.video_assembler import assemble_video, assemble_highlight_videos
 from modules.metadata_gen import generate_metadata
 from modules.ig_uploader import upload_to_instagram
+from modules.ui import print_intro, get_help_header
 
 # ── Logging ───────────────────────────────────────────────
 LOG_FORMAT = "%(asctime)s │ %(message)s"
@@ -177,12 +178,17 @@ def process_beat(
     logger.info("")
     logger.info("📤 Step 5: Uploading to Instagram...")
     
-    upload_path = output_path
-    if ig_highlight_only and highlight_paths:
+    # IG always uploads the best 30s highlight (small file, fast upload)
+    # Full video goes to YouTube only
+    if highlight_paths:
         upload_path = highlight_paths[0]
-        logger.info(f"   (Using highlight for IG upload: {upload_path.name})")
+        logger.info(f"   📎 Using highlight clip for IG (smaller upload): {upload_path.name}")
+    else:
+        upload_path = output_path
+        logger.info(f"   📎 No highlights — using full video for IG: {upload_path.name}")
 
     ig_success = upload_to_instagram(upload_path, metadata)
+
 
     if ig_success:
         logger.info("")
@@ -282,7 +288,7 @@ def process_beat_deforum(beat_path: Path) -> bool:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="🎵 Beat-to-Instagram Reel Automation",
+        description=get_help_header() + "\n\n🎵 Beat-to-Instagram Reel Automation",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -307,14 +313,25 @@ Examples:
     parser.add_argument("--deforum", action="store_true", help="Use Stable Diffusion Deforum pipeline instead of video clips")
     parser.add_argument("--watch", "-w", action="store_true", help="Watch beats/ folder and auto-process new files")
     parser.add_argument("--no-gpu", dest="gpu", action="store_false", default=True, help="Disable GPU acceleration (NVENC) for faster rendering")
+    parser.add_argument("--ig-only", type=str, metavar="BEAT_STEM",
+                        help="Skip full pipeline — upload existing highlight_1.mp4 to IG directly. "
+                             "Provide the beat filename stem (without extension), e.g. \"hoodtrap khedoo;\"")
 
     args = parser.parse_args()
 
     # Setup
     setup_logging(args.verbose)
+    # Show intro unless it's a specific sub-command that shouldn't have it (optional)
+    # We print intro here so it shows on -h as well
+    if len(sys.argv) > 1 and sys.argv[1] in ["-h", "--help"]:
+        from modules.ui import print_banner
+        print_banner()
+    else:
+        print_intro()
+
     logger = logging.getLogger(__name__)
 
-    logger.info("🚀 Beat-to-Instagram Reel Automation")
+    logger.info("🚀 Pipeline Startup")
     logger.info("=" * 60)
 
     # Validate config
@@ -374,6 +391,74 @@ Examples:
             observer.stop()
         observer.join()
         sys.exit(0)
+
+    # ── IG-ONLY MODE (upload existing highlight_1 directly) ──
+    if args.ig_only:
+        from modules.beat_parser import parse_beat
+        from modules.metadata_gen import generate_metadata
+        from modules.ig_uploader import upload_to_instagram
+
+        stem = args.ig_only
+        # Find the highlight_1 file in output dir
+        highlight_path = config.OUTPUT_DIR / f"{stem}_highlight_1.mp4"
+        if not highlight_path.exists():
+            # Try case-insensitive glob fallback
+            matches = list(config.OUTPUT_DIR.glob(f"*highlight_1*.mp4"))
+            matches = [m for m in matches if stem.lower() in m.name.lower()]
+            if matches:
+                highlight_path = matches[0]
+            else:
+                logger.error(f"❌ highlight_1 not found for '{stem}' in {config.OUTPUT_DIR}")
+                logger.info(f"   Available highlight files:")
+                for f in sorted(config.OUTPUT_DIR.glob('*highlight_1*.mp4')):
+                    logger.info(f"   - {f.name}")
+                sys.exit(1)
+
+        logger.info(f"🎵 Found highlight: {highlight_path.name} ({highlight_path.stat().st_size / 1024 / 1024:.1f} MB)")
+
+        # Find the original beat file to generate metadata
+        beat_path = None
+        for ext in [".mp3", ".wav", ".flac", ".m4a", ".ogg", ".aac"]:
+            candidate = config.BEATS_DIR / f"{stem}{ext}"
+            if candidate.exists():
+                beat_path = candidate
+                break
+        if not beat_path:
+            # Try glob
+            matches = list(config.BEATS_DIR.glob(f"{stem}.*"))
+            if matches:
+                beat_path = matches[0]
+
+        if beat_path:
+            logger.info(f"🎵 Generating metadata from: {beat_path.name}")
+            from modules.beat_parser import parse_beat
+            beat_info = parse_beat(beat_path)
+        else:
+            logger.warning(f"⚠️ Beat file not found for '{stem}', using minimal metadata")
+            from modules.beat_parser import BeatInfo
+            from pathlib import Path as _Path
+            beat_info = BeatInfo(
+                name=stem.replace(";", "").strip().title(),
+                filename=stem,
+                path=_Path(stem),
+                bpm=120, duration=30, energy="high",
+                genre="hip hop", mood="vibes",
+                brightness="neutral", rhythm="bouncy",
+                visual_keywords=["trap", "aesthetic"],
+                best_segments=[],
+            )
+
+        metadata = generate_metadata(beat_info)
+        logger.info(f"📝 Metadata ready | Caption: {metadata.caption[:60]}...")
+        logger.info(f"   Hashtags: {len(metadata.hashtags)} | YT Title: {metadata.yt_title}")
+
+        logger.info("📤 Uploading to Instagram...")
+        success = upload_to_instagram(highlight_path, metadata)
+        if success:
+            logger.info("🎉 IG upload complete!")
+        else:
+            logger.error("❌ IG upload failed")
+        sys.exit(0 if success else 1)
 
     # ── BATCH MODE ──────────────────────────────────────────
     # Determine which beats to process

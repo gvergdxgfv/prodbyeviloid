@@ -155,21 +155,39 @@ def _render_ffmpeg_video(
     cmd.extend(["-map", f"[{current_v_out}]"])
     cmd.extend(["-map", "0:a"]) # Output the original audio
 
-    # Encoding parameters
+    # Encoding parameters — dynamically cap bitrate to keep output < 90 MB
+    # Formula: bitrate_bps = (target_MB × 8 × 1024 × 1024) / duration_sec
+    TARGET_MB = 90
+    audio_bitrate_bps = 192_000  # 192 kbps audio
+    max_video_bps = int(
+        ((TARGET_MB * 8 * 1024 * 1024) / max(target_duration, 1)) - audio_bitrate_bps
+    )
+    # Clamp: min 2 Mbps (watchable quality), max 5 Mbps (no reason to go higher)
+    max_video_bps = max(2_000_000, min(max_video_bps, 5_000_000))
+    video_bitrate = f"{max_video_bps // 1_000_000}M" if max_video_bps >= 1_000_000 else f"{max_video_bps // 1000}k"
+    logger.info(f"   🎯 Target bitrate {video_bitrate} to keep output ≤ {TARGET_MB}MB for {target_duration:.0f}s video")
+
     if gpu_enabled:
         logger.info("   🚀 Using GPU Encoding (h264_nvenc)")
         cmd.extend([
             "-c:v", "h264_nvenc",
-            "-preset", "p1",  # p1 is fastest for NVENC
-            "-rc", "vbr", "-cq", "28", "-b:v", "5M", "-spatial_aq", "1"
+            "-preset", "p1",
+            "-rc", "vbr", "-cq", "28",
+            "-b:v", video_bitrate,
+            "-maxrate", video_bitrate,
+            "-bufsize", f"{max_video_bps * 2 // 1_000_000}M",
+            "-spatial_aq", "1",
         ])
     else:
         logger.info("   🐢 Using CPU Encoding (libx264 ultrafast)")
         cmd.extend([
             "-c:v", "libx264",
             "-preset", "ultrafast",
-            "-crf", "23"
+            "-crf", "23",
+            "-maxrate", video_bitrate,
+            "-bufsize", f"{max_video_bps * 2 // 1_000_000}M",
         ])
+
 
     # Audio encoding and duration cut
     cmd.extend([
