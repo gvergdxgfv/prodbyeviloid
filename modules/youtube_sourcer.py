@@ -71,14 +71,14 @@ Beat info:
 - Visual keywords already detected: {', '.join(beat_info.visual_keywords[:5]) if beat_info.visual_keywords else "none"}
 
 Rules for search queries:
-- 5-6 queries MUST feature these specific artists that fit the genre: {target_artists}
+- 5 queries MUST feature these specific artists that fit the genre: {target_artists}
   Use queries like: "[Artist Name] concert lit", "[Artist Name] studio session making music", "[Artist Name] partying"
-- 2-3 queries MUST be for random lifestyle/action clips that fit the vibe:
+- 2 queries MUST be for random lifestyle/action clips that fit the vibe:
   * e.g., "fast car night racing aesthetic", "dirt bike riding", "luxury lifestyle party", "night city driving POV"
 - DO NOT search for "stock footage", "no copyright", "royalty free".
 - Keep queries SHORT (3-7 words max).
 
-Respond with EXACTLY 8 lines, one search query per line, nothing else:"""
+Respond with EXACTLY 7 lines, one search query per line, nothing else:"""
 
     try:
         from modules import ai_helper

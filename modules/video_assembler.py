@@ -149,11 +149,16 @@ def _render_ffmpeg_video(
     drops = beat_info.drop_times or beat_info.beat_times or []
     
     clip_audio_end = audio_end if audio_end is not None else (audio_start + target_duration)
-    valid_drops = [t - audio_start for t in drops if audio_start <= t <= clip_audio_end]
+    
+    # Keep the absolute drop times directly from the audio file parser!
+    valid_drops = [t for t in drops if audio_start <= t <= clip_audio_end]
     valid_drops = valid_drops[:25] # Cap to prevent cmd line length limits
     
     for dt in valid_drops:
-        expr = f"if(between(in_time,{dt},{dt+0.25}), 1.05-(in_time-{dt})*0.2, 1)"
+        # zoom to 105% instantly on drop, ease out back to 100% over 0.25 seconds
+        # Note: We must compare `in_time + audio_start` against the absolute `dt`
+        # Using `in_time` is required because `xfade` changes FFmpeg `t` timescale.
+        expr = f"if(between(in_time+{audio_start},{dt},{dt+0.25}), 1.05-(in_time+{audio_start}-{dt})*0.2, 1)"
         z_exprs.append(expr)
         
     z_full = "1"

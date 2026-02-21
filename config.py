@@ -38,7 +38,7 @@ IG_ACCESS_TOKEN: str = ""
 OPENROUTER_API_KEY: str = ""
 
 # ── Video Settings ────────────────────────────────────────
-MAX_CLIPS_PER_BEAT: int = _int("MAX_CLIPS_PER_BEAT", 10)
+MAX_CLIPS_PER_BEAT: int = _int("MAX_CLIPS_PER_BEAT", 7)
 CLIP_SEGMENT_DURATION: int = _int("CLIP_SEGMENT_DURATION", 10)
 VIDEO_DURATION_MAX: int = _int("VIDEO_DURATION_MAX", 900)
 VIDEO_WIDTH: int = _int("VIDEO_WIDTH", 1080)

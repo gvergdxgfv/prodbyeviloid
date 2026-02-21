@@ -16,12 +16,12 @@ def test_ffmpeg_assembler():
         logger.error("No beats dir")
         return
         
-    beats = list(beats_dir.glob("*.mp3")) + list(beats_dir.glob("*.wav"))
-    if not beats:
-        logger.error("No beats")
+    beat_path = Path("beats/AYUSHCOLLAB.mp3")
+    if not beat_path.exists():
+        logger.error("Beats dir doesn't have AYUSHCOLLAB.mp3")
         return
         
-    beat_info = parse_beat(beats[0])
+    beat_info = parse_beat(beat_path)
     
     # Let's mock some clips using any mp4s in clips/
     clips = []

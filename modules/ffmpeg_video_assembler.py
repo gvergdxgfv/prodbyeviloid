@@ -182,8 +182,9 @@ def _render_ffmpeg_video(
     logger.debug(f"Render CMD: {' '.join(cmd)}")
     
     try:
-        subprocess.run(cmd, check=True)
+        subprocess.run(cmd, check=True, capture_output=True, text=True)
         return output_path
     except subprocess.CalledProcessError as e:
         logger.error(f"❌ FFmpeg assembled render failed: {e}")
+        logger.error(f"STDERR: {e.stderr}")
         raise
