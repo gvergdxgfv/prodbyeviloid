@@ -142,6 +142,35 @@ def _render_ffmpeg_video(
             current_v_out = next_v_out
             current_offset += (selected_clips[i].duration - fade_duration)
 
+    # 4.5 Apply Cinematic Color Grading & Beat-Reactive Zoom
+    cinematic_filter = "eq=contrast=1.1:saturation=1.2:gamma=0.95,vignette=PI/4,noise=alls=4:allf=t+u"
+    
+    z_exprs = []
+    drops = beat_info.drop_times or beat_info.beat_times or []
+    
+    clip_audio_end = audio_end if audio_end is not None else (audio_start + target_duration)
+    valid_drops = [t - audio_start for t in drops if audio_start <= t <= clip_audio_end]
+    valid_drops = valid_drops[:25] # Cap to prevent cmd line length limits
+    
+    for dt in valid_drops:
+        expr = f"if(between(in_time,{dt},{dt+0.25}), 1.05-(in_time-{dt})*0.2, 1)"
+        z_exprs.append(expr)
+        
+    z_full = "1"
+    if z_exprs:
+        for expr in reversed(z_exprs):
+            z_full = expr.replace(", 1)", f", {z_full})")
+            
+    zoompan_filter = f"zoompan=z='{z_full}':d=1:x='iw/2-(iw/zoom)/2':y='ih/2-(ih/zoom)/2':s={TARGET_W}x{TARGET_H}:fps={TARGET_FPS}"
+    
+    v_fx_out = "v_fx"
+    if valid_drops:
+        filter_lines.append(f"[{current_v_out}]{zoompan_filter},{cinematic_filter}[{v_fx_out}]")
+    else:
+        filter_lines.append(f"[{current_v_out}]{cinematic_filter}[{v_fx_out}]")
+        
+    current_v_out = v_fx_out
+
     # 5. Apply Visualizer if requested
     if visualizer:
         viz_lines, current_v_out = _build_visualizer_filtergraph(
